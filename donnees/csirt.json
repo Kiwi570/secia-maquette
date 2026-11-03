@@ -1,0 +1,6 @@
+[
+  { "t": { "fr": "Confinement rapide :", "en": "Rapid containment:" }, "d": { "fr": "isoler immédiatement les systèmes affectés.", "en": "immediately isolate affected systems." } },
+  { "t": { "fr": "Atténuation :", "en": "Mitigation:" }, "d": { "fr": "réduire les interruptions et l'impact financier.", "en": "reduce disruption and financial impact." } },
+  { "t": { "fr": "Coordination :", "en": "Coordination:" }, "d": { "fr": "aligner les équipes pour une réponse efficace, gestion de crise comprise.", "en": "align teams for an effective response, crisis management included." } },
+  { "t": { "fr": "Enquête et rapports :", "en": "Investigation and reporting:" }, "d": { "fr": "analyse de la cause racine, remédiation et leçons apprises.", "en": "root cause analysis, remediation and lessons learned." } }
+]

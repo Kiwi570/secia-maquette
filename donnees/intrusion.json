@@ -1,0 +1,63 @@
+{
+  "familles": [
+    {
+      "cle": "externes-internes",
+      "nom": { "fr": "Externes / internes", "en": "External / internal" },
+      "titre": { "fr": "Tester vos défenses, dedans comme dehors", "en": "Test your defences, inside and out" },
+      "points": [
+        { "t": { "fr": "Tests internes :", "en": "Internal testing:" }, "d": { "fr": "simuler des attaques internes pour repérer les mauvaises configurations et les vulnérabilités.", "en": "simulate attacks from within to identify misconfigurations and vulnerabilities." } },
+        { "t": { "fr": "Tests externes :", "en": "External testing:" }, "d": { "fr": "évaluer votre exposition aux menaces qui visent votre périmètre.", "en": "assess your exposure to external threats targeting your perimeter." } },
+        { "t": { "fr": "Réseau et sans fil :", "en": "Network and wireless:" }, "d": { "fr": "examiner les réseaux filaires et Wi-Fi pour en détecter les faiblesses.", "en": "evaluate both wired and wireless networks for weaknesses." } },
+        { "t": { "fr": "Rapport et recommandations :", "en": "Reporting and recommendations:" }, "d": { "fr": "des actions concrètes pour corriger les vulnérabilités trouvées.", "en": "actionable steps to remediate discovered vulnerabilities." } }
+      ],
+      "conclusion": { "fr": "Les tests externes et internes donnent une vision complète de votre posture de sécurité.", "en": "External and internal testing ensures a holistic understanding of your security posture." }
+    },
+    {
+      "cle": "web-api",
+      "nom": { "fr": "Web / API", "en": "Web / API" },
+      "titre": { "fr": "Sécuriser vos applications là où cela compte", "en": "Secure your applications where it matters most" },
+      "points": [
+        { "t": { "fr": "Applications web :", "en": "Web applications:" }, "d": { "fr": "identifier les vulnérabilités de vos applications.", "en": "identify vulnerabilities in your web apps." } },
+        { "t": { "fr": "Sécurité des API :", "en": "API security:" }, "d": { "fr": "évaluer les points d'accès API et leurs intégrations.", "en": "evaluate the security of API endpoints and integrations." } },
+        { "t": { "fr": "Intégrité des données :", "en": "Data integrity:" }, "d": { "fr": "vérifier que les informations sensibles sont protégées.", "en": "ensure sensitive information is protected from attacks." } },
+        { "t": { "fr": "Plan de remédiation :", "en": "Remediation plan:" }, "d": { "fr": "des recommandations concrètes pour les développeurs et les équipes IT.", "en": "actionable recommendations for developers and IT teams." } }
+      ],
+      "conclusion": { "fr": "Les tests Web et API protègent vos applications critiques et préviennent les violations de sécurité.", "en": "Web and API testing protects critical applications and prevents potential breaches." }
+    },
+    {
+      "cle": "red-team",
+      "nom": { "fr": "Red Team", "en": "Red Team" },
+      "titre": { "fr": "Penser comme un attaquant, pour garder une longueur d'avance", "en": "Think like an attacker to stay ahead" },
+      "points": [
+        { "t": { "fr": "Simulations avancées :", "en": "Advanced simulations:" }, "d": { "fr": "mettre à l'épreuve vos capacités de détection et de réponse.", "en": "challenge your detection and response systems." } },
+        { "t": { "fr": "Scénarios sur mesure :", "en": "Custom scenarios:" }, "d": { "fr": "cibler vos fonctions critiques et vos actifs sensibles.", "en": "focus on critical business functions and sensitive assets." } },
+        { "t": { "fr": "Détection et réponse :", "en": "Detection and response:" }, "d": { "fr": "mesurer l'efficacité de vos opérations de sécurité.", "en": "measure the effectiveness of your security operations." } },
+        { "t": { "fr": "Rapport et conseils :", "en": "Reporting and guidance:" }, "d": { "fr": "renforcer la résilience face aux attaques sophistiquées.", "en": "recommendations to improve resilience against sophisticated attacks." } }
+      ],
+      "conclusion": { "fr": "Les exercices Red Team préparent votre organisation à des menaces complexes et réalistes.", "en": "Red Team exercises prepare your organisation for complex, real-world threats." }
+    }
+  ],
+  "pourquoi": [
+    { "fr": "Les attaquants exploitent de nouvelles vulnérabilités chaque jour.", "en": "Attackers exploit new vulnerabilities daily." },
+    { "fr": "Les normes réglementaires exigent des évaluations de sécurité documentées.", "en": "Regulatory standards require documented security assessments." },
+    { "fr": "Tester tôt évite des violations de données et des interruptions coûteuses.", "en": "Early testing prevents data breaches and costly downtime." }
+  ],
+  "atouts": [
+    { "fr": "Hackers éthiques certifiés (CEH, OSCP) à l'expérience prouvée", "en": "Certified ethical hackers (CEH, OSCP) with proven experience" },
+    { "fr": "Tests complets sur les réseaux, les applications et les postes", "en": "Comprehensive testing across networks, applications and endpoints" },
+    { "fr": "Rapports détaillés, avec des mesures de remédiation priorisées", "en": "Detailed reporting with actionable, prioritised mitigation steps" },
+    { "fr": "Engagement neutre vis-à-vis des fournisseurs, adapté à votre organisation", "en": "Vendor-neutral engagement tailored to your organisation" }
+  ],
+  "livrables": [
+    { "famille": { "fr": "Externes / internes", "en": "External / internal" }, "titre": { "fr": "Rapport et recommandations", "en": "Report and recommendations" }, "texte": { "fr": "Les vulnérabilités trouvées et les actions concrètes pour les corriger.", "en": "The vulnerabilities found and the concrete steps to fix them." } },
+    { "famille": { "fr": "Web / API", "en": "Web / API" }, "titre": { "fr": "Plan de remédiation détaillé", "en": "Detailed remediation plan" }, "texte": { "fr": "Des recommandations prêtes à appliquer, pour les développeurs et les équipes IT.", "en": "Ready-to-apply recommendations for developers and IT teams." } },
+    { "famille": { "fr": "Red Team", "en": "Red Team" }, "titre": { "fr": "Évaluation de la détection et de la réponse", "en": "Detection and response assessment" }, "texte": { "fr": "Ce que vos opérations de sécurité ont vu, ou non, et comment les renforcer.", "en": "What your security operations saw, or missed, and how to strengthen them." } }
+  ],
+  "faq": [
+    { "q": { "fr": "Quelle différence avec un scan de vulnérabilités ?", "en": "How is this different from a vulnerability scan?" }, "r": { "fr": "Le test d'intrusion évalue votre sécurité du point de vue d'un attaquant. Plus complet qu'une évaluation standard des vulnérabilités, il donne un aperçu réaliste des faiblesses à corriger.", "en": "Penetration testing evaluates your security from an attacker's perspective. More thorough than a standard vulnerability assessment, it gives a realistic view of the weaknesses to address." } },
+    { "q": { "fr": "Que pouvez-vous tester ?", "en": "What can you test?" }, "r": { "fr": "Votre périmètre externe, votre réseau interne, vos réseaux filaires et Wi-Fi, vos applications web et vos API, et, en exercice Red Team, vos capacités de détection et de réponse.", "en": "Your external perimeter, internal network, wired and Wi-Fi networks, web applications and APIs, and, in a Red Team exercise, your detection and response capabilities." } },
+    { "q": { "fr": "Que recevez-vous à la fin ?", "en": "What do you receive at the end?" }, "r": { "fr": "Un rapport détaillé avec des mesures de remédiation exploitables et priorisées, et un plan de remédiation pour les développeurs et les équipes IT.", "en": "A detailed report with actionable, prioritised mitigation steps, and a remediation plan for developers and IT teams." } },
+    { "q": { "fr": "À quoi sert un exercice Red Team ?", "en": "What is a Red Team exercise for?" }, "r": { "fr": "À mettre à l'épreuve vos capacités de détection et de réponse avec des scénarios d'attaque ciblant vos fonctions critiques, puis à mesurer l'efficacité de vos opérations de sécurité.", "en": "To challenge your detection and response with attack scenarios aimed at your critical functions, then measure how effective your security operations are." } },
+    { "q": { "fr": "Pourquoi tester maintenant ?", "en": "Why test now?" }, "r": { "fr": "Les attaquants exploitent de nouvelles vulnérabilités chaque jour, et les normes réglementaires exigent des évaluations de sécurité documentées. Tester tôt réduit les risques avant qu'ils n'affectent vos opérations.", "en": "Attackers exploit new vulnerabilities daily, and regulatory standards require documented security assessments. Testing early reduces risk before it affects your operations." } }
+  ]
+}

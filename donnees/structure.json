@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SECIA",
+  "alternateName": "NS Consulting",
+  "foundingDate": "2009",
+  "url": "https://secia-maquette.vercel.app/",
+  "logo": "https://secia-maquette.vercel.app/assets/images/logo.svg",
+  "email": "contact@secia.eu",
+  "telephone": "+3210391610",
+  "address": { "@type": "PostalAddress", "streetAddress": "Rue des Sablières 45/89", "postalCode": "1435", "addressLocality": "Mont-Saint-Guibert", "addressCountry": "BE" },
+  "parentOrganization": { "@type": "Organization", "name": "NPS Consult Group S.A.", "address": { "@type": "PostalAddress", "streetAddress": "25 Hossegaass", "postalCode": "L-5687", "addressLocality": "Dalheim", "addressCountry": "LU" } },
+  "contactPoint": [
+    { "@type": "ContactPoint", "contactType": "emergency", "telephone": "+32475376891", "areaServed": "BE", "hoursAvailable": "Mo-Su 00:00-23:59" },
+    { "@type": "ContactPoint", "contactType": "sales", "telephone": "+32473471697", "areaServed": "BE" }
+  ],
+  "description": { "fr": "Société de conseil en IT et en cybersécurité, spécialisée dans la conception, la sécurisation et l'exploitation d'infrastructures numériques résilientes.", "en": "IT and cybersecurity consulting company specialising in the design, security and operation of resilient digital infrastructures." }
+}

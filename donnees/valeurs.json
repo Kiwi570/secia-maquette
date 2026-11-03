@@ -1,0 +1,44 @@
+[
+  {
+    "cle": "transparence", "image": "valeur-transparence", "cadrage": "55% 55%",
+    "titre": { "fr": "Transparence", "en": "Transparency" },
+    "alt": { "fr": "Trois membres de l'équipe autour d'un ordinateur, en réunion", "en": "Three team members around a laptop, in a meeting" },
+    "court": { "fr": "Une relation de confiance se construit dans la clarté : vous savez toujours où en est votre projet.", "en": "A relationship of trust is built on clarity: you always know where your project stands." },
+    "texte": { "fr": "Nous croyons qu'une relation de confiance se construit dans la clarté. C'est pourquoi nous communiquons de manière ouverte et honnête à chaque étape de vos projets, afin que vous sachiez toujours où vous en êtes et puissiez avancer en toute confiance.", "en": "We believe that a relationship of trust is built on clarity. That's why we communicate openly and honestly at every stage of your projects, so you always know where you stand and can move forward with confidence." }
+  },
+  {
+    "cle": "responsabilite", "image": "valeur-responsabilite", "cadrage": "52% 42%",
+    "titre": { "fr": "Responsabilité", "en": "Responsibility" },
+    "alt": { "fr": "Un ingénieur concentré devant son poste de travail", "en": "An engineer focused at his workstation" },
+    "court": { "fr": "La sécurité et la fiabilité de vos systèmes sont une responsabilité que nous prenons à cœur.", "en": "The security and reliability of your systems are a responsibility we take to heart." },
+    "texte": { "fr": "La sécurité et la fiabilité de vos systèmes sont une responsabilité que nous prenons à cœur. Nous nous engageons à protéger ce qui compte le plus pour votre entreprise et à assurer la continuité de vos opérations dans un monde numérique exigeant.", "en": "The security and reliability of your systems are a responsibility we take to heart. We are committed to protecting what matters most to your business and ensuring the continuity of your operations in a demanding digital world." }
+  },
+  {
+    "cle": "esprit-equipe", "image": "valeur-esprit-equipe", "cadrage": "56% 42%",
+    "titre": { "fr": "Esprit d'équipe", "en": "Team spirit" },
+    "alt": { "fr": "Réunion de l'équipe dans une salle vitrée aux couleurs de SECIA", "en": "Team meeting in a glass-walled room bearing the SECIA logo" },
+    "court": { "fr": "Main dans la main, en partageant notre expertise, pour des solutions solides et durables.", "en": "Hand in hand, sharing our expertise, to build strong and lasting solutions." },
+    "texte": { "fr": "En travaillant main dans la main, en partageant notre expertise et en favorisant une dynamique collaborative, nous construisons des solutions solides et durables qui répondent réellement à vos besoins.", "en": "We consider our clients as true partners. By working hand in hand, sharing our expertise, and fostering a collaborative dynamic, we build strong and lasting solutions that truly meet your needs." }
+  },
+  {
+    "cle": "confiance", "image": "valeur-confiance", "cadrage": "52% 48%",
+    "titre": { "fr": "Confiance", "en": "Trust" },
+    "alt": { "fr": "Une poignée de main devant un mur à lattes de bois", "en": "A handshake in front of a wooden slatted wall" },
+    "court": { "fr": "Vos infrastructures, confiées à une équipe qui les protège comme si elles étaient les siennes.", "en": "Your infrastructures, entrusted to a team that protects them as if they were its own." },
+    "texte": { "fr": "Faire appel à SECIA, c'est confier vos infrastructures à une équipe qui les protège comme si elles étaient les siennes. Nous gagnons cette confiance chaque jour grâce à la rigueur, la proximité et la constance de nos engagements.", "en": "Turning to SECIA means entrusting your infrastructures to a team that protects them as if they were its own. We earn this trust every day through rigor, closeness, and consistency in our commitments." }
+  },
+  {
+    "cle": "respect", "image": "valeur-respect", "cadrage": "66% 46%",
+    "titre": { "fr": "Respect", "en": "Respect" },
+    "alt": { "fr": "Un membre de l'équipe souriant, en échange avec un collègue", "en": "A smiling team member talking with a colleague" },
+    "court": { "fr": "Chaque organisation, quelle que soit sa taille, mérite la même qualité d'écoute et de service.", "en": "Every organisation, whatever its size, deserves the same quality of listening and service." },
+    "texte": { "fr": "Pour nous, chaque organisation est unique. Quelle que soit sa taille ou son secteur, elle mérite la même qualité d'écoute, d'attention et de service. Ce respect guide notre manière de collaborer et construit des relations équilibrées et durables.", "en": "For us, every organisation is unique. Regardless of its size or sector, it deserves the same quality of listening, attention, and service. This respect guides the way we collaborate and builds balanced and lasting relationships." }
+  },
+  {
+    "cle": "partenariat", "image": "valeur-partenariat", "cadrage": "58% 48%",
+    "titre": { "fr": "Partenariat à long terme", "en": "Long-term partnership" },
+    "alt": { "fr": "Une main signe un document posé sur une table", "en": "A hand signing a document on a table" },
+    "court": { "fr": "Plus qu'un prestataire : un partenaire qui anticipe vos besoins futurs, pas à pas.", "en": "More than a provider: a partner who anticipates your future needs, step by step." },
+    "texte": { "fr": "Nous sommes plus qu'un prestataire : un partenaire de confiance sur le long terme. Notre approche consiste à vous accompagner pas à pas dans votre évolution digitale, en anticipant vos besoins futurs et en adaptant continuellement nos solutions.", "en": "We are not just a service provider, but a partner you can rely on for the long term. Our approach is to support you step by step in your digital evolution, anticipating your future needs and continuously adapting our solutions." }
+  }
+]

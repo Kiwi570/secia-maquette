@@ -1,0 +1,493 @@
+{
+  "commun": {
+    "navigation": "Main navigation",
+    "menu": "Menu",
+    "fermer": "Close",
+    "langueAutre": "Version française",
+    "logoAlt": "SECIA, Network & Security Solutions",
+    "actionEntete": "Under attack?",
+    "appeler": "Call",
+    "rendezVous": "Book a meeting",
+    "rendezVousCourt": "Meeting",
+    "urgenceTitre": "Cyberattack emergency · 24/7",
+    "urgenceCourt": "Emergency",
+    "urgenceBelgique": "Belgium",
+    "urgenceLuxembourg": "Luxembourg",
+    "belgique": "Belgium",
+    "luxembourg": "Luxembourg",
+    "general": "General",
+    "premiersGestes": "First steps",
+    "linkedin": "NPS Consult Group on LinkedIn",
+    "calmeReduire": "Reduce animations",
+    "calmeRetablir": "Restore animations",
+    "calmeSysteme": "Animations reduced by your device setting",
+    "sommaire": "Contents",
+    "confort": "Reading comfort",
+    "retourHaut": "Back to top",
+    "piedAccroche": "IT and cybersecurity consulting. Design, security and operation of resilient digital infrastructures, in Belgium since 2009.",
+    "membre": "SECIA is a member of NPS Consult Group S.A.",
+    "maquette": "Mock-up: details marked “to be completed” will be provided by the client.",
+    "evitement": "Skip to content",
+    "mentionIa": "Generated illustration",
+    "pause": "Pause",
+    "lecture": "Play",
+    "pauseImpulsions": "Pause",
+    "lectureImpulsions": "Resume",
+    "planche": "Sheet",
+    "echelle": "Scale 1:1",
+    "introLigne": "Belgium · since 2009",
+    "introCote": "Design · Secure · Operate",
+    "schemaIllustratif": "Illustrative diagram",
+    "aCompleter": "to be completed",
+    "formSimule": "Simulated form: nothing is sent in this mock-up.",
+    "mentionDonnees": "Your data is only used to handle your request. <a href=\"/en/mentions-legales#confidentialite\">Privacy policy</a> (to be completed).",
+    "barreAppel": "Call 24/7"
+  },
+  "plans": {
+    "internet": "INTERNET",
+    "parefeu": "FIREWALL",
+    "coeur": "CORE",
+    "soc": "SOC 24/7",
+    "cloud": "CLOUD",
+    "serveurs": "SERVERS",
+    "postes": "ENDPOINTS",
+    "wifi": "WI-FI",
+    "segment": "SEGMENT",
+    "veille": "WATCH 24/7",
+    "croquis1": "ACCESS",
+    "croquis2": "CONTROL",
+    "croquis3": "SERVICES",
+    "coteOuverture": "RESILIENT INFRASTRUCTURE",
+    "zoneA": "ZONE A",
+    "zoneB": "ZONE B",
+    "zoneC": "ZONE C",
+    "exterieur": "OUTSIDE",
+    "detecter": "Detect",
+    "contenir": "Contain",
+    "restaurer": "Restore",
+    "siteSecia": "Mont-Saint-Guibert",
+    "siteGroupe": "Dalheim",
+    "carteLegende": "Belgium and Luxembourg · Natural Earth base map",
+    "webapi": "WEB / API",
+    "donnees": "DATA",
+    "zoneExterne": "OUTSIDE",
+    "zonePerimetre": "PERIMETER",
+    "zoneInterne": "INTERNAL NETWORK"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "SECIA: IT and cybersecurity consulting in Belgium",
+      "description": "SECIA designs, secures and operates resilient digital infrastructures for enterprises and the public sector. Certified engineers, a vendor-independent approach, 24/7 support.",
+      "nav": "Home",
+      "partageAlt": "SECIA: design, secure and operate resilient infrastructures",
+      "accroche": "Design, secure and operate resilient infrastructures."
+    },
+    "cybersecurite": {
+      "titre": "Cybersecurity: SECIA",
+      "description": "Consulting, audits, penetration testing, managed security, CSOC monitoring and CSIRT incident response: SECIA's cybersecurity services.",
+      "nav": "Cybersecurity",
+      "partageAlt": "SECIA's cybersecurity services",
+      "accroche": "Six services to protect your systems, from design to response."
+    },
+    "tests-intrusion": {
+      "titre": "Penetration testing: SECIA",
+      "description": "External and internal, Web and API testing, Red Team exercises: SECIA assesses your security from an attacker's perspective and hands you a remediation plan.",
+      "nav": "Penetration testing",
+      "partageAlt": "Penetration testing by SECIA",
+      "accroche": "Assessing your security from an attacker's perspective."
+    },
+    "alerte-cyberattaque": {
+      "titre": "Cyberattack emergency: SECIA",
+      "description": "Hacked or under attack? SECIA's experts respond 24/7. Belgium: +32 475 37 68 91.",
+      "nav": "Cyberattack emergency",
+      "partageAlt": "Cyberattack emergency: call SECIA",
+      "accroche": "Under attack? Our experts respond 24/7."
+    },
+    "secia": {
+      "titre": "SECIA: history, values and team",
+      "description": "Founded in 2009 as NS Consulting, SECIA joined NPS Consult Group in 2025. Its values, its team, its certifications.",
+      "nav": "SECIA",
+      "partageAlt": "SECIA, its offices and its team",
+      "accroche": "Since 2009, infrastructures protected as if they were our own."
+    },
+    "contact": {
+      "titre": "Contact and meetings: SECIA",
+      "description": "Book a meeting with SECIA in Mont-Saint-Guibert: +32 10 39 16 10, contact@secia.eu. 24/7 cyberattack emergency: +32 475 37 68 91.",
+      "nav": "Contact",
+      "partageAlt": "Book a meeting with SECIA",
+      "accroche": "Let's meet."
+    },
+    "mentions-legales": {
+      "titre": "Legal notice: SECIA",
+      "description": "Publisher, host, credits and privacy for the SECIA website.",
+      "nav": "Legal notice",
+      "partageAlt": "SECIA legal notice",
+      "accroche": "Legal notice"
+    },
+    "404": {
+      "titre": "Link not found: SECIA",
+      "description": "This page does not exist or no longer exists.",
+      "nav": "Link not found",
+      "partageAlt": "Page not found",
+      "accroche": "Link not found"
+    }
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "IT and cybersecurity consulting · Belgium",
+      "titre1": "Design, secure",
+      "titre2": "and operate infrastructures",
+      "titre3": "built to last.",
+      "intro": "SECIA supports enterprises and public-sector organisations in complex and regulated environments: highly certified engineers, a vendor-independent approach and 24/7 operational support.",
+      "action": "Book a meeting",
+      "urgence": "Under attack?",
+      "info": "24/7 operational support",
+      "tirageAlt": "Meeting room at SECIA's offices, SECIA and NPS Consult Group logos on the glass",
+      "tirageLegende": "Sheet 01 · SECIA offices"
+    },
+    "reperes": {
+      "titre": "Key facts",
+      "r1v": "2009",
+      "r1l": "founded as NS Consulting",
+      "r2v": "24/7",
+      "r2l": "operational support",
+      "r3v": "42",
+      "r3l": "team certifications",
+      "r4v": "15",
+      "r4l": "services, cybersecurity and network"
+    },
+    "methode": {
+      "surtitre": "Method",
+      "titre": "One infrastructure, three stages.",
+      "intro": "SECIA works across the whole life cycle of your systems: we draw the plan, we protect it, then we keep it alive under watch.",
+      "e1": {
+        "nom": "Design",
+        "titre": "A plan built around your constraints",
+        "texte": "Architecture, integration, migration: network and security are designed together, from your business needs and your existing estate.",
+        "services": "Security consulting · Design and migration · Proof-of-concept labs"
+      },
+      "e2": {
+        "nom": "Secure",
+        "titre": "Every zone protected",
+        "texte": "Segmentation, firewalls, access control, audits and penetration tests: each segment is isolated, checked and put to the test.",
+        "services": "Audits · Penetration testing · NIS2 compliance"
+      },
+      "e3": {
+        "nom": "Operate",
+        "titre": "A living plan, under watch",
+        "texte": "24/7 monitoring, managed security and incident response: your infrastructure stays observed, maintained and defended.",
+        "services": "Managed security · CSOC monitoring · CSIRT response"
+      }
+    },
+    "poles": {
+      "surtitre": "Expertise",
+      "titre": "Cybersecurity and networks.",
+      "cyber": {
+        "titre": "Cybersecurity",
+        "compte": "6 services",
+        "texte": "Protecting your systems, networks and data, from threat detection to continuous protection.",
+        "lien": "Explore cybersecurity",
+        "alt": "Network rack with neatly dressed blue cables"
+      },
+      "reseau": {
+        "titre": "Network",
+        "compte": "9 services",
+        "texte": "Fast, reliable and secure connections, from design and build to ongoing management and support.",
+        "lien": "Talk about your network",
+        "alt": "Fibre optic patch panel"
+      }
+    },
+    "urgence": {
+      "surtitre": "Emergency line · 24 hours a day, 7 days a week",
+      "titre": "Under attack?",
+      "texte": "Unusual activity on your servers or user accounts? Don't panic: the cybersecurity and crisis response team steps in to contain the threat, investigate and restore your systems.",
+      "lien": "First steps",
+      "phases": "The three stages of a response"
+    },
+    "certifs": {
+      "surtitre": "Proof",
+      "titre": "42 certifications, a vendor-independent approach.",
+      "texte": "SECIA's engineers are certified on the technologies they design and operate. Their recommendation stays neutral: it starts from your infrastructure, not from a catalogue.",
+      "verifiees": "certifications listed",
+      "editeurs": {
+        "cisco": "Cisco",
+        "checkpoint": "Check Point",
+        "extreme": "Extreme Networks",
+        "sentinelone": "SentinelOne",
+        "isc2": "ISC2"
+      },
+      "source": "Badges shown on the NPS Consult Group website, list to be confirmed by SECIA."
+    },
+    "nis2": {
+      "surtitre": "NIS2 compliance · Belgium",
+      "titre": "Where do you stand on the ten NIS2 measures?",
+      "texte": "Directive (EU) 2022/2555 requires essential and important entities to implement at least ten risk-management measures (Article 21). Tick the ones already in place.",
+      "loi": "In Belgium, it is transposed by the Act of 26 April 2024, in force since 18 October 2024. The competent authority is the Centre for Cybersecurity Belgium (CCB).",
+      "liste": "The ten measures of Article 21",
+      "enPlace": "measures in place",
+      "avertissement": "Illustrative check: it does not replace a compliance assessment.",
+      "action": "Review it with SECIA"
+    },
+    "equipe": {
+      "surtitre": "Team and values",
+      "titre": "Your infrastructures, protected as if they were our own.",
+      "texte": "Turning to SECIA means entrusting your infrastructures to a team that protects them as if they were its own. Six values guide every project.",
+      "lien": "Discover SECIA",
+      "alt": "The team in a meeting in front of a presentation screen"
+    },
+    "groupe": {
+      "surtitre": "Group",
+      "titre": "A member of NPS Consult Group.",
+      "texte": "Integrated into NPS Consult Group and renamed SECIA in 2025, the company relies on a group present in Belgium and Luxembourg to expand its services and place cybersecurity at the core of its expertise.",
+      "source": "NPS Consult Group figures, from the group's website."
+    },
+    "fin": {
+      "titre": "Let's meet."
+    }
+  },
+  "mentions": {
+    "titre": "Legal notice",
+    "editeur": {
+      "titre": "Publisher",
+      "texte": "SECIA, a member of NPS Consult Group S.A., Rue des Sablières 45/89, 1435 Mont-Saint-Guibert, Belgium. E-mail: contact@secia.eu. Legal form, company number (CBE) and publication manager: to be completed."
+    },
+    "hebergeur": {
+      "titre": "Host",
+      "texte": "Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States (address taken from vercel.com/privacy, version of 1 June 2026)."
+    },
+    "credits": {
+      "titre": "Credits",
+      "texte": "Photographs: SECIA and NPS Consult Group photo shoot (photographer to be completed). Images marked “Generated illustration” were created with artificial intelligence. Certification badges: property of their vendors. Geist typefaces (SIL Open Font License). Base map: Natural Earth (public domain)."
+    },
+    "confidentialite": {
+      "titre": "Privacy",
+      "texte": "Privacy policy to be completed (GDPR): data collected, purpose, retention period, rights, data protection officer contact."
+    },
+    "fiche": {
+      "titre": "To be provided by the client",
+      "texte": "Legal form · company number (CBE) · VAT · publication manager · privacy policy · photographer · matching of portraits and names."
+    },
+    "surtitre": "Legal information"
+  },
+  "introuvable": {
+    "titre": "Link not found",
+    "texte": "This page does not exist or no longer exists. The rest of the network is running fine.",
+    "retour": "Back to home"
+  },
+  "cyber": {
+    "surtitre": "Sheet 02 · Cybersecurity practice",
+    "titre": "Cybersecurity",
+    "intro1": "Cyber threats evolve daily, and a cyberattack can disrupt operations or expose sensitive data. Protecting your IT systems, networks and information is now essential.",
+    "intro2": "Practical, effective services, from threat detection to continuous protection, so you stay secure, compliant and confident in your digital operations.",
+    "info": "6 services and NIS2 · 24/7 support",
+    "alt": "The SECIA team in front of a security dashboard, in a meeting room",
+    "services": {
+      "titre": "Six services and NIS2, plate by plate.",
+      "texte": "Scroll on: each sheet describes a service and what it covers.",
+      "region": "Cybersecurity services, horizontal scroll",
+      "service": "Service",
+      "reglementation": "Regulation",
+      "voir": "See the service",
+      "parler": "Talk to SECIA about it"
+    },
+    "cycle": {
+      "surtitre": "Life cycle",
+      "titre": "From design to response.",
+      "texte": "Each service steps in at a specific point in the life of your systems: we design them, put them to the test, then operate them under watch."
+    },
+    "urgence": {
+      "titre": "An incident in progress?",
+      "texte": "The CSIRT team reacts quickly to contain, investigate and recover. Call the emergency line, 24 hours a day.",
+      "alt": "Live cyber threat map on a laptop"
+    },
+    "fin": {
+      "titre": "Let's talk about your security.",
+      "texte": "Want to find out more about our cybersecurity solutions? An engineer will get back to you.",
+      "alt": "Team meeting in a SECIA room"
+    }
+  },
+  "intrusion": {
+    "surtitre": "Sheet 02.3 · Cybersecurity",
+    "titre": "Penetration testing",
+    "intro": "Penetration testing evaluates an environment's security resilience from an attacker's perspective. More thorough than standard vulnerability assessments, it provides realistic insight into the weaknesses that must be addressed.",
+    "action": "Schedule a test",
+    "info": "External · internal · Web · API · Red Team",
+    "alt": "An engineer annotates penetration test results on a screen",
+    "chemin": {
+      "surtitre": "Three families of tests",
+      "titre": "An attacker's path, before they take it.",
+      "texte": "Each family of tests follows a different attack path. The weaknesses found are marked, documented, then closed.",
+      "illustratif": "Illustrative path"
+    },
+    "pourquoi": {
+      "surtitre": "Why now?",
+      "titre": "Threats are increasingly targeted.",
+      "texte": "Cyber threats are increasingly sophisticated and targeted, making proactive testing essential.",
+      "conclusion": "Investing in penetration testing now strengthens your defences and mitigates risk before it impacts your operations."
+    },
+    "secia": {
+      "surtitre": "Why SECIA?",
+      "titre": "Certified expertise, real-world experience.",
+      "texte": "A partner that identifies vulnerabilities, strengthens resilience and improves your overall security posture.",
+      "livrables": "What you receive",
+      "alt": "Two team members review a printed document around their laptops"
+    },
+    "faq": {
+      "surtitre": "Frequently asked questions",
+      "titre": "Before you start a test.",
+      "alt": "Network diagram displayed on a screen"
+    },
+    "fin": {
+      "titre": "Let's test your defences.",
+      "texte": "External, internal, Web, API or Red Team: tell us what you need and an engineer will get back to you.",
+      "alt": "Two team members talking in front of a laptop"
+    }
+  },
+  "alerte": {
+    "surtitre": "Sheet 04 · Emergency line",
+    "titre": "Cyberattack emergency",
+    "intro": "Hacked or under attack? Our experts are ready to respond 24/7.",
+    "dispo": "24 hours a day, 7 days a week",
+    "gestes": {
+      "surtitre": "What now?",
+      "titre": "First steps.",
+      "texte": "Do you suspect unusual activity on your servers or user accounts? Don't panic: the cybersecurity and crisis response team is here to help.",
+      "aConfirmer": "Instruction to be confirmed by SECIA",
+      "alt": "Demo dashboard showing a cyberattack alert"
+    },
+    "intervention": {
+      "surtitre": "How the response unfolds",
+      "titre": "Contain, investigate, recover.",
+      "texte": "The CSIRT team provides structured support to contain the incident, investigate the attack and strengthen your resilience."
+    },
+    "form": {
+      "surtitre": "Report an incident",
+      "titre": "Describe the situation.",
+      "texte": "For an attack in progress, call the emergency line first. This form is for passing on the details.",
+      "entreprise": "Company name",
+      "tva": "VAT number",
+      "contact": "Contact person",
+      "tel": "Phone",
+      "email": "E-mail",
+      "pays": "Country",
+      "choisir": "Choose",
+      "autrePays": "Other country",
+      "description": "Description of the problem",
+      "envoyer": "Send the alert"
+    }
+  },
+  "secia": {
+    "surtitre": "Sheet 05 · About",
+    "titre": "SECIA",
+    "intro1": "SECIA is an IT and cybersecurity consulting company, specialising in the design, security and operation of resilient digital infrastructures.",
+    "intro2": "With a team of highly certified engineers, it combines deep technical expertise, a vendor-independent approach and 24/7 operational support.",
+    "voirEquipe": "Meet the team",
+    "info": "Founded in 2009 · member of NPS Consult Group",
+    "histoire": {
+      "surtitre": "History",
+      "titre": "From NS Consulting to SECIA.",
+      "texte": "Founded in 2009 as NS Consulting and active in Belgium, the company supports enterprises and public-sector organisations with network and cybersecurity services tailored to complex and regulated environments.",
+      "alt": "A team member smiling during a meeting, in black and white"
+    },
+    "valeurs": {
+      "surtitre": "Values",
+      "titre": "What guides every project."
+    },
+    "equipe": {
+      "surtitre": "Team",
+      "titre": "Engineers and specialists.",
+      "texte": "Management, sales, security and network engineers, cybersecurity awareness: the roles as presented on the group website.",
+      "source": "Team as presented on the NPS Consult Group website. Matching of portraits and names: to be completed.",
+      "portraitAlt": "Portrait of a team member, on a black background",
+      "nomACompleter": "Name to be completed"
+    },
+    "nomenclature": {
+      "surtitre": "Bill of materials",
+      "titre": "Certifications and partners.",
+      "certifs": "Team certifications",
+      "partenaires": "Technology partners",
+      "source": "Partners as presented on the NPS Consult Group website."
+    },
+    "groupe": {
+      "titre": "NPS Consult Group.",
+      "texte1": "Founded in 2014 in Luxembourg, NPS Consult Group is an IT partner specialising in network infrastructure, cybersecurity, systems integration and information security consulting.",
+      "texte2": "The company was integrated into the group and became SECIA in 2025, to expand its service portfolio and place cybersecurity at the core of its expertise.",
+      "alt": "NPS Consult Group logo on an office wall"
+    },
+    "fin": {
+      "alt": "Two team members posing together in a studio",
+      "titre": "Let's work together."
+    }
+  },
+  "contact": {
+    "surtitre": "Sheet 06 · Contact",
+    "titre": "Let's meet.",
+    "intro": "Our team of specialists in cybersecurity, network infrastructure and IT services offers solutions tailored to the needs of your business or organisation.",
+    "action": "Fill in the request",
+    "info": "General +32 10 39 16 10 · contact@secia.eu",
+    "alt": "A team member on the phone, in the offices",
+    "form": {
+      "surtitre": "Meeting request",
+      "titre": "Your request, in four steps.",
+      "texte": "Topic, organisation, contact details, then a summary: an engineer will get back to you.",
+      "fil": "Request steps",
+      "etapes": {
+        "sujet": "Topic",
+        "organisation": "Organisation",
+        "coordonnees": "Contact details",
+        "recap": "Summary"
+      },
+      "sujets": {
+        "cybersecurite": "Cybersecurity",
+        "tests-intrusion": "Penetration testing",
+        "reseau": "Network",
+        "nis2": "NIS2 compliance",
+        "autre": "Other request"
+      },
+      "urgence": "An attack in progress? Call the emergency line directly:",
+      "organisation": "Organisation",
+      "secteur": "Sector",
+      "secteurs": {
+        "choisir": "Choose",
+        "public": "Public sector",
+        "sante": "Healthcare",
+        "finance": "Finance",
+        "industrie": "Industry",
+        "services": "Services",
+        "autre": "Other"
+      },
+      "taille": "Size",
+      "tailles": {
+        "choisir": "Choose",
+        "moins-50": "Fewer than 50 people",
+        "50-249": "50 to 249 people",
+        "250-plus": "250 people or more"
+      },
+      "nom": "Name",
+      "email": "E-mail",
+      "tel": "Phone",
+      "message": "What you need",
+      "relire": "Check the summary, then send the request.",
+      "accord": "I agree that SECIA may use this information to contact me.",
+      "precedent": "Previous step",
+      "suivant": "Next step",
+      "envoyer": "Send the request",
+      "suite": "After sending, an engineer gets back to you to set the meeting.",
+      "service": "Service",
+      "recapAlt": "Signing a request form"
+    },
+    "lieux": {
+      "surtitre": "Locations",
+      "titre": "Belgium and Luxembourg.",
+      "belgique": "Belgium",
+      "luxembourg": "Luxembourg · group",
+      "ventes": "Sales",
+      "itineraire": "Directions"
+    },
+    "urgence": {
+      "titre": "An emergency?",
+      "texte": "For a cyberattack in progress, don't wait for a meeting: call the emergency line.",
+      "alt": "The open-plan office, workstations and screens"
+    }
+  }
+}

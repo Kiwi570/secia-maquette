@@ -1,0 +1,15 @@
+{
+  "groupes": [
+    { "role": { "fr": "Direction et management", "en": "Management" }, "noms": ["Christophe Celio", "Jean-Marie Kolb"] },
+    { "role": { "fr": "Commerciaux", "en": "Sales" }, "noms": ["Patrick Besch", "Yanik Besch"] },
+    { "role": { "fr": "Ingénieurs sécurité", "en": "Security engineers" }, "noms": ["Guillaume Magery", "Grégoire Somville"] },
+    { "role": { "fr": "Ingénieurs réseau et sécurité", "en": "Network and security engineers" }, "noms": ["Peter Boutzev", "Nicolas Bricnet", "Andrey Chemyakov"] },
+    { "role": { "fr": "Ingénieurs réseau", "en": "Network engineers" }, "noms": ["Christophe Koelsh", "Olivier Cherrier"] },
+    { "role": { "fr": "Sensibilisation à la cybersécurité", "en": "Cybersecurity awareness" }, "noms": ["Valèria Ligurgo"] }
+  ],
+  "portraits": [
+    { "image": "christophe-celio", "nom": "Christophe Celio" },
+    { "image": "portrait-1" }, { "image": "portrait-2" }, { "image": "portrait-3" },
+    { "image": "portrait-4" }, { "image": "portrait-5" }, { "image": "portrait-6" }, { "image": "portrait-7" }
+  ]
+}

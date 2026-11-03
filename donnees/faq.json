@@ -1,0 +1,5 @@
+[
+  { "q": { "fr": "Question pratique d'exemple ?", "en": "Sample practical question?" }, "r": { "fr": "Réponse tirée du site actuel, à compléter.", "en": "Answer from the current site, to be completed." } },
+  { "q": { "fr": "Faut-il réserver ?", "en": "Do I need to book?" }, "r": { "fr": "Réponse à compléter : modalités réelles de réservation.", "en": "To be completed: real booking terms." } },
+  { "q": { "fr": "Comment venir ?", "en": "How do I get there?" }, "r": { "fr": "Accès réel à compléter : transports, stationnement.", "en": "Real access to be completed: transport, parking." } }
+]

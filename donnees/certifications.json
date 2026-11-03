@@ -1,0 +1,212 @@
+[
+ {
+  "cle": "cisco-ccie-datacenter",
+  "editeur": "cisco",
+  "nom": "Cisco CCIE Data Center"
+ },
+ {
+  "cle": "ccie-enterprise-large",
+  "editeur": "cisco",
+  "nom": "Cisco CCIE Enterprise"
+ },
+ {
+  "cle": "cisco-ccna",
+  "editeur": "cisco",
+  "nom": "Cisco CCNA"
+ },
+ {
+  "cle": "cisco-ccnp-datacenter",
+  "editeur": "cisco",
+  "nom": "Cisco CCNP Data Center"
+ },
+ {
+  "cle": "ccnp-enterprise-large",
+  "editeur": "cisco",
+  "nom": "Cisco CCNP Enterprise"
+ },
+ {
+  "cle": "cisco-ccnp-security",
+  "editeur": "cisco",
+  "nom": "Cisco CCNP Security"
+ },
+ {
+  "cle": "cct-routing-switching",
+  "editeur": "cisco",
+  "nom": "Cisco CCT Technician"
+ },
+ {
+  "cle": "cisco-devnetasst-600",
+  "editeur": "cisco",
+  "nom": "Cisco DevNet Associate"
+ },
+ {
+  "cle": "devnetpro-600",
+  "editeur": "cisco",
+  "nom": "Cisco DevNet Professional"
+ },
+ {
+  "cle": "cisco-devnetspecialist-1",
+  "editeur": "cisco",
+  "nom": "Cisco DevNet Specialist"
+ },
+ {
+  "cle": "checkpoint-endpoint-spec",
+  "editeur": "checkpoint",
+  "nom": "Check Point CCES Contributor"
+ },
+ {
+  "cle": "checkpoint-ccsa",
+  "editeur": "checkpoint",
+  "nom": "Check Point CCSA"
+ },
+ {
+  "cle": "checkpoint-ccse",
+  "editeur": "checkpoint",
+  "nom": "Check Point CCSE"
+ },
+ {
+  "cle": "checkpoint-harmony-expert-aws",
+  "editeur": "checkpoint",
+  "nom": "Check Point CNSE AWS"
+ },
+ {
+  "cle": "checkpoint-expert-azure",
+  "editeur": "checkpoint",
+  "nom": "Check Point CNSE Azure"
+ },
+ {
+  "cle": "cloud-guard-pre-sales",
+  "editeur": "checkpoint",
+  "nom": "Check Point CloudGuard Pre-Sales, Technical Specialist"
+ },
+ {
+  "cle": "checkpoint-harmony-connect",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony Connect, Sales Specialist"
+ },
+ {
+  "cle": "checkpoint-harmony-connect-2",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony Connect, Technical Specialist"
+ },
+ {
+  "cle": "checkpoint-harmony-email-collaboration",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony Email & Collaboration, Sales Specialist"
+ },
+ {
+  "cle": "checkpoint-harmony-email-coll",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony Email & Collaboration, Technical Specialist"
+ },
+ {
+  "cle": "checkpoint-harmony-endpoint-browse",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony Endpoint & Browse, Sales Specialist"
+ },
+ {
+  "cle": "checkpoint-harmony-endpoint-browse-2",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony Endpoint & Browse, Technical Specialist"
+ },
+ {
+  "cle": "checkpoint-harmony-endpoint",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony Endpoint Specialist (CCES)"
+ },
+ {
+  "cle": "checkpoint-harmony-sase",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony SASE, Technical Specialist"
+ },
+ {
+  "cle": "sales",
+  "editeur": "checkpoint",
+  "nom": "Check Point Harmony Sales Specialist"
+ },
+ {
+  "cle": "checkpoint-maestro",
+  "editeur": "checkpoint",
+  "nom": "Check Point Maestro Expert (CCME)"
+ },
+ {
+  "cle": "checkpoint-mdsm",
+  "editeur": "checkpoint",
+  "nom": "Check Point Multi-Domain Security Management Specialist (CCMS)"
+ },
+ {
+  "cle": "checkpoint-troubleshooting",
+  "editeur": "checkpoint",
+  "nom": "Check Point Troubleshooting Administrator (CCTA)"
+ },
+ {
+  "cle": "checkpoint-troubleshooting-2",
+  "editeur": "checkpoint",
+  "nom": "Check Point Troubleshooting Expert (CCTE)"
+ },
+ {
+  "cle": "extreme-networks-extreme-fabric",
+  "editeur": "extreme",
+  "nom": "Extreme Networks Extreme Fabric Professional"
+ },
+ {
+  "cle": "extreme-networks-switching",
+  "editeur": "extreme",
+  "nom": "Extreme Networks Extreme Switching Professional"
+ },
+ {
+  "cle": "extreme-networks-iq-controler",
+  "editeur": "extreme",
+  "nom": "Extreme Networks ExtremeCloud IQ Controller Professional"
+ },
+ {
+  "cle": "extreme-networks-cloud-iq",
+  "editeur": "extreme",
+  "nom": "Extreme Networks ExtremeCloud IQ Site Engine Professional"
+ },
+ {
+  "cle": "extreme-networks-sd-wan",
+  "editeur": "extreme",
+  "nom": "Extreme Networks ExtremeCloud SD-WAN Professional"
+ },
+ {
+  "cle": "extreme-networks-extreme-control",
+  "editeur": "extreme",
+  "nom": "Extreme Networks ExtremeControl Professional"
+ },
+ {
+  "cle": "extreme-networks-extremewirelesscloud",
+  "editeur": "extreme",
+  "nom": "Extreme Networks ExtremeWireless Cloud Professional"
+ },
+ {
+  "cle": "extreme-networks-solution-design-platfor",
+  "editeur": "extreme",
+  "nom": "Extreme Networks Solutions Design Platform ONE"
+ },
+ {
+  "cle": "extreme-networks-solution-selling-platfo",
+  "editeur": "extreme",
+  "nom": "Extreme Networks Solutions Selling Platform ONE"
+ },
+ {
+  "cle": "extreme-networks-solution-selling",
+  "editeur": "extreme",
+  "nom": "Extreme Networks Solutions Selling Professional"
+ },
+ {
+  "cle": "sentinel-one-pre-sales",
+  "editeur": "sentinelone",
+  "nom": "SentinelOne Pre-Sales Expert"
+ },
+ {
+  "cle": "sentinel-one-sales",
+  "editeur": "sentinelone",
+  "nom": "SentinelOne Sales Professional"
+ },
+ {
+  "cle": "cissp-isc2",
+  "editeur": "isc2",
+  "nom": "ISC2 CISSP"
+ }
+]

@@ -1,0 +1,12 @@
+[
+  { "lettre": "a", "nom": { "fr": "Analyse des risques et sécurité des systèmes d'information", "en": "Risk analysis and information system security policies" } },
+  { "lettre": "b", "nom": { "fr": "Gestion des incidents", "en": "Incident handling" } },
+  { "lettre": "c", "nom": { "fr": "Continuité des activités : sauvegardes, reprise, gestion de crise", "en": "Business continuity: backups, disaster recovery, crisis management" } },
+  { "lettre": "d", "nom": { "fr": "Sécurité de la chaîne d'approvisionnement", "en": "Supply chain security" } },
+  { "lettre": "e", "nom": { "fr": "Sécurité de l'acquisition, du développement et de la maintenance des systèmes", "en": "Security in system acquisition, development and maintenance" } },
+  { "lettre": "f", "nom": { "fr": "Évaluation de l'efficacité des mesures de gestion des risques", "en": "Assessing the effectiveness of risk-management measures" } },
+  { "lettre": "g", "nom": { "fr": "Cyberhygiène de base et formation à la cybersécurité", "en": "Basic cyber hygiene and cybersecurity training" } },
+  { "lettre": "h", "nom": { "fr": "Cryptographie et, le cas échéant, chiffrement", "en": "Cryptography and, where appropriate, encryption" } },
+  { "lettre": "i", "nom": { "fr": "Sécurité des ressources humaines, contrôle d'accès et gestion des actifs", "en": "Human resources security, access control and asset management" } },
+  { "lettre": "j", "nom": { "fr": "Authentification à plusieurs facteurs et communications sécurisées", "en": "Multi-factor authentication and secured communications" } }
+]

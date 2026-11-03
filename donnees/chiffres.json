@@ -1,0 +1,8 @@
+[
+  { "valeur": "6,8", "compteur": 6.8, "suffixe": { "fr": "M€", "en": "M€" }, "libelle": { "fr": "chiffre d'affaires", "en": "revenue" } },
+  { "valeur": "150", "compteur": 150, "suffixe": "+", "libelle": { "fr": "clients", "en": "clients" } },
+  { "valeur": "400", "compteur": 400, "suffixe": "+", "libelle": { "fr": "projets", "en": "projects" } },
+  { "valeur": "25", "compteur": 25, "suffixe": "+", "libelle": { "fr": "partenaires", "en": "partners" } },
+  { "valeur": "3", "compteur": 3, "libelle": { "fr": "bureaux", "en": "offices" } },
+  { "valeur": "33", "compteur": 33, "libelle": { "fr": "collaborateurs (à confirmer)", "en": "employees (to be confirmed)" } }
+]

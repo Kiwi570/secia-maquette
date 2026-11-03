@@ -1,0 +1,81 @@
+{
+  "nom": "SECIA",
+  "adresse": "https://secia-maquette.vercel.app",
+  "siteActuel": "npsconsultgroup.com",
+  "version": 1,
+  "langues": [
+    "fr",
+    "en"
+  ],
+  "navigation": [
+    "accueil",
+    "cybersecurite",
+    "tests-intrusion",
+    "alerte-cyberattaque",
+    "secia",
+    "contact"
+  ],
+  "navigationEntete": [
+    "cybersecurite",
+    "secia",
+    "contact"
+  ],
+  "actionEntete": {
+    "page": "alerte-cyberattaque"
+  },
+  "couleurs": {
+    "fond": "#EEF2F5",
+    "texte": "#152452",
+    "voile": "#152452",
+    "ouverture": "#EEF2F5",
+    "menu": "#EEF2F5",
+    "theme": "#EEF2F5"
+  },
+  "contact": {
+    "telephone": "+32 10 39 16 10",
+    "telephoneLien": "+3210391610",
+    "ventes": "+32 473 471 697",
+    "ventesLien": "+32473471697",
+    "email": "contact@secia.eu",
+    "rue": "Rue des Sablières 45/89",
+    "ville": "1435 Mont-Saint-Guibert",
+    "pays": {
+      "fr": "Belgique",
+      "en": "Belgium"
+    },
+    "adresse": "Rue des Sablières 45/89, 1435 Mont-Saint-Guibert"
+  },
+  "urgence": {
+    "belgique": "+32 475 37 68 91",
+    "belgiqueLien": "+32475376891",
+    "luxembourg": "+352 621 310 183",
+    "luxembourgLien": "+352621310183"
+  },
+  "groupe": {
+    "nom": "NPS Consult Group S.A.",
+    "rue": "25 Hossegaass",
+    "ville": "L-5687 Dalheim",
+    "pays": "Luxembourg",
+    "telephone": "+352 621 491 906",
+    "telephoneLien": "+352621491906",
+    "ventes": "+352 661 359 449",
+    "ventesLien": "+352661359449",
+    "email": "contact@npsconsult.com",
+    "linkedin": "https://lu.linkedin.com/company/nps-consult-group"
+  },
+  "planches": {
+    "accueil": "01",
+    "cybersecurite": "02",
+    "tests-intrusion": "02.3",
+    "alerte-cyberattaque": "04",
+    "secia": "05",
+    "contact": "06",
+    "mentions-legales": "07",
+    "404": "00"
+  },
+  "polices": [
+    "/assets/fonts/geist.woff2"
+  ],
+  "imagePartage": "photos/bureaux-secia-1280.webp",
+  "curseur": true
+}

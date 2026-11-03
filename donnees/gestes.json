@@ -1,0 +1,43 @@
+[
+ {
+  "titre": {
+   "fr": "Informez votre service informatique",
+   "en": "Notify your IT department"
+  },
+  "texte": {
+   "fr": "Prévenez tout de suite votre équipe IT ou votre prestataire.",
+   "en": "Alert your IT team or provider straight away."
+  }
+ },
+ {
+  "titre": {
+   "fr": "Déconnectez-vous d'internet",
+   "en": "Disconnect from the Internet"
+  },
+  "texte": {
+   "fr": "Isolez les systèmes touchés du réseau pour limiter la propagation.",
+   "en": "Isolate affected systems from the network to limit the spread."
+  }
+ },
+ {
+  "titre": {
+   "fr": "Éteignez les systèmes compromis",
+   "en": "Shut down compromised systems"
+  },
+  "texte": {
+   "fr": "Mettez hors service les machines touchées par l'attaque.",
+   "en": "Take the machines hit by the attack out of service."
+  },
+  "aConfirmer": true
+ },
+ {
+  "titre": {
+   "fr": "Contactez SECIA",
+   "en": "Contact SECIA"
+  },
+  "texte": {
+   "fr": "Appelez la ligne d'urgence, 24 h sur 24 et 7 jours sur 7, ou remplissez le formulaire ci-dessous.",
+   "en": "Call the emergency line, 24 hours a day, 7 days a week, or fill in the form below."
+  }
+ }
+]
