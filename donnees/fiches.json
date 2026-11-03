@@ -1,0 +1,3494 @@
+{
+  "integration-conseil": {
+    "pole": "cyber",
+    "page": "integration-conseil",
+    "image": "grok/service-integration-conseil",
+    "titre": {
+      "fr": "Intégration et conseil en sécurité",
+      "en": "Security integration & consulting"
+    },
+    "intro": {
+      "fr": "Notre équipe est composée d’ingénieurs et de consultants possédant une expertise approfondie des technologies de sécurité modernes et une connaissance des menaces et vulnérabilités actuelles. Les clients bénéficient de cette expérience grâce à des services de conseil en sécurité à la demande.",
+      "en": "Our team is composed of engineers and consultants with deep expertise in modern security technologies and awareness of current threats and vulnerabilities. Customers benefit from this experience through on-demand security consulting services."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Sécurité périmétrique",
+          "en": "Perimeter security"
+        },
+        "accroche": {
+          "fr": "Protégez votre périmètre réseau étendu à travers plusieurs sites, le cloud et les utilisateurs distants.",
+          "en": "Protect your extended network perimeter across multiple sites, cloud, and remote users."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Segmentation du réseau :",
+              "en": "Network segmentation:"
+            },
+            "d": {
+              "fr": "limitez l’exposition en divisant les réseaux en zones sécurisées.",
+              "en": "limit exposure by dividing networks into secure zones."
+            }
+          },
+          {
+            "t": {
+              "fr": "Gestion des pare-feux et passerelles :",
+              "en": "Firewall & gateway management:"
+            },
+            "d": {
+              "fr": "configurez des pare-feux avancés et des passerelles sécurisées.",
+              "en": "configure advanced firewalls and secure gateways."
+            }
+          },
+          {
+            "t": {
+              "fr": "Sécurité des accès à distance :",
+              "en": "Remote access security:"
+            },
+            "d": {
+              "fr": "assurez la protection complète des connexions VPN et distantes.",
+              "en": "ensure VPN and remote connections are fully protected."
+            }
+          },
+          {
+            "t": {
+              "fr": "Surveillance et alertes :",
+              "en": "Monitoring & alerts:"
+            },
+            "d": {
+              "fr": "détectez en temps réel les violations et anomalies du périmètre.",
+              "en": "detect perimeter breaches and anomalies in real time."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Une sécurité périmétrique appropriée réduit le risque d’accès non autorisé et renforce les défenses globales du réseau.",
+          "en": "Proper perimeter security reduces the risk of unauthorized access and strengthens overall network defenses."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Sécurité des endpoints",
+          "en": "Endpoint security"
+        },
+        "accroche": {
+          "fr": "Déployez des solutions modernes de sécurité des endpoints pour obtenir visibilité, contrôle et réponse automatisée aux menaces.",
+          "en": "Deploy modern endpoint security solutions for visibility, control, and automated threat response."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Antivirus et EDR :",
+              "en": "Antivirus & EDR:"
+            },
+            "d": {
+              "fr": "détectez et bloquez les malwares et menaces sophistiquées.",
+              "en": "detect and block malware and sophisticated threats."
+            }
+          },
+          {
+            "t": {
+              "fr": "Contrôle des dispositifs et application des politiques :",
+              "en": "Device control & policy enforcement:"
+            },
+            "d": {
+              "fr": "appliquez les politiques de sécurité de manière cohérente.",
+              "en": "apply security policies consistently."
+            }
+          },
+          {
+            "t": {
+              "fr": "Réponse automatisée aux menaces :",
+              "en": "Automated threat response:"
+            },
+            "d": {
+              "fr": "réduisez l’intervention manuelle des analystes de sécurité.",
+              "en": "reduce manual intervention for security analysts."
+            }
+          },
+          {
+            "t": {
+              "fr": "Surveillance et rapports :",
+              "en": "Monitoring & reporting:"
+            },
+            "d": {
+              "fr": "obtenez une visibilité complète sur l’état des endpoints et les événements de sécurité.",
+              "en": "gain full visibility into endpoint health and security events."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "La sécurité des endpoints protège les dispositifs critiques et garantit que les menaces sont atténuées avant d’affecter les opérations.",
+          "en": "Endpoint security protects critical devices and ensures threats are mitigated before impacting operations."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Les cybermenaces évoluent plus rapidement que jamais et les réseaux étendus augmentent l’exposition aux attaques.",
+        "en": "Cyber threats are evolving faster than ever, and extended networks increase exposure to attacks."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Adoption du cloud et télétravail : augmentation de la surface d’attaque",
+            "en": "Cloud adoption and remote work expand the attack surface"
+          }
+        },
+        {
+          "d": {
+            "fr": "Menaces persistantes avancées : ciblent les endpoints et les vulnérabilités périmétriques",
+            "en": "Advanced persistent threats target endpoints and perimeter vulnerabilities"
+          }
+        },
+        {
+          "d": {
+            "fr": "Conformité réglementaire (NIS2, RGPD) : nécessite des mesures proactives",
+            "en": "Regulatory compliance (NIS2, GDPR) requires proactive measures"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Agir dès maintenant garantit que votre organisation reste sécurisée, résiliente et conforme dans le paysage numérique actuel.",
+        "en": "Acting now ensures your organization stays secure, resilient, and compliant in today’s digital landscape."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA combine une expertise certifiée en sécurité, des outils avancés et un consulting pratique pour protéger votre entreprise.",
+        "en": "SECIA combines certified security expertise, advanced tools, and hands-on consulting to protect your business."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Ingénieurs et consultants expérimentés en technologies de sécurité modernes",
+            "en": "Experienced engineers and consultants in modern security technologies"
+          }
+        },
+        {
+          "d": {
+            "fr": "Méthodologies éprouvées pour la sécurité périmétrique et des endpoints",
+            "en": "Proven methodologies for perimeter and endpoint security"
+          }
+        },
+        {
+          "d": {
+            "fr": "Consulting en sécurité à la demande adapté à votre organisation",
+            "en": "On-demand security consulting tailored to your organization"
+          }
+        },
+        {
+          "d": {
+            "fr": "Surveillance continue, évaluation des menaces et guidance en cas d’incident",
+            "en": "Continuous monitoring, threat assessment, and incident guidance"
+          }
+        },
+        {
+          "d": {
+            "fr": "Solutions neutres vis-à-vis des fournisseurs garantissant un ajustement optimal à votre environnement IT",
+            "en": "Vendor-neutral solutions ensuring optimal fit for your IT environment"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Avec SECIA, vous bénéficiez d’un partenaire de confiance pour intégrer, optimiser et sécuriser votre infrastructure, réduire les risques et renforcer la résilience.",
+        "en": "With SECIA, you gain a trusted partner to integrate, optimize, and secure your infrastructure, minimizing risks and enhancing resilience."
+      }
+    }
+  },
+  "audits": {
+    "pole": "cyber",
+    "page": "audits-securite",
+    "image": "grok/service-audits",
+    "titre": {
+      "fr": "Audits et évaluations de sécurité",
+      "en": "Security audits & assessments"
+    },
+    "intro": {
+      "fr": "Maintenir une architecture de sécurité solide et résiliente représente un défi dans un environnement commercial en constante évolution, devant supporter un large éventail d’applications et de services dans un paysage de menaces changeant. La réalisation régulière d’audits et de revues de configuration devient de plus en plus importante. Notre équipe de consultants s’assure que votre infrastructure est correctement maintenue et que vos configurations sont sécurisées conformément aux normes industrielles.",
+      "en": "Maintaining a solid and resilient security architecture is a challenge in an ever-changing business environment that must support a wide array of applications and services in an evolving threat landscape. Performing regular audits and configuration reviews is increasingly important. Our consulting team ensures your infrastructure is properly maintained and your configurations are secured according to industry standards."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Gouvernance de la sécurité",
+          "en": "Security governance"
+        },
+        "accroche": {
+          "fr": "Pilotez votre cybersécurité avec des conseils d’experts.",
+          "en": "Drive your cybersecurity with expert guidance."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "CISO as a service :",
+              "en": "CISO as a service:"
+            },
+            "d": {
+              "fr": "définissez et gérez votre stratégie de cybersécurité.",
+              "en": "define and manage your cybersecurity strategy."
+            }
+          },
+          {
+            "t": {
+              "fr": "DPO as a service :",
+              "en": "DPO as a service:"
+            },
+            "d": {
+              "fr": "garantissez la conformité aux réglementations sur la protection des données (RGPD).",
+              "en": "ensure compliance with data protection regulations (GDPR)."
+            }
+          },
+          {
+            "t": {
+              "fr": "Gestion des politiques :",
+              "en": "Policy management:"
+            },
+            "d": {
+              "fr": "mettez en œuvre les politiques de sécurité dans toute l’organisation.",
+              "en": "implement security policies across the organization."
+            }
+          },
+          {
+            "t": {
+              "fr": "Surveillance et rapports :",
+              "en": "Monitoring & reporting:"
+            },
+            "d": {
+              "fr": "supervision continue avec recommandations exploitables.",
+              "en": "continuous oversight with actionable guidance."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "La gouvernance de la sécurité renforce la résilience et la posture de conformité de votre organisation.",
+          "en": "Security governance strengthens your organization’s resilience and compliance posture."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Gestion des risques",
+          "en": "Risk management"
+        },
+        "accroche": {
+          "fr": "Identifiez, évaluez et maîtrisez vos risques.",
+          "en": "Identify, assess, and control your risks."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Identification des risques :",
+              "en": "Risk identification:"
+            },
+            "d": {
+              "fr": "détectez les vulnérabilités et les menaces.",
+              "en": "detect vulnerabilities and threats."
+            }
+          },
+          {
+            "t": {
+              "fr": "Évaluation des risques :",
+              "en": "Risk assessment:"
+            },
+            "d": {
+              "fr": "analysez les risques selon les méthodologies EBIOS et ISO 27005.",
+              "en": "evaluate risks using EBIOS and ISO 27005 methodologies."
+            }
+          },
+          {
+            "t": {
+              "fr": "Contrôles adaptés :",
+              "en": "Tailored controls:"
+            },
+            "d": {
+              "fr": "mettez en place des mesures de mitigation pour réduire l’impact sur l’entreprise.",
+              "en": "implement mitigation measures to reduce business impact."
+            }
+          },
+          {
+            "t": {
+              "fr": "Surveillance continue :",
+              "en": "Continuous monitoring:"
+            },
+            "d": {
+              "fr": "suivez et réduisez l’exposition au fil du temps.",
+              "en": "track and reduce exposure over time."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Une gestion efficace des risques minimise l’impact des cybermenaces sur votre entreprise.",
+          "en": "Effective risk management minimizes the impact of cyber threats on your business."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Conformité et réglementation",
+          "en": "Compliance & regulations"
+        },
+        "accroche": {
+          "fr": "Restez conforme en toute confiance.",
+          "en": "Stay compliant with confidence."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Conformité réglementaire :",
+              "en": "Regulatory compliance:"
+            },
+            "d": {
+              "fr": "respectez les exigences légales et sectorielles, y compris NIS2, ISO 27001, RGPD.",
+              "en": "meet legal and industry requirements including NIS2, ISO 27001, GDPR."
+            }
+          },
+          {
+            "t": {
+              "fr": "Solutions sur mesure :",
+              "en": "Tailored solutions:"
+            },
+            "d": {
+              "fr": "adaptez les contrôles de sécurité et de conformité à votre secteur.",
+              "en": "adapt security and compliance controls to your sector."
+            }
+          },
+          {
+            "t": {
+              "fr": "Préparation aux audits :",
+              "en": "Audit preparation:"
+            },
+            "d": {
+              "fr": "facilitez les inspections et certifications.",
+              "en": "facilitate inspections and certification."
+            }
+          },
+          {
+            "t": {
+              "fr": "Alignement des politiques :",
+              "en": "Policy alignment:"
+            },
+            "d": {
+              "fr": "intégrez la conformité dans les opérations quotidiennes.",
+              "en": "integrate compliance into daily operations."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "La conformité garantit que votre organisation évite les sanctions et maintient la confiance des parties prenantes.",
+          "en": "Compliance ensures your organization avoids penalties and maintains trust with stakeholders."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Continuité des activités",
+          "en": "Business continuity"
+        },
+        "accroche": {
+          "fr": "Préparez-vous à l’inattendu et protégez votre entreprise.",
+          "en": "Prepare for the unexpected and protect your business."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Planification de la continuité :",
+              "en": "Continuity planning:"
+            },
+            "d": {
+              "fr": "concevez des plans pour des opérations ininterrompues.",
+              "en": "design plans for uninterrupted operations."
+            }
+          },
+          {
+            "t": {
+              "fr": "Reprise après sinistre :",
+              "en": "Disaster recovery:"
+            },
+            "d": {
+              "fr": "mettez en œuvre des stratégies PCA/PRA pour un rétablissement rapide après un incident.",
+              "en": "implement PCA/PRA strategies to recover quickly from incidents."
+            }
+          },
+          {
+            "t": {
+              "fr": "Protection des systèmes critiques :",
+              "en": "Critical systems protection:"
+            },
+            "d": {
+              "fr": "maintenez la disponibilité des services essentiels.",
+              "en": "maintain availability of essential services."
+            }
+          },
+          {
+            "t": {
+              "fr": "Tests et exercices :",
+              "en": "Testing & drills:"
+            },
+            "d": {
+              "fr": "validez les plans pour garantir leur efficacité.",
+              "en": "validate plans to guarantee effectiveness."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "La planification de la continuité des activités permet de maintenir vos systèmes opérationnels même lors d’incidents majeurs.",
+          "en": "Business continuity planning keeps your systems operational even during major incidents."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Sensibilisation à la sécurité",
+          "en": "Security awareness"
+        },
+        "accroche": {
+          "fr": "Vos collaborateurs sont votre meilleure défense.",
+          "en": "Your people are your strongest defense."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Formation des employés :",
+              "en": "Employee training:"
+            },
+            "d": {
+              "fr": "bonnes pratiques et réflexes en cybersécurité.",
+              "en": "best practices and cybersecurity reflexes."
+            }
+          },
+          {
+            "t": {
+              "fr": "Simulations de phishing :",
+              "en": "Phishing simulations:"
+            },
+            "d": {
+              "fr": "testez la préparation des employés.",
+              "en": "test employee preparedness."
+            }
+          },
+          {
+            "t": {
+              "fr": "Sensibilisation aux politiques :",
+              "en": "Policy education:"
+            },
+            "d": {
+              "fr": "assurez la compréhension des règles de sécurité internes.",
+              "en": "ensure understanding of internal security rules."
+            }
+          },
+          {
+            "t": {
+              "fr": "Évaluation continue :",
+              "en": "Continuous assessment:"
+            },
+            "d": {
+              "fr": "renforcez la sensibilisation au fil du temps.",
+              "en": "reinforce awareness over time."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Des équipes bien formées réduisent les risques liés aux erreurs humaines et renforcent la posture de sécurité globale de votre organisation.",
+          "en": "Well-trained teams reduce risks related to human error and strengthen your overall security posture."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Les cybermenaces deviennent de plus en plus sophistiquées et fréquentes, nécessitant des mesures proactives.",
+        "en": "Cyber threats are increasing in sophistication and frequency, requiring proactive measures."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Expansion des surfaces d’attaque : adoption du cloud et télétravail",
+            "en": "Expanded attack surfaces due to cloud adoption and remote work"
+          }
+        },
+        {
+          "d": {
+            "fr": "Exigences réglementaires : conformité documentée et contrôles (NIS2, RGPD, ISO 27001)",
+            "en": "Regulatory requirements demand documented compliance and controls (NIS2, GDPR, ISO 27001)"
+          }
+        },
+        {
+          "d": {
+            "fr": "Menaces croissantes : ransomware, phishing et menaces persistantes avancées",
+            "en": "Ransomware, phishing, and advanced persistent threats continue to rise"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Agir dès maintenant garantit que votre organisation reste résiliente, sécurisée et conforme face à l’évolution des menaces.",
+        "en": "Acting now ensures your organization is resilient, secure, and compliant against evolving threats."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA combine une expertise certifiée, des outils avancés et une expérience pratique pour sécuriser votre organisation.",
+        "en": "SECIA combines certified expertise, advanced tools, and hands-on experience to secure your organization."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Ingénieurs et consultants expérimentés en gouvernance, gestion des risques, conformité et sensibilisation",
+            "en": "Experienced engineers and consultants in governance, risk, compliance, and awareness"
+          }
+        },
+        {
+          "d": {
+            "fr": "Services complets allant des audits à la sensibilisation et à la gestion des risques",
+            "en": "End-to-end services from audits to awareness and risk management"
+          }
+        },
+        {
+          "d": {
+            "fr": "Solutions neutres vis-à-vis des fournisseurs pour un choix technologique optimal",
+            "en": "Vendor-neutral solutions for optimal technology fit"
+          }
+        },
+        {
+          "d": {
+            "fr": "Surveillance continue, conseils et consulting à la demande",
+            "en": "Continuous monitoring, guidance, and on-demand consulting"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Avec SECIA, vous bénéficiez d’un partenaire de confiance pour protéger, optimiser et pérenniser votre infrastructure de cybersécurité.",
+        "en": "With SECIA, you gain a trusted partner to protect, optimize, and future-proof your cybersecurity infrastructure."
+      }
+    }
+  },
+  "securite-managee": {
+    "pole": "cyber",
+    "page": "securite-managee",
+    "image": "grok/service-securite-managee",
+    "titre": {
+      "fr": "Services de sécurité managés",
+      "en": "Managed security services"
+    },
+    "intro": {
+      "fr": "Assurez une protection continue de votre environnement informatique grâce aux Services de Sécurité Managés (MSS) de SECIA. Nous aidons les organisations à surveiller, exploiter et optimiser les technologies de sécurité afin de réduire les risques et garantir une sécurité opérationnelle constante.",
+      "en": "Maintain continuous protection for your IT environment with SECIA’s Managed Security Services (MSS). We help organizations monitor, operate, and optimize security technologies to reduce risk and ensure consistent operational security."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Gestion des vulnérabilités",
+          "en": "Vulnerability management"
+        },
+        "accroche": {
+          "fr": "Maintenez une vue claire de vos vulnérabilités les plus critiques.",
+          "en": "Maintain a clear view of your most critical security weaknesses."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Analyse des actifs :",
+              "en": "Asset scanning:"
+            },
+            "d": {
+              "fr": "identifiez les vulnérabilités dans les actifs les plus exposés.",
+              "en": "identify vulnerabilities in the most exposed assets."
+            }
+          },
+          {
+            "t": {
+              "fr": "Priorisation :",
+              "en": "Prioritization:"
+            },
+            "d": {
+              "fr": "concentrez les efforts de remédiation sur les problèmes les plus critiques.",
+              "en": "focus remediation efforts on the most critical issues."
+            }
+          },
+          {
+            "t": {
+              "fr": "Rapports détaillés :",
+              "en": "In-Depth reporting:"
+            },
+            "d": {
+              "fr": "recevez des informations exploitables pour la mitigation.",
+              "en": "receive actionable insights for mitigation."
+            }
+          },
+          {
+            "t": {
+              "fr": "Évaluation continue :",
+              "en": "Continuous assessment:"
+            },
+            "d": {
+              "fr": "assurez la visibilité des nouvelles menaces et de leur évolution.",
+              "en": "ensure visibility into new and evolving threats."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "La gestion des vulnérabilités permet aux organisations de rester en avance sur les menaces et de réduire l’exposition potentielle.",
+          "en": "Vulnerability management helps organizations stay ahead of threats and reduce potential exposure."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Gestion des dispositifs de sécurité",
+          "en": "Security device management"
+        },
+        "accroche": {
+          "fr": "Maintenez le contrôle et la visibilité sur votre infrastructure de sécurité.",
+          "en": "Maintain control and visibility over your security infrastructure."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Exploitation et maintenance des dispositifs :",
+              "en": "Device operation & maintenance:"
+            },
+            "d": {
+              "fr": "gérez et exploitez les technologies de sécurité tierces.",
+              "en": "manage and operate third-party security technologies."
+            }
+          },
+          {
+            "t": {
+              "fr": "Surveillance et alertes :",
+              "en": "Monitoring & alerts:"
+            },
+            "d": {
+              "fr": "assurez le bon fonctionnement des dispositifs et la détection des menaces.",
+              "en": "ensure devices are functioning and threats are detected."
+            }
+          },
+          {
+            "t": {
+              "fr": "Configuration et mises à jour :",
+              "en": "Configuration & updates:"
+            },
+            "d": {
+              "fr": "maintenez les dispositifs optimisés et conformes.",
+              "en": "keep devices optimized and compliant."
+            }
+          },
+          {
+            "t": {
+              "fr": "Rapports de performance :",
+              "en": "Performance reporting:"
+            },
+            "d": {
+              "fr": "mesurez et améliorez l’efficacité.",
+              "en": "measure and improve effectiveness."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Une gestion efficace des dispositifs garantit que vos technologies de sécurité fonctionnent de manière fiable et performante.",
+          "en": "Effective device management ensures your security technologies operate efficiently and reliably."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Surveillance externe",
+          "en": "External monitoring"
+        },
+        "accroche": null,
+        "points": [],
+        "conclusion": null,
+        "aCompleter": true
+      },
+      {
+        "titre": {
+          "fr": "Soutien",
+          "en": "Support"
+        },
+        "accroche": {
+          "fr": "Support 24/7 pour assurer le bon fonctionnement de vos systèmes de sécurité.",
+          "en": "24/7 support to keep your security systems running smoothly."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Assistance technique :",
+              "en": "Technical assistance:"
+            },
+            "d": {
+              "fr": "aide immédiate pour les applications et équipements de sécurité.",
+              "en": "immediate help for security applications and appliances."
+            }
+          },
+          {
+            "t": {
+              "fr": "Réponse aux incidents :",
+              "en": "Incident response:"
+            },
+            "d": {
+              "fr": "conseils pour les problèmes opérationnels et les menaces.",
+              "en": "guidance for operational issues and threats."
+            }
+          },
+          {
+            "t": {
+              "fr": "Support de maintenance :",
+              "en": "Maintenance support:"
+            },
+            "d": {
+              "fr": "assistance pour les mises à jour et configurations.",
+              "en": "help with updates and configurations."
+            }
+          },
+          {
+            "t": {
+              "fr": "Conseils proactifs :",
+              "en": "Proactive guidance:"
+            },
+            "d": {
+              "fr": "recommandations pour améliorer la posture de sécurité.",
+              "en": "recommendations for improving security posture."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Un support permanent garantit une sécurité continue et une efficacité opérationnelle.",
+          "en": "Round-the-clock support guarantees continuous security and operational efficiency."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Les organisations sont confrontées à des attaques de plus en plus sophistiquées visant à la fois les systèmes internes et les actifs accessibles au public.",
+        "en": "Organizations face increasingly sophisticated attacks targeting both internal systems and public-facing assets."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Les menaces évoluent plus rapidement que ce que la surveillance standard peut détecter",
+            "en": "Threats are evolving faster than standard monitoring can detect"
+          }
+        },
+        {
+          "d": {
+            "fr": "Une supervision continue est nécessaire pour éviter les interruptions de service",
+            "en": "Continuous oversight is required to avoid service disruptions"
+          }
+        },
+        {
+          "d": {
+            "fr": "Maintenir la visibilité et la remédiation réduit le risque de violations",
+            "en": "Maintaining visibility and remediation reduces risk of breaches"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Investir dans des Services de Sécurité Managés garantit que votre environnement informatique reste sécurisé, conforme et fiable.",
+        "en": "Investing in Managed Security Services ensures your IT environment remains secure, compliant, and reliable."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA combine une expertise certifiée, des outils avancés et une expérience pratique pour fournir des solutions MSS.",
+        "en": "SECIA combines certified expertise, advanced tools, and hands-on experience to deliver MSS solutions."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Surveillance et gestion continues des dispositifs et applications de sécurité",
+            "en": "Continuous monitoring and management of security devices and applications"
+          }
+        },
+        {
+          "d": {
+            "fr": "Évaluations des vulnérabilités et recommandations de remédiation",
+            "en": "Vulnerability assessments and remediation guidance"
+          }
+        },
+        {
+          "d": {
+            "fr": "Support 24/7 par des spécialistes de la sécurité certifiés",
+            "en": "24/7 support from certified security specialists"
+          }
+        },
+        {
+          "d": {
+            "fr": "Service neutre vis-à-vis des fournisseurs, adapté à l’environnement de votre organisation",
+            "en": "Vendor-neutral service tailored to your organization’s environment"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Avec SECIA, votre organisation bénéficie d’un partenaire proactif qui protège les actifs, réduit les risques et garantit la résilience opérationnelle.",
+        "en": "With SECIA, your organization gains a proactive partner that protects assets, mitigates risk, and ensures operational resilience."
+      }
+    }
+  },
+  "csoc": {
+    "pole": "cyber",
+    "page": "surveillance-csoc",
+    "image": "grok/service-csoc",
+    "titre": {
+      "fr": "Surveillance et renseignement (CSOC)",
+      "en": "Monitoring & threat intelligence (CSOC)"
+    },
+    "intro": {
+      "fr": "Repérez les menaces avant qu’elles n’agissent grâce au Centre d’Opérations de Cybersécurité (CSOC) de SECIA et à nos services de renseignement sur les menaces exploitables. Nous fournissons une surveillance continue, la détection et des conseils pour maintenir votre organisation sûre et résiliente.",
+      "en": "See threats before they strike with SECIA’s Cyber Security Operations Center (CSOC) and actionable threat intelligence services. We provide continuous monitoring, detection, and guidance to keep your organization safe and resilient."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "CSOC – Surveillance des événements de sécurité",
+          "en": "CSOC – Security event monitoring"
+        },
+        "accroche": {
+          "fr": "Détectez et réagissez aux événements de sécurité en temps réel.",
+          "en": "Detect and respond to security events in real time."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Surveillance 24/7 :",
+              "en": "24/7 monitoring:"
+            },
+            "d": {
+              "fr": "surveillance continue des réseaux, systèmes et applications.",
+              "en": "continuous surveillance of networks, systems, and applications."
+            }
+          },
+          {
+            "t": {
+              "fr": "Détection des événements :",
+              "en": "Event detection:"
+            },
+            "d": {
+              "fr": "identifier les activités suspectes et les attaques potentielles.",
+              "en": "identify suspicious activities and potential attacks."
+            }
+          },
+          {
+            "t": {
+              "fr": "Orchestration et automatisation :",
+              "en": "Orchestration & automation:"
+            },
+            "d": {
+              "fr": "automatiser les réponses aux menaces pour minimiser l’impact.",
+              "en": "automate threat responses to minimize impact."
+            }
+          },
+          {
+            "t": {
+              "fr": "Alertes et rapports :",
+              "en": "Alerting & reporting:"
+            },
+            "d": {
+              "fr": "fournir des informations exploitables aux équipes IT.",
+              "en": "provide actionable insights to IT teams."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Le CSOC garantit que les menaces sont détectées tôt et atténuées avant d’impacter les opérations.",
+          "en": "CSOC ensures threats are detected early and mitigated before impacting operations."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Renseignement sur les menaces cyber (CTI)",
+          "en": "Cyber threat intelligence (CTI)"
+        },
+        "accroche": {
+          "fr": "Transformez l’information en protection proactive.",
+          "en": "Turn information into proactive protection."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Analyse des menaces :",
+              "en": "Threat analysis:"
+            },
+            "d": {
+              "fr": "surveillez les tactiques, techniques et procédures des attaquants.",
+              "en": "monitor attacker tactics, techniques, and procedures."
+            }
+          },
+          {
+            "t": {
+              "fr": "Anticipation des risques :",
+              "en": "Risk anticipation:"
+            },
+            "d": {
+              "fr": "identifiez les menaces émergentes avant qu’elles n’affectent votre organisation.",
+              "en": "identify emerging threats before they affect your organization."
+            }
+          },
+          {
+            "t": {
+              "fr": "Renseignements exploitables :",
+              "en": "Actionable intelligence:"
+            },
+            "d": {
+              "fr": "fournissez des conseils pour des mesures de sécurité préventives.",
+              "en": "deliver guidance for preemptive security measures."
+            }
+          },
+          {
+            "t": {
+              "fr": "Intégration :",
+              "en": "Integration:"
+            },
+            "d": {
+              "fr": "intégrez les renseignements dans les systèmes de surveillance et de défense.",
+              "en": "feed intelligence into monitoring and defense systems."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Le CTI permet à votre organisation d’agir de manière proactive et de renforcer sa posture de sécurité globale.",
+          "en": "CTI empowers your organization to act proactively and strengthen overall security posture."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Les cybermenaces deviennent de plus en plus sophistiquées et rapides.",
+        "en": "Cyber threats are increasingly sophisticated and fast-moving."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Les attaques passent souvent inaperçues sans une surveillance 24/7",
+            "en": "Attacks often go undetected without 24/7 monitoring"
+          }
+        },
+        {
+          "d": {
+            "fr": "La sécurité basée sur le renseignement réduit les risques et les interruptions",
+            "en": "Intelligence-driven security reduces risk and downtime"
+          }
+        },
+        {
+          "d": {
+            "fr": "La détection proactive aide à prévenir des violations coûteuses et des perturbations de service",
+            "en": "Proactive detection helps prevent costly breaches and service disruptions"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Investir dès maintenant dans le CSOC et le CTI permet à votre organisation de rester en avance sur les attaquants.",
+        "en": "Investing in CSOC and CTI now ensures your organization stays ahead of attackers."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA combine une expertise certifiée, des outils avancés et une expérience mondiale pour offrir une surveillance proactive et un renseignement sur les menaces.",
+        "en": "SECIA combines certified expertise, advanced tools, and global experience to deliver proactive monitoring and threat intelligence."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Opérations CSOC 24/7 avec détection en temps réel",
+            "en": "24/7 CSOC operations with real-time detection"
+          }
+        },
+        {
+          "d": {
+            "fr": "Renseignements exploitables adaptés à votre organisation",
+            "en": "Actionable threat intelligence tailored to your organization"
+          }
+        },
+        {
+          "d": {
+            "fr": "Orchestration et automatisation pour minimiser l’intervention manuelle",
+            "en": "Orchestration and automation to minimize manual intervention"
+          }
+        },
+        {
+          "d": {
+            "fr": "Conseils d’experts pour une atténuation et une défense proactives",
+            "en": "Expert guidance for proactive mitigation and defense"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Avec SECIA, vous bénéficiez d’un partenaire de confiance qui détecte, prévient et atténue les cybermenaces avant qu’elles n’affectent votre entreprise.",
+        "en": "With SECIA, you gain a trusted partner that detects, prevents, and mitigates cyber threats before they impact your business."
+      }
+    }
+  },
+  "csirt": {
+    "pole": "cyber",
+    "page": "reponse-incidents",
+    "image": "grok/service-reponse-incidents",
+    "titre": {
+      "fr": "Réponse aux incidents (CSIRT)",
+      "en": "Incident response (CSIRT)"
+    },
+    "intro": {
+      "fr": "Réagissez rapidement et minimisez les dommages avec l’équipe de réponse aux incidents de cybersécurité (CSIRT) de SECIA. Nous fournissons un support proactif, structuré et expert pour contenir les incidents, enquêter sur les attaques et renforcer votre résilience.",
+      "en": "React quickly and minimize damage with SECIA’s Cyber Security Incident Response Team (CSIRT). We provide proactive, structured, and expert support to contain incidents, investigate attacks, and strengthen your resilience."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Réponse aux incidents de sécurité",
+          "en": "Security incident response"
+        },
+        "accroche": {
+          "fr": "Réagissez rapidement pour minimiser les dommages.",
+          "en": "React fast to minimize damage."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Confinement rapide :",
+              "en": "Rapid containment:"
+            },
+            "d": {
+              "fr": "isolez immédiatement les systèmes affectés.",
+              "en": "isolate affected systems immediately."
+            }
+          },
+          {
+            "t": {
+              "fr": "Atténuation :",
+              "en": "Mitigation:"
+            },
+            "d": {
+              "fr": "réduisez les interruptions et l’impact financier.",
+              "en": "reduce downtime and financial impact."
+            }
+          },
+          {
+            "t": {
+              "fr": "Coordination des incidents :",
+              "en": "Incident coordination:"
+            },
+            "d": {
+              "fr": "alignez les équipes pour une réponse efficace.",
+              "en": "align teams to respond efficiently."
+            }
+          },
+          {
+            "t": {
+              "fr": "Rapports :",
+              "en": "Reporting:"
+            },
+            "d": {
+              "fr": "documentez les actions et résultats pour de futures améliorations.",
+              "en": "document actions and outcomes for future improvements."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "La réponse aux incidents garantit que votre organisation se rétablit rapidement tout en limitant les perturbations opérationnelles.",
+          "en": "Incident response ensures your organization recovers quickly while limiting operational disruption."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Chasse proactive aux menaces",
+          "en": "Proactive threat hunting"
+        },
+        "accroche": {
+          "fr": "N’attendez pas, traquez les menaces.",
+          "en": "Don’t wait, hunt the threats."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Recherche active des menaces :",
+              "en": "Active threat searches:"
+            },
+            "d": {
+              "fr": "identifiez les attaquants cachés dans votre environnement.",
+              "en": "identify hidden attackers within your environment."
+            }
+          },
+          {
+            "t": {
+              "fr": "Analyse du comportement :",
+              "en": "Behavior analysis:"
+            },
+            "d": {
+              "fr": "détectez les activités inhabituelles.",
+              "en": "detect unusual activity patterns."
+            }
+          },
+          {
+            "t": {
+              "fr": "Détection précoce :",
+              "en": "Early detection:"
+            },
+            "d": {
+              "fr": "empêchez les menaces avancées de s’aggraver.",
+              "en": "prevent advanced threats from escalating."
+            }
+          },
+          {
+            "t": {
+              "fr": "Surveillance continue :",
+              "en": "Continuous monitoring:"
+            },
+            "d": {
+              "fr": "renforcez proactivement la posture de sécurité globale.",
+              "en": "strengthen overall security posture proactively."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "La chasse proactive permet de détecter les menaces avant qu’elles ne causent des dommages.",
+          "en": "Proactive hunting uncovers threats before they cause damage."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Enquête Post-Incident",
+          "en": "Post-Incident investigation"
+        },
+        "accroche": {
+          "fr": "Récupérez plus fort et empêchez la récurrence.",
+          "en": "Recover stronger and prevent recurrence."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Analyse de la cause racine :",
+              "en": "Root cause analysis:"
+            },
+            "d": {
+              "fr": "identifiez comment la faille est survenue.",
+              "en": "identify how the breach occurred."
+            }
+          },
+          {
+            "t": {
+              "fr": "Guidance de remédiation :",
+              "en": "Remediation guidance:"
+            },
+            "d": {
+              "fr": "mettez en œuvre des mesures correctives.",
+              "en": "implement corrective measures."
+            }
+          },
+          {
+            "t": {
+              "fr": "Leçons apprises :",
+              "en": "Lessons learned:"
+            },
+            "d": {
+              "fr": "renforcez les politiques et contrôles pour l’avenir.",
+              "en": "strengthen policies and controls for the future."
+            }
+          },
+          {
+            "t": {
+              "fr": "Rapports :",
+              "en": "Reporting:"
+            },
+            "d": {
+              "fr": "fournissez des informations détaillées aux parties prenantes.",
+              "en": "provide detailed insights for stakeholders."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "L’enquête post-incident améliore la résilience et réduit le risque futur.",
+          "en": "Post-incident investigation improves resilience and reduces future risk."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Gestion de crise",
+          "en": "Crisis management"
+        },
+        "accroche": {
+          "fr": "Contrôlez le chaos et protégez votre réputation.",
+          "en": "Control the chaos and protect your reputation."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Coordination de crise :",
+              "en": "Crisis coordination:"
+            },
+            "d": {
+              "fr": "alignez la communication et la prise de décision sous pression.",
+              "en": "align communication and decision-making under pressure."
+            }
+          },
+          {
+            "t": {
+              "fr": "Guidance technique :",
+              "en": "Technical action guidance:"
+            },
+            "d": {
+              "fr": "assurez un confinement et une atténuation efficaces.",
+              "en": "ensure effective containment and mitigation."
+            }
+          },
+          {
+            "t": {
+              "fr": "Protection de la réputation :",
+              "en": "Reputation protection:"
+            },
+            "d": {
+              "fr": "minimisez l’impact sur l’entreprise et les parties prenantes.",
+              "en": "minimize business impact and stakeholder concerns."
+            }
+          },
+          {
+            "t": {
+              "fr": "Évaluation post-crise :",
+              "en": "Post-Crisis evaluation:"
+            },
+            "d": {
+              "fr": "mettez à jour les processus pour améliorer la préparation.",
+              "en": "update processes for improved readiness."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "La gestion de crise garantit une réponse contrôlée et efficace lors d’incidents majeurs.",
+          "en": "Crisis management ensures a controlled and effective response during major incidents."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Préparation et simulation d’Incidents",
+          "en": "Incident preparedness & simulation"
+        },
+        "accroche": {
+          "fr": "Soyez prêt avant que cela n’arrive.",
+          "en": "Be ready before it happens."
+        },
+        "points": [
+          {
+            "t": {
+              "fr": "Simulations réalistes :",
+              "en": "Realistic simulations:"
+            },
+            "d": {
+              "fr": "exécutez des exercices de cyberattaque pour tester la réponse.",
+              "en": "run cyber-attack exercises to test response."
+            }
+          },
+          {
+            "t": {
+              "fr": "Exercices de préparation :",
+              "en": "Preparedness drills:"
+            },
+            "d": {
+              "fr": "formez le personnel à la gestion des incidents.",
+              "en": "train staff in incident handling."
+            }
+          },
+          {
+            "t": {
+              "fr": "Planification de scénarios :",
+              "en": "Scenario planning:"
+            },
+            "d": {
+              "fr": "évaluez les réponses techniques et opérationnelles.",
+              "en": "evaluate technical and operational responses."
+            }
+          },
+          {
+            "t": {
+              "fr": "Amélioration continue :",
+              "en": "Continuous improvement:"
+            },
+            "d": {
+              "fr": "affinez les capacités de réponse aux incidents.",
+              "en": "refine incident response capabilities."
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Les exercices de préparation augmentent la réactivité et réduisent le temps de réponse lors de vrais incidents.",
+          "en": "Preparedness exercises increase readiness and reduce response time during real incidents."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Les incidents cyber peuvent causer d’importants dommages opérationnels, financiers et réputationnels.",
+        "en": "Cyber incidents can cause major operational, financial, and reputational damage."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Évolution rapide des attaques : nécessite une réponse immédiate et structurée",
+            "en": "Rapid attack evolution requires immediate and structured response"
+          }
+        },
+        {
+          "d": {
+            "fr": "Détection proactive : les organisations doivent être préparées aux incidents",
+            "en": "Organizations need proactive detection and incident preparedness"
+          }
+        },
+        {
+          "d": {
+            "fr": "Exigences réglementaires : les cadres réglementaires imposent des plans de réponse documentés",
+            "en": "Regulatory frameworks demand documented response plans"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Investir dès maintenant dans les services CSIRT garantit une récupération plus rapide, un impact minimisé et une résilience renforcée.",
+        "en": "Investing in CSIRT services now ensures faster recovery, minimized impact, and stronger resilience."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA fournit une expertise certifiée, des outils avancés et des méthodologies éprouvées pour la réponse aux incidents.",
+        "en": "SECIA provides certified expertise, advanced tools, and proven methodologies for incident response."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Support CSIRT 24/7 : contention et mitigation rapides",
+            "en": "24/7 CSIRT support for rapid containment and mitigation"
+          }
+        },
+        {
+          "d": {
+            "fr": "Recherche proactive des menaces et investigation post-incident",
+            "en": "Proactive threat hunting and post-incident investigation"
+          }
+        },
+        {
+          "d": {
+            "fr": "Gestion de crise et simulations de préparation",
+            "en": "Crisis management and preparedness simulations"
+          }
+        },
+        {
+          "d": {
+            "fr": "Accompagnement continu pour renforcer les capacités de réponse aux incidents",
+            "en": "Continuous guidance to strengthen incident response capabilities"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Avec SECIA, votre organisation bénéficie d’un partenaire de confiance pour une réponse aux incidents rapide, efficace et résiliente.",
+        "en": "With SECIA, your organization gains a trusted partner for fast, effective, and resilient incident response."
+      }
+    }
+  },
+  "reseau-entreprise": {
+    "pole": "reseau",
+    "page": "reseau-entreprise",
+    "image": "grok/service-reseau-entreprise",
+    "titre": {
+      "fr": "Réseau d'entreprise",
+      "en": "Enterprise network"
+    },
+    "intro": {
+      "fr": "Chez SECIA, nous construisons des infrastructures réseau d’entreprise garantissant stabilité, rapidité et évolutivité. Notre objectif est de créer une base qui soutient vos opérations, améliore la collaboration et s’intègre parfaitement à vos systèmes existants. Chaque réseau est conçu avec la performance, la fiabilité et la sécurité au cœur. Nous fournissons des services réseau d’entreprise complets, de l’architecture et du contrôle d’accès à l’intégration fluide des systèmes.",
+      "en": "At SECIA, we build enterprise network infrastructures that ensure stability, speed, and scalability. Our goal is to create a foundation that supports your business operations, enhances collaboration, and integrates seamlessly with your existing systems. Each network is designed with performance, reliability, and security at its core. We deliver end-to-end enterprise network services, from architecture and access control to seamless system integration."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Contrôle d'accès",
+          "en": "Access control"
+        },
+        "accroche": {
+          "fr": "Assurez-vous que seuls les utilisateurs et les appareils de confiance puissent se connecter à votre réseau:",
+          "en": "Ensure that only trusted users and devices can connect to your network: anywhere, anytime."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Déploiement de solutions de contrôle d'accès au réseau (NAC) et de confiance zéro (ZTNA)",
+              "en": "Deployment of Network Access Control (NAC) and Zero Trust (ZTNA) solutions"
+            }
+          },
+          {
+            "d": {
+              "fr": "Politiques d'authentification et d'autorisation centralisées",
+              "en": "Centralized authentication and authorization policies"
+            }
+          },
+          {
+            "d": {
+              "fr": "Contrôle d'accès basé sur les rôles pour les employés, les sous-traitants et les invités",
+              "en": "Role-based access for employees, contractors, and guests"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration aux systèmes d'identité et de sécurité existants",
+              "en": "Integration with existing identity and security systems"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Le contrôle d'accès est la première étape pour sécuriser votre infrastructure, protéger les données sensibles et empêcher les intrusions non autorisées.",
+          "en": "Access control is the first step to securing your infrastructure, protecting sensitive data and preventing unauthorized entry."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Architecture réseau",
+          "en": "Network architecture"
+        },
+        "accroche": {
+          "fr": "La conception d'un réseau fiable et évolutif commence par une architecture solide.",
+          "en": "Designing a reliable, scalable network starts with solid architecture."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Conception de réseau personnalisée alignée sur vos objectifs commerciaux",
+              "en": "Custom network design aligned with your business objectives"
+            }
+          },
+          {
+            "d": {
+              "fr": "Haute disponibilité et configurations redondantes pour éviter les interruptions de service",
+              "en": "High availability and redundant configurations to avoid downtime"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration des composants LAN, WAN et Cloud pour des performances unifiées",
+              "en": "Integration of LAN, WAN, and Cloud components for unified performance"
+            }
+          },
+          {
+            "d": {
+              "fr": "Sécurité et conformité intégrées dès le départ",
+              "en": "Built-in security and compliance from the start"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nos ingénieurs certifiés veillent à ce que votre réseau soit prêt pour la croissance future et conforme aux normes de l'industrie.",
+          "en": "Our certified engineers ensure your network is ready for future growth and compliant with industry standards."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Intégration transparente",
+          "en": "Seamless integration"
+        },
+        "accroche": {
+          "fr": "Connectez les nouveaux systèmes et technologies sans interruption.",
+          "en": "Connect new systems and technologies without disruption."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Intégration harmonieuse des infrastructures existantes aux environnements modernes",
+              "en": "Smooth integration of legacy infrastructure with modern environments"
+            }
+          },
+          {
+            "d": {
+              "fr": "Interopérabilité entre les systèmes sur site, hybrides et cloud",
+              "en": "Interoperability between on-premises, hybrid, and cloud systems"
+            }
+          },
+          {
+            "d": {
+              "fr": "Cadres d'automatisation pour un déploiement plus rapide et une réduction des erreurs humaines",
+              "en": "Automation frameworks for faster deployment and reduced human error"
+            }
+          },
+          {
+            "d": {
+              "fr": "Tests et validation pour une mise en œuvre sans faille",
+              "en": "Testing and validation for flawless implementation"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nous veillons à ce que votre transition se déroule en douceur, en minimisant les temps d'arrêt et en maximisant les performances.",
+          "en": "We make sure your transition is smooth, minimizing downtime and maximizing performance."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": null,
+      "points": [
+        {
+          "d": {
+            "fr": "Le télétravail et l'informatique hybride exigent des solutions d'accès sécurisées et flexibles",
+            "en": "Remote work and hybrid IT demand secure, flexible access solutions"
+          }
+        },
+        {
+          "d": {
+            "fr": "La transformation numérique exige des architectures évolutives et connectées au cloud",
+            "en": "Digital transformation requires scalable, cloud-connected architectures"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les cybermenaces croissantes ciblent plus que jamais les vulnérabilités des réseaux",
+            "en": "Increasing cyber threats target network vulnerabilities more than ever"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les exigences réglementaires (NIS2, RGPD) imposent des contrôles de sécurité et de visibilité plus stricts",
+            "en": "Regulatory requirements (NIS2, GDPR) enforce stricter security and visibility controls"
+          }
+        }
+      ],
+      "conclusion": null
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "Expertise reconnue dans la conception et la gestion d'infrastructures d'entreprise complexes.",
+        "en": "Proven expertise in designing and managing complex enterprise infrastructures."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Ingénieurs certifiés (Fortinet, Cisco, Juniper, Microsoft)",
+            "en": "Certified engineers (Fortinet, Cisco, Juniper, Microsoft)"
+          }
+        },
+        {
+          "d": {
+            "fr": "Réalisation de projet sans faille, de la planification à la mise en œuvre",
+            "en": "Seamless project delivery from planning to implementation"
+          }
+        },
+        {
+          "d": {
+            "fr": "Assistance 24 h sur 24 et 7 jours sur 7 et engagement de partenariat à long terme",
+            "en": "24/7 support and long-term partnership commitment"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "SECIA est votre partenaire de confiance pour des réseaux d'entreprise résilients, sécurisés et évolutifs.",
+        "en": "SECIA is your trusted partner for resilient, secure, and future-proof enterprise networking."
+      }
+    }
+  },
+  "wan-cloud": {
+    "pole": "reseau",
+    "page": "connectivite-wan-cloud",
+    "image": "grok/service-wan-cloud",
+    "titre": {
+      "fr": "Connectivité WAN et cloud",
+      "en": "WAN & cloud connectivity"
+    },
+    "intro": {
+      "fr": "Travailler avec SECIA signifie travailler avec une équipe qui combine excellence technique, certifications reconnues et expérience mondiale éprouvée dans les déploiements réseau. Nos ingénieurs certifiés en technologies SD-WAN, Cloud et Sécurité, telles que Fortinet, Cisco et Microsoft, offrent une expertise complète allant de la conception de l’architecture à la surveillance et l’optimisation continues. Grâce à une intégration fluide dans vos systèmes existants, un support expert 24 h sur 24 et 7 jours sur 7, et une approche indépendante des fournisseurs, nous garantissons la meilleure technologie adaptée à votre organisation. SECIA construit une connectivité sécurisée, intelligente et évolutive qui accompagne la croissance de votre entreprise dès aujourd’hui et pour l’avenir.",
+      "en": "Partnering with SECIA means working with a team that combines technical excellence, industry certifications, and proven global experience in network deployments. Our certified engineers in SD-WAN, Cloud, and Security technologies such as Fortinet, Cisco, and Microsoft provide complete expertise from architecture design to continuous monitoring and optimization. With seamless integration into your existing systems, 24/7 expert support, and a vendor-neutral approach, we ensure the best technology fit for your organization. SECIA builds secure, intelligent, and scalable connectivity that evolves with your business today and in the future."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Connexion inter-sites",
+          "en": "Branch-to-Branch connectivity"
+        },
+        "accroche": {
+          "fr": "Assurez une communication cohérente et sécurisée entre tous vos sites, peu importe leur localisation.",
+          "en": "Ensure consistent, secure communication between all your sites. No matter where they’re located."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Architecture WAN centralisée et optimisée",
+              "en": "Centralized and optimized WAN architecture"
+            }
+          },
+          {
+            "d": {
+              "fr": "Connexions inter-sites fiables et à haute vitesse",
+              "en": "Reliable, high-speed inter-site connections"
+            }
+          },
+          {
+            "d": {
+              "fr": "Transfert de données chiffré entre les agences",
+              "en": "Encrypted data transfer between branches"
+            }
+          },
+          {
+            "d": {
+              "fr": "Technologies VPN et SD-WAN intégrées",
+              "en": "Integrated VPN and SD-WAN technologies"
+            }
+          },
+          {
+            "d": {
+              "fr": "Surveillance continue et basculement automatique",
+              "en": "Continuous monitoring and automatic failover"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Une architecture WAN unifiée et évolutive permet à vos équipes de collaborer efficacement à travers les différentes zones géographiques.",
+          "en": "A unified, scalable WAN architecture allows your teams to collaborate efficiently across geographies."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Intégration réseau cloud",
+          "en": "Cloud network integration"
+        },
+        "accroche": {
+          "fr": "Connectez-vous de manière fluide aux clouds publics, privés ou hybrides avec une visibilité et un contrôle complets.",
+          "en": "Connect seamlessly to public, private, or hybrid clouds with full visibility and control."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Interconnexion sécurisée entre environnements sur site et cloud",
+              "en": "Secure interconnection between on-premises and cloud environments"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration avec les principaux fournisseurs (AWS, Azure, Google Cloud)",
+              "en": "Integration with major providers (AWS, Azure, Google Cloud)"
+            }
+          },
+          {
+            "d": {
+              "fr": "Routage dynamique et optimisation de la bande passante",
+              "en": "Dynamic routing and bandwidth optimization"
+            }
+          },
+          {
+            "d": {
+              "fr": "Politiques réseau cohérentes à travers les environnements",
+              "en": "Consistent network policies across environments"
+            }
+          },
+          {
+            "d": {
+              "fr": "Gestion simplifiée via des tableaux de bord centralisés",
+              "en": "Simplified management through centralized dashboards"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nous garantissons une communication fluide et sécurisée entre votre infrastructure et vos applications cloud.",
+          "en": "We ensure smooth, secure communication between your infrastructure and cloud applications."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Routage flexible et basculement",
+          "en": "Flexible routing & failover"
+        },
+        "accroche": {
+          "fr": "Maintenez vos opérations, même en cas d’imprévus.",
+          "en": "Keep your operations running, even when the unexpected happens."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Routage intelligent pour des chemins de données optimaux",
+              "en": "Intelligent routing for optimal data paths"
+            }
+          },
+          {
+            "d": {
+              "fr": "Systèmes de basculement et de redondance automatisés",
+              "en": "Automated failover and redundancy systems"
+            }
+          },
+          {
+            "d": {
+              "fr": "Priorisation du trafic pour les applications critiques",
+              "en": "Traffic prioritization for critical applications"
+            }
+          },
+          {
+            "d": {
+              "fr": "Conception à haute disponibilité pour la continuité des activités",
+              "en": "High availability design for business continuity"
+            }
+          },
+          {
+            "d": {
+              "fr": "Infrastructure évolutive qui s’adapte à la croissance",
+              "en": "Scalable infrastructure that adapts to growth"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Votre entreprise reste en ligne, protégée et efficace, quelles que soient les conditions réseau.",
+          "en": "Your business stays online, protected, and efficient, no matter the network conditions."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "L’entreprise moderne repose sur l’échange de données en temps réel, la collaboration à distance et les applications cloud-first, qui dépendent toutes d’une connectivité solide et sécurisée.",
+        "en": "The modern enterprise relies on real-time data exchange, remote collaboration, and cloud-first applications all of which depend on strong, secure connectivity."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Augmentation des besoins en bande passante des collaborateurs à distance et en mode hybride",
+            "en": "Rising bandwidth demands from remote and hybrid workforces"
+          }
+        },
+        {
+          "d": {
+            "fr": "Migration cloud accélérée dans tous les secteurs",
+            "en": "Accelerated cloud migration across all industries"
+          }
+        },
+        {
+          "d": {
+            "fr": "Menaces cyber ciblant les liens WAN et les erreurs de configuration cloud",
+            "en": "Cyber threats targeting WAN links and cloud misconfigurations"
+          }
+        },
+        {
+          "d": {
+            "fr": "Conformité réglementaire nécessitant un transfert de données sécurisé",
+            "en": "Regulatory compliance requiring secure data transfer"
+          }
+        },
+        {
+          "d": {
+            "fr": "Opérations mondiales exigeant une connectivité ininterrompue",
+            "en": "Global operations demanding uninterrupted connectivity"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Plus que jamais, des connexions WAN et cloud fiables sont essentielles pour garantir productivité, résilience et protection des données.",
+        "en": "Now more than ever, reliable WAN and cloud connections are essential to ensure productivity, resilience, and data protection."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "Travailler avec SECIA, c’est travailler avec des experts certifiés qui allient excellence technique, reconnaissance sectorielle et expérience mondiale dans les déploiements réseau.",
+        "en": "Partnering with SECIA means working with certified experts who combine technical excellence, industry recognition, and global experience in network deployments."
+      },
+      "points": [
+        {
+          "t": {
+            "fr": "Expertise éprouvée :",
+            "en": "Proven expertise:"
+          },
+          "d": {
+            "fr": "spécialistes des technologies WAN et cloud avancées pour une connectivité sécurisée et optimisée.",
+            "en": "specialists in advanced WAN and cloud technologies for secure, optimized connectivity."
+          }
+        },
+        {
+          "t": {
+            "fr": "Intégration fluide :",
+            "en": "Seamless integration:"
+          },
+          "d": {
+            "fr": "solutions s’intégrant parfaitement à votre infrastructure existante avec un minimum de perturbations.",
+            "en": "solutions that fit smoothly into your existing infrastructure with minimal disruption."
+          }
+        },
+        {
+          "t": {
+            "fr": "Support 24 h sur 24 et 7 jours sur 7 :",
+            "en": "24/7 support:"
+          },
+          "d": {
+            "fr": "surveillance continue, maintenance proactive et intervention rapide pour des opérations ininterrompues.",
+            "en": "continuous monitoring, proactive maintenance, and fast response for uninterrupted operations."
+          }
+        },
+        {
+          "t": {
+            "fr": "Indépendance vis-à-vis des fournisseurs :",
+            "en": "Vendor-Neutral:"
+          },
+          "d": {
+            "fr": "partenariats avec Fortinet, Cisco et Microsoft pour garantir la meilleure technologie adaptée à vos besoins.",
+            "en": "partnerships with Fortinet, Cisco, and Microsoft ensure the best technology for your needs."
+          }
+        },
+        {
+          "t": {
+            "fr": "Préparation au futur :",
+            "en": "Future-Ready:"
+          },
+          "d": {
+            "fr": "conceptions évolutives qui suivent la croissance de votre entreprise tout en maintenant sécurité et efficacité.",
+            "en": "scalable designs that evolve with your business while maintaining security and efficiency."
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "SECIA est votre partenaire de confiance pour un futur connecté, sécurisé et résilient.",
+        "en": "SECIA is your trusted partner for a connected, secure, and resilient future."
+      }
+    }
+  },
+  "sdn": {
+    "pole": "reseau",
+    "page": "sdn",
+    "image": "grok/service-sdn",
+    "titre": {
+      "fr": "Réseaux définis par logiciel (SDN)",
+      "en": "Software-defined networking (SDN)"
+    },
+    "intro": {
+      "fr": "SECIA conçoit et fournit des solutions de connectivité WAN et cloud performantes, permettant une communication fluide entre vos bureaux, utilisateurs et environnements cloud. Notre objectif est de garantir que votre organisation reste connectée de manière sécurisée, partout et à tout moment.",
+      "en": "SECIA designs and delivers high-performance WAN and cloud connectivity solutions that enable seamless communication between your offices, users, and cloud environments."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Opérations simplifiées",
+          "en": "Simplified operations"
+        },
+        "accroche": {
+          "fr": "Gérez l’ensemble de votre réseau depuis un point de contrôle intelligent unique et réduisez la complexité opérationnelle.",
+          "en": "Manage your entire network from a single, intelligent control point and reduce operational complexity."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Visibilité centralisée sur tous les dispositifs et environnements",
+              "en": "Centralized visibility across all devices and environments"
+            }
+          },
+          {
+            "d": {
+              "fr": "Configuration dynamique et application automatique des politiques",
+              "en": "Dynamic configuration and automatic policy enforcement"
+            }
+          },
+          {
+            "d": {
+              "fr": "Performance optimisée grâce à un routage intelligent du trafic",
+              "en": "Optimized performance through intelligent traffic routing"
+            }
+          },
+          {
+            "d": {
+              "fr": "Réduction des interventions manuelles et des erreurs de configuration",
+              "en": "Reduced manual intervention and configuration errors"
+            }
+          },
+          {
+            "d": {
+              "fr": "Gestion évolutive pour les déploiements multi-sites",
+              "en": "Scalable management for multi-site deployments"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Des opérations réseau simplifiées permettent à vos équipes de se concentrer sur l’innovation plutôt que sur la maintenance.",
+          "en": "Simplified network operations enable your teams to focus on innovation, not maintenance."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Migration SDN en douceur",
+          "en": "Smooth SDN migration"
+        },
+        "accroche": {
+          "fr": "Passez en douceur des environnements traditionnels aux environnements définis par logiciel sans interruption.",
+          "en": "Transition seamlessly from traditional to software-defined environments without disruption."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Planification et conception complètes de la migration",
+              "en": "Comprehensive migration planning and design"
+            }
+          },
+          {
+            "d": {
+              "fr": "Stratégies de mise en œuvre progressive minimisant les temps d’arrêt",
+              "en": "Gradual implementation strategies minimizing downtime"
+            }
+          },
+          {
+            "d": {
+              "fr": "Vérifications de compatibilité avec les systèmes existants",
+              "en": "Compatibility checks with legacy systems"
+            }
+          },
+          {
+            "d": {
+              "fr": "Tests et validations avant le déploiement complet",
+              "en": "Testing and validation before full deployment"
+            }
+          },
+          {
+            "d": {
+              "fr": "Support continu pendant et après la transition",
+              "en": "Continuous support during and after transition"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nous garantissons que votre migration SDN est sécurisée, efficace et entièrement alignée sur vos objectifs métier.",
+          "en": "We ensure your SDN migration is secure, efficient, and fully aligned with your business goals."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Intégration multi-domaines",
+          "en": "Multi-Domain integration"
+        },
+        "accroche": {
+          "fr": "Unifiez le contrôle entre différents domaines réseau pour une visibilité et une gouvernance cohérentes.",
+          "en": "Unify control across different network domains for consistent visibility and governance."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Intégration des environnements LAN, WAN, Cloud et Data Center",
+              "en": "Integration of LAN, WAN, Cloud, and Data Center environments"
+            }
+          },
+          {
+            "d": {
+              "fr": "Automatisation de bout en bout pour les réseaux hybrides et multi-cloud",
+              "en": "End-to-end automation for hybrid and multi-cloud networks"
+            }
+          },
+          {
+            "d": {
+              "fr": "Cohérence des politiques entre fournisseurs et plateformes",
+              "en": "Policy consistency across vendors and platforms"
+            }
+          },
+          {
+            "d": {
+              "fr": "Interopérabilité entre les contrôleurs SDN et les outils d’orchestration",
+              "en": "Interoperability between SDN controllers and orchestration tools"
+            }
+          },
+          {
+            "d": {
+              "fr": "Gestion simplifiée grâce à des tableaux de bord centralisés",
+              "en": "Simplified management through central dashboards"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nos ingénieurs conçoivent des architectures SDN multi-domaines qui connectent l’ensemble de votre écosystème avec précision et flexibilité.",
+          "en": "Our engineers deliver multi-domain SDN architectures that connect your entire ecosystem with precision and flexibility."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Les entreprises modernes sont confrontées à une complexité réseau croissante avec des environnements hybrides, l’accès à distance et des déploiements multi-cloud qui poussent les infrastructures traditionnelles à leurs limites.",
+        "en": "Modern enterprises face growing network complexity with hybrid environments, remote access, and multi-cloud deployments pushing traditional infrastructures to their limits."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Demande accrue d’automatisation et de visibilité en temps réel",
+            "en": "Increasing demand for automation and real-time visibility"
+          }
+        },
+        {
+          "d": {
+            "fr": "Transformation cloud nécessitant un contrôle réseau unifié",
+            "en": "Cloud transformation requiring unified network control"
+          }
+        },
+        {
+          "d": {
+            "fr": "Défis de sécurité liés aux architectures distribuées",
+            "en": "Security challenges from distributed architectures"
+          }
+        },
+        {
+          "d": {
+            "fr": "Coûts opérationnels élevés dus à la gestion manuelle",
+            "en": "High operational costs due to manual management"
+          }
+        },
+        {
+          "d": {
+            "fr": "Besoins de scalabilité pour une connectivité mondiale",
+            "en": "Scalability needs for global connectivity"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "La technologie SDN offre l’agilité, l’intelligence et l’efficacité nécessaires pour rester compétitif dans le paysage dynamique actuel.",
+        "en": "SDN technology offers the agility, intelligence, and efficiency required to stay competitive in today’s fast-changing landscape."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA combine une expertise approfondie en SDN avec des compétences certifiées en ingénierie réseau pour vous aider à concevoir, déployer et gérer des infrastructures avancées définies par logiciel.",
+        "en": "SECIA combines deep SDN expertise with certified network engineering to help you design, deploy, and manage advanced software-defined infrastructures."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Spécialistes certifiés en SDN, automatisation et réseaux multi-domaines",
+            "en": "Certified specialists in SDN, automation, and multi-domain networking"
+          }
+        },
+        {
+          "d": {
+            "fr": "Expérience éprouvée avec Fortinet, Cisco, Juniper et les fournisseurs cloud",
+            "en": "Proven experience with Fortinet, Cisco, Juniper, and cloud providers"
+          }
+        },
+        {
+          "d": {
+            "fr": "Déploiement de projet complet, de l’évaluation à la surveillance",
+            "en": "End-to-end project delivery from assessment to monitoring"
+          }
+        },
+        {
+          "d": {
+            "fr": "Intégration fluide avec les composants réseau existants",
+            "en": "Seamless integration with existing network components"
+          }
+        },
+        {
+          "d": {
+            "fr": "Support géré 24/7 et optimisation continue",
+            "en": "24/7 managed support and continuous optimization"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Nous rendons votre réseau plus simple, intelligent et robuste grâce à des solutions SDN intelligentes.",
+        "en": "We make your network simpler, smarter, and stronger through intelligent SDN solutions."
+      }
+    }
+  },
+  "sans-fil": {
+    "pole": "reseau",
+    "page": "sans-fil",
+    "image": "grok/service-sans-fil",
+    "titre": {
+      "fr": "Solutions sans fil",
+      "en": "Wireless solutions"
+    },
+    "intro": {
+      "fr": "Chez SECIA, nous concevons et déployons des réseaux sans fil d’entreprise offrant rapidité, fiabilité et couverture dans toutes les parties de votre organisation. Notre objectif est de garantir que votre entreprise reste connectée avec une mobilité fluide et des performances sécurisées, dès les bases.",
+      "en": "At SECIA, we design and deploy enterprise-grade wireless networks that deliver speed, reliability, and coverage across every part of your organization."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Étude de site et planification",
+          "en": "Site survey & planning"
+        },
+        "accroche": {
+          "fr": "Un réseau sans fil performant commence par une conception et une évaluation précises.",
+          "en": "A strong wireless network starts with precise design and assessment."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Études de site complètes utilisant des outils avancés pour l’analyse de couverture",
+              "en": "Comprehensive site surveys using advanced tools for coverage analysis"
+            }
+          },
+          {
+            "d": {
+              "fr": "Identification des sources d’interférences et placement optimal des points d’accès",
+              "en": "Identification of interference sources and optimal access point placement"
+            }
+          },
+          {
+            "d": {
+              "fr": "Planification de la capacité en fonction de la densité d’utilisateurs et des applications",
+              "en": "Capacity planning based on user density and applications"
+            }
+          },
+          {
+            "d": {
+              "fr": "Conception pour l’évolutivité, la performance et la sécurité",
+              "en": "Design for scalability, performance, and security"
+            }
+          },
+          {
+            "d": {
+              "fr": "Documentation détaillée pour une exécution impeccable",
+              "en": "Detailed documentation for flawless execution"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Une planification rigoureuse garantit que votre infrastructure sans fil répond aux besoins actuels et futurs de l’entreprise.",
+          "en": "Thorough planning ensures your wireless infrastructure meets both current and future business needs."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Déploiement et mise en œuvre",
+          "en": "Deployment & implementation"
+        },
+        "accroche": {
+          "fr": "Des petits bureaux aux grands campus, nous assurons des déploiements fluides, sécurisés et évolutifs.",
+          "en": "From small offices to large campuses, we deliver smooth, secure, and scalable deployments."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Installation complète par des ingénieurs certifiés",
+              "en": "End-to-end installation by certified engineers"
+            }
+          },
+          {
+            "d": {
+              "fr": "Configuration et tests des points d’accès et des contrôleurs",
+              "en": "Configuration and testing of access points and controllers"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration avec les environnements filaires et cloud existants",
+              "en": "Integration with existing wired and cloud environments"
+            }
+          },
+          {
+            "d": {
+              "fr": "Mise en œuvre de la segmentation réseau et des politiques d’accès",
+              "en": "Implementation of network segmentation and access policies"
+            }
+          },
+          {
+            "d": {
+              "fr": "Validation des exigences de performance et de couverture",
+              "en": "Validation of performance and coverage requirements"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Notre processus de déploiement garantit un minimum de perturbations et des performances optimales dès le premier jour.",
+          "en": "Our deployment process ensures minimal disruption and maximum performance right from day one."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Migration du réseau sans fil",
+          "en": "Wireless network migration"
+        },
+        "accroche": {
+          "fr": "Passez à la technologie sans fil de nouvelle génération en toute confiance et sans temps d’arrêt.",
+          "en": "Upgrade to next-generation wireless technology with confidence and zero downtime."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Planification de la migration et évaluation de l’architecture",
+              "en": "Migration planning and architecture assessment"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration des nouveaux points d’accès et contrôleurs",
+              "en": "Integration of new access points and controllers"
+            }
+          },
+          {
+            "d": {
+              "fr": "Renforcement de la sécurité selon les standards modernes (WPA3, ZTNA)",
+              "en": "Security enhancements for modern standards (WPA3, ZTNA)"
+            }
+          },
+          {
+            "d": {
+              "fr": "Tests et validation de toutes les configurations",
+              "en": "Testing and validation of all configurations"
+            }
+          },
+          {
+            "d": {
+              "fr": "Support continu et optimisation après migration",
+              "en": "Ongoing support and optimization post-migration"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nous garantissons que votre transition sans fil est sécurisée, efficace et entièrement alignée sur vos objectifs métier.",
+          "en": "We ensure your wireless transition is secure, efficient, and fully aligned with your business objectives."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Dans le monde actuel axé sur le mobile, une connectivité sans fil fiable est la base de la productivité et de la transformation numérique.",
+        "en": "In today’s mobile-first world, reliable wireless connectivity is the foundation of productivity and digital transformation."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Les modèles de travail hybrides augmentent la demande de Wi-Fi à haute capacité",
+            "en": "Hybrid work models increase demand for high-capacity Wi-Fi"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les applications cloud nécessitent des connexions constantes à faible latence",
+            "en": "Cloud-based applications require consistent, low-latency connections"
+          }
+        },
+        {
+          "d": {
+            "fr": "L’expansion de l’IoT ajoute de nouveaux appareils et défis de sécurité",
+            "en": "IoT expansion adds new devices and security challenges"
+          }
+        },
+        {
+          "d": {
+            "fr": "La croissance du trafic de données exige des réseaux évolutifs et performants",
+            "en": "Growing data traffic demands scalable, high-performance networks"
+          }
+        },
+        {
+          "d": {
+            "fr": "Une expérience utilisateur améliorée est essentielle à l’efficacité de l’entreprise",
+            "en": "Enhanced user experience is key to business efficiency"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Il est temps de construire une infrastructure sans fil sécurisée et prête pour l’avenir, qui maintient vos équipes connectées partout et à tout moment.",
+        "en": "Now is the time to build a secure, future-ready wireless infrastructure that keeps your teams connected anywhere, anytime."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "Travailler avec SECIA vous donne accès à des ingénieurs experts et des spécialistes certifiés avec des années d’expérience en conception, déploiement et optimisation de réseaux sans fil.",
+        "en": "Partnering with SECIA gives you access to expert engineers and certified specialists with years of experience in wireless design, deployment, and optimization."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "· Ingénieurs certifiés pour les principales technologies sans fil (Fortinet, Cisco, Aruba, Meraki)",
+            "en": "Certified engineers for leading wireless technologies (Fortinet, Cisco, Aruba, Meraki)"
+          }
+        },
+        {
+          "d": {
+            "fr": "· Gestion complète des projets, de la planification au support post-déploiement",
+            "en": "Comprehensive project delivery from planning to post-deployment support"
+          }
+        },
+        {
+          "d": {
+            "fr": "· Intégration fluide avec votre infrastructure existante",
+            "en": "Seamless integration with your existing infrastructure"
+          }
+        },
+        {
+          "d": {
+            "fr": "· Surveillance et maintenance 24/7 pour un temps de disponibilité maximal",
+            "en": "24/7 monitoring and maintenance for maximum uptime"
+          }
+        },
+        {
+          "d": {
+            "fr": "· Expérience éprouvée dans les environnements corporatifs, industriels et publics",
+            "en": "Proven experience across corporate, industrial, and public environments"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "SECIAfournit des réseaux sans fil conçus pour la performance, la fiabilité et la sécurité, prêts à soutenir la croissance de votre entreprise.",
+        "en": "SECIA delivers wireless networks built for performance, reliability, and security ready to support your business growth."
+      }
+    }
+  },
+  "automatisation": {
+    "pole": "reseau",
+    "page": "automatisation-surveillance",
+    "image": "grok/service-automatisation",
+    "titre": {
+      "fr": "Automatisation et surveillance",
+      "en": "Automation and monitoring"
+    },
+    "intro": {
+      "fr": "SECIA aide les organisations à mettre en place des réseaux plus intelligents et plus résilients grâce à l'automatisation et à la surveillance en temps réel.",
+      "en": "SECIA helps organizations achieve smarter, more resilient networks through automation and real-time monitoring."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Surveillance réseau en temps réel",
+          "en": "Real-Time network monitoring"
+        },
+        "accroche": {
+          "fr": "Gardez une longueur d'avance grâce à une visibilité complète sur la santé et les performances de votre réseau.",
+          "en": "Stay one step ahead with full visibility of your network’s health and performance."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Surveillance continue des périphériques et connexions réseau",
+              "en": "Continuous monitoring of network devices and connections"
+            }
+          },
+          {
+            "d": {
+              "fr": "Détection automatique des pannes, de la latence et des goulots d'étranglement",
+              "en": "Automatic detection of failures, latency, and bottlenecks"
+            }
+          },
+          {
+            "d": {
+              "fr": "Analyse des performances pour la maintenance proactive",
+              "en": "Performance analytics for proactive maintenance"
+            }
+          },
+          {
+            "d": {
+              "fr": "Alertes personnalisées pour les événements critiques ou les anomalies",
+              "en": "Custom alerts for critical events or anomalies"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration avec les systèmes SIEM et NOC",
+              "en": "Integration with SIEM and NOC systems"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Grâce à la surveillance en temps réel, vous pouvez anticiper les problèmes avant qu'ils n'affectent vos opérations et garantir une continuité de service.",
+          "en": "With real-time monitoring, you can anticipate issues before they impact operations and ensure uninterrupted service delivery."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Cadres d’automatisation",
+          "en": "Automation frameworks"
+        },
+        "accroche": {
+          "fr": "Réduisez la charge de travail manuelle et les erreurs humaines grâce à une automatisation intelligente et évolutive.",
+          "en": "Reduce manual workload and human error through smart, scalable automation."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Automatisation de la configuration des périphériques et services réseau",
+              "en": "Configuration automation for network devices and services"
+            }
+          },
+          {
+            "d": {
+              "fr": "Orchestration des flux de travail pour simplifier les tâches répétitives",
+              "en": "Workflow orchestration to simplify repetitive tasks"
+            }
+          },
+          {
+            "d": {
+              "fr": "Gestion basée sur des politiques dans des environnements multi-fournisseurs",
+              "en": "Policy-based management across multi-vendor environments"
+            }
+          },
+          {
+            "d": {
+              "fr": "Mises à jour automatiques et validation des modifications",
+              "en": "Automatic updates and change validation"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration avec les plateformes SDN et de gestion du cloud",
+              "en": "Integration with SDN and cloud management platforms"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "L'automatisation vous permet de faire évoluer vos opérations sans effort tout en maintenant les normes de conformité et de sécurité.",
+          "en": "Automation allows you to scale operations effortlessly while maintaining compliance and security standards."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Tableaux de bord et alertes personnalisés",
+          "en": "Custom dashboards & alerts"
+        },
+        "accroche": {
+          "fr": "Rendez vos données exploitables grâce à des tableaux de bord personnalisés et des notifications intelligentes.",
+          "en": "Make data actionable with tailored dashboards and smart notifications."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Tableaux de bord centralisés pour une visibilité et un contrôle en temps réel",
+              "en": "Centralized dashboards for real-time visibility and control"
+            }
+          },
+          {
+            "d": {
+              "fr": "Des indicateurs personnalisés alignés sur les priorités de l'entreprise",
+              "en": "Custom metrics aligned with business priorities"
+            }
+          },
+          {
+            "d": {
+              "fr": "Corrélation des événements à travers plusieurs couches de réseau",
+              "en": "Event correlation across multiple network layers"
+            }
+          },
+          {
+            "d": {
+              "fr": "Alerte automatisée pour prioriser les incidents",
+              "en": "Automated alerting to prioritize incidents"
+            }
+          },
+          {
+            "d": {
+              "fr": "Rapports historiques pour l'optimisation et les audits",
+              "en": "Historical reporting for optimization and audits"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nos tableaux de bord transforment des données complexes en informations claires et exploitables, permettant une prise de décision plus rapide et une résilience accrue.",
+          "en": "Our dashboards turn complex data into clear, actionable insights, enabling faster decision-making and stronger resilience."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Les environnements IT modernes exigent rapidité, précision et transparence. À mesure que les réseaux s’étendent et se diversifient, les processus manuels ne peuvent plus suivre les exigences opérationnelles.",
+        "en": "Modern IT environments demand speed, precision, and transparency. As networks expand and diversify, manual processes can no longer keep up with operational demands."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Les infrastructures hybrides augmentent la complexité et la charge de maintenance",
+            "en": "Hybrid infrastructures increase complexity and maintenance overhead"
+          }
+        },
+        {
+          "d": {
+            "fr": "L’erreur humaine reste une cause majeure de temps d’arrêt",
+            "en": "Human error remains a leading cause of downtime"
+          }
+        },
+        {
+          "d": {
+            "fr": "La montée des menaces cybernétiques nécessite une détection et une réponse instantanées",
+            "en": "Growing cybersecurity threats require instant detection and response"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les opérations basées sur les données exigent une visibilité et une optimisation constantes",
+            "en": "Data-driven operations need constant visibility and optimization"
+          }
+        },
+        {
+          "d": {
+            "fr": "La transformation numérique repose sur des processus intelligents et automatisés",
+            "en": "Digital transformation relies on intelligent, automated processes"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Il est maintenant temps d’adopter l’automatisation et la surveillance pour atteindre agilité, sécurité et excellence opérationnelle.",
+        "en": "Now is the time to adopt automation and monitoring to achieve agility, security, and operational excellence."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA allie expertise technique, outils avancés et expérience pratique pour automatiser et optimiser votre infrastructure réseau.",
+        "en": "SECIA combines technical expertise, advanced tools, and hands-on experience to automate and optimize your network infrastructure."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Ingénieurs certifiés spécialisés dans les technologies d’automatisation et de surveillance",
+            "en": "Certified engineers specialized in automation and monitoring technologies"
+          }
+        },
+        {
+          "d": {
+            "fr": "Cadres complets adaptés à votre environnement et à vos objectifs",
+            "en": "Comprehensive frameworks adapted to your environment and goals"
+          }
+        },
+        {
+          "d": {
+            "fr": "Expertise multi-fournisseurs assurant une intégration fluide",
+            "en": "Multi-vendor expertise ensuring smooth integration"
+          }
+        },
+        {
+          "d": {
+            "fr": "Supervision 24/7 via des systèmes de surveillance proactive",
+            "en": "24/7 supervision through proactive monitoring systems"
+          }
+        },
+        {
+          "d": {
+            "fr": "Résultats éprouvés dans l’optimisation des performances et la réduction des temps d’arrêt",
+            "en": "Proven results in optimizing performance and reducing downtime"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Avec SECIA, vous bénéficiez d’un partenaire stratégique qui rend votre réseau plus intelligent, rapide et fiable.",
+        "en": "With SECIA, you gain a strategic partner that makes your network smarter, faster, and more reliable."
+      }
+    }
+  },
+  "audits-reseau": {
+    "pole": "reseau",
+    "page": "audits-reseau",
+    "image": "grok/service-audits-reseau",
+    "titre": {
+      "fr": "Audits et conformité des réseaux",
+      "en": "Network audits & compliance"
+    },
+    "intro": {
+      "fr": "SECIA fournit des services complets d’audit réseau et de conformité pour aider les organisations à évaluer, renforcer et aligner leurs infrastructures IT avec les réglementations et les meilleures pratiques du secteur. Notre objectif est d’améliorer les performances, de réduire les vulnérabilités et de garantir que votre réseau reste fiable, sécurisé et conforme.",
+      "en": "SECIA provides comprehensive network audit and compliance services to help organizations assess, strengthen, and align their IT infrastructures with regulatory and industry best practices."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Audit de l'infrastructure et de la configuration",
+          "en": "Infrastructure & configuration audit"
+        },
+        "accroche": {
+          "fr": "Comprenez votre réseau de l'intérieur pour garantir une efficacité et une sécurité maximales.",
+          "en": "Understand your network from the inside out to ensure maximum efficiency and security."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Évaluation détaillée des configurations, de la topologie et des ressources connectées",
+              "en": "Detailed assessment of configurations, topology, and connected assets"
+            }
+          },
+          {
+            "d": {
+              "fr": "Détection des erreurs de configuration et des goulots d'étranglement des performances",
+              "en": "Detection of misconfigurations and performance bottlenecks"
+            }
+          },
+          {
+            "d": {
+              "fr": "Examen du micrologiciel, des niveaux de correctifs et de l'état du matériel",
+              "en": "Review of device firmware, patch levels, and hardware health"
+            }
+          },
+          {
+            "d": {
+              "fr": "Vérification des mécanismes de redondance, de basculement et de disponibilité",
+              "en": "Verification of redundancy, failover, and availability mechanisms"
+            }
+          },
+          {
+            "d": {
+              "fr": "Recommandations pour l'optimisation et la modernisation",
+              "en": "Recommendations for optimization and modernization"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Un audit approfondi de votre infrastructure garantit le fonctionnement efficace et sécurisé de vos systèmes, conformément aux normes de l'industrie.",
+          "en": "A thorough infrastructure audit ensures your systems operate efficiently, securely, and according to industry standards."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Revue de la posture de sécurité",
+          "en": "Security posture review"
+        },
+        "accroche": {
+          "fr": "Évaluez le niveau de préparation de votre réseau face à l'évolution des menaces.",
+          "en": "Measure how prepared your network is to resist evolving threats."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Évaluation des contrôles et politiques de sécurité existants",
+              "en": "Evaluation of existing security controls and policies"
+            }
+          },
+          {
+            "d": {
+              "fr": "Identification des vulnérabilités et des points d'exposition",
+              "en": "Identification of vulnerabilities and exposure points"
+            }
+          },
+          {
+            "d": {
+              "fr": "Vérification de la réponse aux incidents et de la gestion des accès",
+              "en": "Verification of incident response and access management"
+            }
+          },
+          {
+            "d": {
+              "fr": "Examen du pare-feu, du système IDS/IPS et de la protection des terminaux",
+              "en": "Review of firewall, IDS/IPS, and endpoint protection"
+            }
+          },
+          {
+            "d": {
+              "fr": "Recommandations concrètes pour renforcer la résilience et la visibilité",
+              "en": "Actionable recommendations to enhance resilience and visibility"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nos experts vous fournissent une feuille de route claire et priorisée pour améliorer votre niveau de sécurité global et réduire les risques opérationnels.",
+          "en": "Our experts deliver a clear, prioritized roadmap to improve your overall security posture and reduce operational risk."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Validation des normes et bonnes pratiques",
+          "en": "Standards & best practices validation"
+        },
+        "accroche": {
+          "fr": "Assurez-vous que votre réseau respecte les dernières exigences de conformité et les normes internationales.",
+          "en": "Ensure your network meets the latest compliance requirements and international standards."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Validation par rapport aux référentiels ISO 27001, NIST, RGPD et NIS2",
+              "en": "Validation against ISO 27001, NIST, GDPR, and NIS2 frameworks"
+            }
+          },
+          {
+            "d": {
+              "fr": "Vérification de la documentation de sécurité et de configuration",
+              "en": "Verification of security and configuration documentation"
+            }
+          },
+          {
+            "d": {
+              "fr": "Alignement avec les meilleures pratiques spécifiques aux fournisseurs",
+              "en": "Alignment with vendor-specific best practices"
+            }
+          },
+          {
+            "d": {
+              "fr": "Examen des processus de gestion du changement et opérationnels",
+              "en": "Review of change management and operational processes"
+            }
+          },
+          {
+            "d": {
+              "fr": "Soutien à la préparation aux audits et à la certification",
+              "en": "Support for audit preparation and certification readiness"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Grâce à notre accompagnement, votre organisation maintient une conformité continue et une excellence opérationnelle tout en respectant les normes internationales.",
+          "en": "With our guidance, your organization maintains continuous compliance and operational excellence while meeting global standards."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Face à la multiplication des cybermenaces et à l'évolution des réglementations, l'audit et la conformité des réseaux sont plus importants que jamais.",
+        "en": "With increasing cyber threats and evolving regulations, network auditing and compliance are more critical than ever."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "L'augmentation des exigences réglementaires impose des contrôles et des rapports plus stricts",
+            "en": "Rising regulatory requirements demand stronger controls and reporting"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les environnements hybrides et cloud accentuent les défis en matière de visibilité",
+            "en": "Hybrid and cloud environments increase visibility challenges"
+          }
+        },
+        {
+          "d": {
+            "fr": "Le non-respect des règles peut entraîner des sanctions financières importantes et des violations de données",
+            "en": "Non-compliance can lead to costly penalties and data breaches"
+          }
+        },
+        {
+          "d": {
+            "fr": "L'optimisation continue est essentielle à la résilience et à la performance",
+            "en": "Continuous optimization is essential for resilience and performance"
+          }
+        },
+        {
+          "d": {
+            "fr": "La confiance des clients repose sur des opérations transparentes et conformes",
+            "en": "Client trust depends on transparent, compliant operations"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Il est temps d'évaluer et de renforcer proactivement votre réseau avant que les risques ne se transforment en incidents.",
+        "en": "Now is the time to proactively evaluate and strengthen your network before risks turn into incidents."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA allie expertise en audit, précision technique et connaissance approfondie de la réglementation pour protéger votre infrastructure.",
+        "en": "SECIA combines audit expertise, technical precision, and deep regulatory understanding to safeguard your infrastructure."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Ingénieurs certifiés possédant une expérience intersectorielle en sécurité et conformité informatique",
+            "en": "Certified engineers with cross-sector experience in IT security and compliance"
+          }
+        },
+        {
+          "d": {
+            "fr": "Une approche indépendante des fournisseurs garantissant des résultats impartiaux et exploitables",
+            "en": "Vendor-neutral approach ensuring unbiased, actionable results"
+          }
+        },
+        {
+          "d": {
+            "fr": "Des recommandations personnalisées, alignées sur vos objectifs commerciaux et votre profil de risque",
+            "en": "Tailored recommendations aligned with your business goals and risk profile"
+          }
+        },
+        {
+          "d": {
+            "fr": "Des rapports complets présentant des priorités de remédiation claires",
+            "en": "Comprehensive reports with clear remediation priorities"
+          }
+        },
+        {
+          "d": {
+            "fr": "Partenariat proactif pour la conformité et le suivi continus",
+            "en": "Proactive partnership for ongoing compliance and monitoring"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Choisir SECIA, c'est s'associer à des experts qui apportent des améliorations mesurables, et pas seulement des évaluations.",
+        "en": "Choosing SECIA means partnering with experts who deliver measurable improvements, not just assessments."
+      }
+    }
+  },
+  "conception-migration": {
+    "pole": "reseau",
+    "page": "conception-migration",
+    "image": "grok/service-conception-migration",
+    "titre": {
+      "fr": "Conception, mise en œuvre et migration",
+      "en": "Design, implementation & migration"
+    },
+    "intro": {
+      "fr": "SECIA fournit des services complets de conception, mise en œuvre et migration de réseaux, adaptés aux objectifs de votre organisation. De l’architecture initiale au déploiement fluide et à la modernisation, nos experts garantissent que votre réseau reste robuste, évolutif et prêt pour l’avenir.",
+      "en": "SECIA delivers end-to-end network design, implementation, and migration services tailored to your organization’s goals. From initial architecture to seamless deployment and modernization, our experts ensure your network remains robust, scalable, and future-ready."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Conception et architecture de réseaux",
+          "en": "Network design & architecture"
+        },
+        "accroche": {
+          "fr": "Bâtissez les fondations de votre infrastructure informatique avec précision et fiabilité.",
+          "en": "Build the foundation of your IT infrastructure with precision and reliability."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Évaluation détaillée de votre infrastructure actuelle et de vos besoins commerciaux",
+              "en": "Detailed assessment of your current infrastructure and business needs"
+            }
+          },
+          {
+            "d": {
+              "fr": "Conception d' architectures de réseau résilientes et performantes",
+              "en": "Design of resilient, high-performance network architectures"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration de la sécurité et de l'évolutivité à chaque niveau",
+              "en": "Integration of security and scalability into every layer"
+            }
+          },
+          {
+            "d": {
+              "fr": "Planification de la connectivité cloud et hybride",
+              "en": "Planning for cloud and hybrid connectivity"
+            }
+          },
+          {
+            "d": {
+              "fr": "Documentation conforme aux normes et aux meilleures pratiques du secteur",
+              "en": "Documentation aligned with industry standards and best practices"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nos ingénieurs conçoivent des réseaux qui allient flexibilité, fiabilité et efficacité à long terme, soutenant ainsi la croissance de votre entreprise depuis ses fondations.",
+          "en": "Our engineers design networks that combine flexibility, reliability, and long-term efficiency, supporting your business growth from the ground up."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Implémentation du réseau",
+          "en": "Network implementation"
+        },
+        "accroche": {
+          "fr": "Transformez votre conception en une infrastructure performante et pleinement opérationnelle.",
+          "en": "Transform your design into a fully operational, high-performance infrastructure."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Déploiement de bout en bout des composants de réseau physiques et virtuels",
+              "en": "End-to-end deployment of physical and virtual network components"
+            }
+          },
+          {
+            "d": {
+              "fr": "Configuration et tests pour garantir des performances optimales",
+              "en": "Configuration and testing to ensure optimal performance"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration transparente avec les systèmes existants et les plateformes tierces",
+              "en": "Seamless integration with existing systems and third-party platforms"
+            }
+          },
+          {
+            "d": {
+              "fr": "Application des politiques de sécurité et gestion des mesures de sécurité lors de la configuration",
+              "en": "Security enforcement and policy management during setup"
+            }
+          },
+          {
+            "d": {
+              "fr": "Validation et optimisation après déploiement",
+              "en": "Post-deployment validation and optimization"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Notre approche structurée de mise en œuvre minimise les perturbations et garantit un fonctionnement optimal de votre réseau dès le premier jour.",
+          "en": "Our structured implementation approach minimizes disruption and ensures your network performs optimally from day one."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Migration de réseau",
+          "en": "Network migration"
+        },
+        "accroche": {
+          "fr": "Modernisez votre réseau en toute confiance, avec efficacité et un temps d'arrêt minimal.",
+          "en": "Modernize your network with confidence, efficiency, and minimal downtime."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Planification complète de la migration basée sur les priorités de l'entreprise",
+              "en": "Comprehensive migration planning based on business priorities"
+            }
+          },
+          {
+            "d": {
+              "fr": "Migration des données et des services avec un risque maîtrisé",
+              "en": "Data and service migration with controlled risk"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration avec les nouvelles technologies et les environnements hybrides",
+              "en": "Integration with new technologies and hybrid environments"
+            }
+          },
+          {
+            "d": {
+              "fr": "Temps d'arrêt nul ou quasi nul pendant la transition",
+              "en": "Zero or near-zero downtime during the transition"
+            }
+          },
+          {
+            "d": {
+              "fr": "Tests, documentation et formation après la finalisation",
+              "en": "Testing, documentation, and training after completion"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nos spécialistes en migration garantissent une transition en douceur, vous aidant à moderniser votre infrastructure sans interrompre vos activités.",
+          "en": "Our migration specialists guarantee a smooth transition, helping you modernize your infrastructure without interrupting business operations."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Les réseaux sont l'épine dorsale de la transformation numérique. Les maintenir efficaces, sécurisés et à jour n'est plus une option.",
+        "en": "Networks are the backbone of digital transformation. Keeping them efficient, secure, and up-to-date is no longer optional."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Les infrastructures traditionnelles peinent à prendre en charge les modèles modernes de cloud et hybrides",
+            "en": "Legacy infrastructures struggle to support modern cloud and hybrid models"
+          }
+        },
+        {
+          "d": {
+            "fr": "La croissance des entreprises exige une connectivité évolutive et agile",
+            "en": "Business growth demands scalable and agile connectivity"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les menaces de cybersécurité ciblent les systèmes et architectures obsolètes",
+            "en": "Cybersecurity threats target outdated systems and architectures"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les exigences en matière de performance augmentent avec le travail à distance et la mondialisation des effectifs",
+            "en": "Performance expectations increase with remote and global workforces"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les initiatives de transformation numérique nécessitent des conceptions robustes et pérennes",
+            "en": "Digital transformation initiatives require robust, future-proof designs"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Moderniser votre réseau aujourd'hui garantit stabilité, efficacité et résilience pour demain.",
+        "en": "Modernizing your network today ensures stability, efficiency, and resilience for tomorrow."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA allie maîtrise technique et expérience de terrain pour concevoir et déployer des infrastructures réseau avancées qui évoluent avec votre entreprise.",
+        "en": "SECIA combines technical mastery and field experience to design and deliver advanced network infrastructures that evolve with your business."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Ingénieurs certifiés possédant une expertise sur de nombreux fournisseurs et technologies",
+            "en": "Certified engineers with expertise across multiple vendors and technologies"
+          }
+        },
+        {
+          "d": {
+            "fr": "Méthodologie éprouvée garantissant fiabilité et évolutivité à long terme",
+            "en": "Proven methodology ensuring reliability and long-term scalability"
+          }
+        },
+        {
+          "d": {
+            "fr": "Des solutions sur mesure adaptées à votre environnement opérationnel",
+            "en": "Tailored solutions adapted to your operational environment"
+          }
+        },
+        {
+          "d": {
+            "fr": "Assistance 24 h sur 24 et 7 jours sur 7 pour assurer la continuité et une gestion proactive",
+            "en": "24/7 support to ensure continuity and proactive management"
+          }
+        },
+        {
+          "d": {
+            "fr": "Partenaire de confiance pour les entreprises de tous les secteurs et de toutes les régions",
+            "en": "Trusted partner for enterprises across industries and regions"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Avec SECIA, vous bénéficiez de bien plus qu'un simple prestataire de services : vous obtenez un partenaire stratégique engagé pour votre réussite.",
+        "en": "With SECIA, you gain more than a service provider, you gain a strategic partner committed to your success."
+      }
+    }
+  },
+  "formation": {
+    "pole": "reseau",
+    "page": "formation",
+    "image": "grok/service-formation",
+    "titre": {
+      "fr": "Formation et transfert de connaissances",
+      "en": "Training & knowledge transfer"
+    },
+    "intro": {
+      "fr": "Chez SECIA, nous croyons que la technologie n’est solide que grâce aux personnes qui la pilotent. Nos services de formation et de transfert de connaissances aident vos équipes à développer les compétences, la confiance et la compréhension nécessaires pour gérer et faire évoluer efficacement vos infrastructures IT et réseau. Grâce à un apprentissage pratique, un support continu et des simulations réelles, nous garantissons une excellence opérationnelle et une autonomie durables.",
+      "en": "At SECIA, we believe that technology is only as strong as the people behind it."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Formation et transfert de connaissances",
+          "en": "Knowledge transfer & training"
+        },
+        "accroche": {
+          "fr": "Transformez vos équipes en experts confiants, équipés des bons outils et connaissances.",
+          "en": "Turn your teams into confident experts equipped with the right tools and understanding."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Programmes de formation personnalisés adaptés à votre infrastructure et à vos objectifs",
+              "en": "Customized training programs tailored to your infrastructure and objectives"
+            }
+          },
+          {
+            "d": {
+              "fr": "Sessions couvrant la conception réseau, la sécurité et les opérations",
+              "en": "Sessions covering network design, security, and operations"
+            }
+          },
+          {
+            "d": {
+              "fr": "Ateliers pratiques animés par des ingénieurs certifiés SECIA",
+              "en": "Hands-on workshops led by certified SECIA engineers"
+            }
+          },
+          {
+            "d": {
+              "fr": "Documentation et guides étape par étape pour les procédures clés",
+              "en": "Documentation and step-by-step guidance for key procedures"
+            }
+          },
+          {
+            "d": {
+              "fr": "Support pour la préparation aux certifications et le partage interne des connaissances",
+              "en": "Support for certification preparation and internal knowledge sharing"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nous veillons à ce que vos équipes acquièrent à la fois la profondeur technique et les compétences pratiques nécessaires pour gérer efficacement des environnements complexes.",
+          "en": "We ensure that your teams gain both the technical depth and the practical skills needed to manage complex environments effectively."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Services de soutien continu",
+          "en": "Ongoing support services"
+        },
+        "accroche": {
+          "fr": "Bénéficiez d’un support durable après la livraison du projet grâce à une assistance et une optimisation continues.",
+          "en": "Stay supported long after project delivery with continuous assistance and optimization."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Support technique 24/7 par des ingénieurs certifiés",
+              "en": "24/7 technical support from certified engineers"
+            }
+          },
+          {
+            "d": {
+              "fr": "Surveillance proactive et assistance à la résolution des incidents",
+              "en": "Proactive monitoring and incident resolution assistance"
+            }
+          },
+          {
+            "d": {
+              "fr": "Revue régulière pour maintenir les systèmes optimisés et à jour",
+              "en": "Regular reviews to keep systems optimized and up to date"
+            }
+          },
+          {
+            "d": {
+              "fr": "Accès à des canaux de support dédiés pour une intervention rapide",
+              "en": "Access to dedicated support channels for quick intervention"
+            }
+          },
+          {
+            "d": {
+              "fr": "Recommandations d’amélioration continue pour une stabilité à long terme",
+              "en": "Continuous improvement recommendations for long-term stability"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Grâce à un support continu, vos opérations restent efficaces et sécurisées tandis que vos équipes se concentrent sur les objectifs stratégiques.",
+          "en": "With ongoing support, your operations remain efficient and secure while your teams focus on strategic goals."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Démonstrations de preuve de concept et en laboratoire",
+          "en": "PoC & lab demonstrations"
+        },
+        "accroche": {
+          "fr": "Expérimentez avant la mise en œuvre grâce à nos solutions de proof-of-concept et de tests en laboratoire.",
+          "en": "Experience before implementation with our proof-of-concept and lab testing solutions."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Démonstrations en direct des solutions réseau et de sécurité",
+              "en": "Live demonstrations of network and security solutions"
+            }
+          },
+          {
+            "d": {
+              "fr": "Environnements de simulation pour tester configurations et intégrations",
+              "en": "Simulation environments to test configurations and integrations"
+            }
+          },
+          {
+            "d": {
+              "fr": "Évaluation des performances et validation de la compatibilité",
+              "en": "Performance benchmarking and compatibility validation"
+            }
+          },
+          {
+            "d": {
+              "fr": "Tests de scénarios réels pour une évaluation sans risque",
+              "en": "Real-world scenario testing for risk-free evaluation"
+            }
+          },
+          {
+            "d": {
+              "fr": "Ateliers collaboratifs pour les équipes techniques et de direction",
+              "en": "Collaborative workshops for technical and management teams"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nos laboratoires offrent un espace sécurisé pour l’expérimentation, permettant à votre organisation de prendre des décisions technologiques confiantes et basées sur les données.",
+          "en": "Our labs provide a safe space for experimentation, helping your organization make confident, data-driven technology decisions."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "Dans un paysage numérique en constante évolution, les organisations doivent faire évoluer continuellement leurs capacités techniques et renforcer leurs équipes internes.",
+        "en": "In a fast-changing digital landscape, organizations must continuously evolve their technical capabilities and empower internal teams."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Les infrastructures complexes exigent une gestion qualifiée et une grande adaptabilité",
+            "en": "Complex infrastructures demand skilled management and adaptability"
+          }
+        },
+        {
+          "d": {
+            "fr": "L’innovation technologique nécessite une formation et une sensibilisation continues",
+            "en": "Technological innovation requires ongoing training and awareness"
+          }
+        },
+        {
+          "d": {
+            "fr": "Le turnover du personnel peut entraîner la perte de connaissances critiques",
+            "en": "Staff turnover can lead to loss of critical knowledge"
+          }
+        },
+        {
+          "d": {
+            "fr": "Les exigences réglementaires exigent de plus en plus de compétences techniques",
+            "en": "Regulatory requirements increasingly demand technical competence"
+          }
+        },
+        {
+          "d": {
+            "fr": "La continuité des activités dépend d’équipes informées et compétentes",
+            "en": "Business continuity depends on informed and capable teams"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Développer l’expertise interne dès aujourd’hui garantit agilité, résilience et autonomie demain.",
+        "en": "Building internal expertise today ensures agility, resilience, and independence tomorrow."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA se distingue par sa capacité à combiner expertise technique, expérience pédagogique et collaboration continue.",
+        "en": "SECIA stands out for its ability to combine technical depth, educational experience, and continuous collaboration."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Formateurs certifiés avec une expérience pratique sur des projets réels",
+            "en": "Certified trainers with hands-on experience in real-world projects"
+          }
+        },
+        {
+          "d": {
+            "fr": "Approche d’apprentissage pratique axée sur les résultats appliqués",
+            "en": "Practical learning approach focused on applied results"
+          }
+        },
+        {
+          "d": {
+            "fr": "Programmes personnalisés alignés sur vos technologies et objectifs",
+            "en": "Customized programs aligned with your technologies and goals"
+          }
+        },
+        {
+          "d": {
+            "fr": "Partenariats à long terme pour une amélioration continue et la croissance",
+            "en": "Long-term partnerships for continuous improvement and growth"
+          }
+        },
+        {
+          "d": {
+            "fr": "Environnements de laboratoire à la pointe pour des démonstrations et tests en direct",
+            "en": "State-of-the-art lab environments for live demonstrations and testing"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Avec SECIA, vous obtenez plus qu’une formation : vous bénéficiez d’une base durable de connaissances, de confiance et d’innovation.",
+        "en": "With SECIA, you gain more than training you gain a sustainable foundation of knowledge, confidence, and innovation."
+      }
+    }
+  },
+  "labs-poc": {
+    "pole": "reseau",
+    "page": "laboratoires-poc",
+    "image": "grok/service-labs-poc",
+    "titre": {
+      "fr": "Laboratoires de validation de concept",
+      "en": "Proof-of-concept labs"
+    },
+    "intro": {
+      "fr": "SECIA se distingue par sa capacité à combiner profondeur technique, expérience pédagogique et collaboration continue.",
+      "en": "SECIA stands out for its ability to combine technical depth, educational experience, and continuous collaboration."
+    },
+    "familles": [
+      {
+        "titre": {
+          "fr": "Contrôle d'accès",
+          "en": "Access control"
+        },
+        "accroche": {
+          "fr": "Validez vos stratégies d’identité et d’accès dans un environnement de test sécurisé.",
+          "en": "Validate your identity and access strategies in a secure testing environment."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Simulation des frameworks NAC et ZTNA dans un laboratoire contrôlé",
+              "en": "Simulation of NAC and ZTNA frameworks in a controlled lab setup"
+            }
+          },
+          {
+            "d": {
+              "fr": "Tests des politiques d’authentification et d’autorisation",
+              "en": "Testing of authentication and authorization policies"
+            }
+          },
+          {
+            "d": {
+              "fr": "Évaluation du comportement d’accès des utilisateurs, appareils et applications",
+              "en": "Evaluation of user, device, and application access behavior"
+            }
+          },
+          {
+            "d": {
+              "fr": "Intégration avec l’infrastructure de sécurité existante",
+              "en": "Integration with existing security infrastructure"
+            }
+          },
+          {
+            "d": {
+              "fr": "Vérification de la conformité et de la préparation opérationnelle",
+              "en": "Verification of compliance and operational readiness"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nos tests de PoC garantissent que seuls les utilisateurs et appareils de confiance ont accès, renforçant ainsi la posture de sécurité de votre organisation.",
+          "en": "Our PoC testing ensures that only trusted users and devices gain access strengthening your organization’s security posture."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Architecture réseau",
+          "en": "Network architecture"
+        },
+        "accroche": {
+          "fr": "Concevez et validez un réseau évolutif répondant aux exigences du monde réel.",
+          "en": "Design and validate a scalable network that meets real-world demands."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Modélisation des couches cœur, distribution et accès pour la résilience",
+              "en": "Modeling of core, distribution, and access layers for resilience"
+            }
+          },
+          {
+            "d": {
+              "fr": "Évaluation des performances sous charges simulées de production",
+              "en": "Performance benchmarking under simulated production workloads"
+            }
+          },
+          {
+            "d": {
+              "fr": "Tests de redondance, basculement et mécanismes de routage",
+              "en": "Testing of redundancy, failover, and routing mechanisms"
+            }
+          },
+          {
+            "d": {
+              "fr": "Analyse des intégrations cloud et hybrides",
+              "en": "Assessment of cloud and hybrid integrations"
+            }
+          },
+          {
+            "d": {
+              "fr": "Validation de la documentation de conception et des plans de scalabilité",
+              "en": "Validation of design documentation and scalability plans"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Grâce à une évaluation complète du PoC, nous garantissons que votre architecture réseau est prête pour la production avec une fiabilité et des performances optimisées.",
+          "en": "Through comprehensive PoC evaluation, we ensure your network architecture is ready for production with optimized reliability and performance."
+        }
+      },
+      {
+        "titre": {
+          "fr": "Intégration transparente",
+          "en": "Seamless integration"
+        },
+        "accroche": {
+          "fr": "Assurez-vous que vos nouvelles technologies s’intègrent parfaitement à votre environnement existant.",
+          "en": "Ensure your new technologies align perfectly with your existing environment."
+        },
+        "points": [
+          {
+            "d": {
+              "fr": "Tests de compatibilité sur des infrastructures multi-fournisseurs",
+              "en": "Compatibility testing across multi-vendor infrastructures"
+            }
+          },
+          {
+            "d": {
+              "fr": "Validation des intégrations basées sur API et des workflows automatisés",
+              "en": "Validation of API-based integrations and automation workflows"
+            }
+          },
+          {
+            "d": {
+              "fr": "Simulations en temps réel des flux d’applications et de données",
+              "en": "Real-time simulations of application and data flows"
+            }
+          },
+          {
+            "d": {
+              "fr": "Résolution des problèmes d’interopérabilité et de sécurité",
+              "en": "Troubleshooting of interoperability and security issues"
+            }
+          },
+          {
+            "d": {
+              "fr": "Tests du comportement complet du système avant le déploiement",
+              "en": "Testing of end-to-end system behavior before deployment"
+            }
+          }
+        ],
+        "conclusion": {
+          "fr": "Nous assurons un processus d’intégration fluide et testé qui minimise les interruptions et accélère le succès de votre projet.",
+          "en": "We deliver a smooth, well-tested integration process that minimizes downtime and accelerates your project’s success."
+        }
+      }
+    ],
+    "maintenant": {
+      "accroche": {
+        "fr": "À mesure que les systèmes IT deviennent plus complexes, les tests avant déploiement sont essentiels pour éviter des risques et des interruptions coûteux.",
+        "en": "As IT systems grow more complex, testing before deployment has become critical to avoid costly risks and disruptions."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Complexité accrue des infrastructures cloud, hybrides et sur site",
+            "en": "Increased complexity across cloud, hybrid, and on-prem infrastructures"
+          }
+        },
+        {
+          "d": {
+            "fr": "Risques cybersécurité liés aux intégrations non testées et aux erreurs de configuration",
+            "en": "Cybersecurity risks from untested integrations and misconfigurations"
+          }
+        },
+        {
+          "d": {
+            "fr": "La continuité des activités nécessite des performances vérifiées avant la mise en production",
+            "en": "Business continuity requires verified performance before go-live"
+          }
+        },
+        {
+          "d": {
+            "fr": "Optimisation du budget grâce à la validation avant investissement",
+            "en": "Budget optimization through validation before investment"
+          }
+        },
+        {
+          "d": {
+            "fr": "Des cycles de déploiement plus rapides nécessitent des solutions fiables et pré-testées",
+            "en": "Faster deployment cycles need reliable, pre-tested solutions"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "Réaliser des Proofs of Concept dès aujourd’hui permet de gagner du temps, de réduire les coûts et d’éviter les interruptions opérationnelles demain.",
+        "en": "Conducting Proofs of Concept today saves time, cost, and operational disruption tomorrow."
+      }
+    },
+    "pourquoi": {
+      "accroche": {
+        "fr": "SECIA apporte à chaque projet de validation de concept une précision technique, des méthodologies éprouvées et une expertise certifiée.",
+        "en": "SECIA brings technical precision, proven methodologies, and certified expertise to every proof-of-concept project."
+      },
+      "points": [
+        {
+          "d": {
+            "fr": "Des ingénieurs certifiés par le fournisseur et possédant une expérience concrète des réseaux d'entreprise",
+            "en": "Vendor-certified engineers experienced in real-world enterprise networks"
+          }
+        },
+        {
+          "d": {
+            "fr": "Environnements de laboratoire de pointe pour des simulations réalistes",
+            "en": "State-of-the-art lab environments for realistic simulations"
+          }
+        },
+        {
+          "d": {
+            "fr": "Processus de test collaboratif avec les équipes clientes et les parties prenantes",
+            "en": "Collaborative testing process with client teams and stakeholders"
+          }
+        },
+        {
+          "d": {
+            "fr": "Résultats documentés et recommandations claires pour le déploiement en production",
+            "en": "Documented results and clear recommendations for production rollout"
+          }
+        },
+        {
+          "d": {
+            "fr": "Assistance complète pour la transition de la preuve de concept à la mise en œuvre",
+            "en": "Full transition support from PoC to implementation"
+          }
+        }
+      ],
+      "conclusion": {
+        "fr": "En collaborant avec SECIA, vous avez l'assurance que vos solutions informatiques sont validées, efficaces et prêtes à être déployées en toute confiance.",
+        "en": "Partnering with SECIA ensures that your IT solutions are validated, efficient, and ready for deployment with confidence."
+      }
+    }
+  },
+  "_corrections": [
+    "Services de sécurité managés : le site actuel répète sous « Gestion des vulnérabilités » (FR) et « Security Device Management » (EN) le bloc Web/API de la page Tests d'intrusion ; ce doublon est retiré. Le bloc « Surveillance externe » (EN : External Monitoring) n'a pas de contenu propre : à compléter.",
+    "Solutions sans fil : « Levés topographiques et nivellement du site » (traduction erronée de Site Survey & Planning) devient « Étude de site et planification ».",
+    "Audits et conformité des réseaux : le premier titre était resté en anglais sur la page française.",
+    "Formation : fautes de frappe corrigées dans le premier titre (« transfer de conaissances »).",
+    "Laboratoires de validation de concept : l'introduction et les trois titres étaient en anglais sur la page française ; ils sont traduits.",
+    "Version anglaise : fautes corrigées dans deux titres (« Dashboars », « Pracices »)."
+  ]
+}

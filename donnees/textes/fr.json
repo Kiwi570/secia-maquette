@@ -40,8 +40,9 @@
     "schemaIllustratif": "Schéma illustratif",
     "aCompleter": "à compléter",
     "formSimule": "Formulaire simulé : rien n'est envoyé dans cette maquette.",
-    "mentionDonnees": "Vos données servent uniquement à traiter votre demande. <a href=\"/mentions-legales#confidentialite\">Politique de confidentialité</a> (à compléter).",
-    "barreAppel": "Appel 24/7"
+    "mentionDonnees": "Vos données servent uniquement à traiter votre demande. <a href=\"/confidentialite\">Politique de confidentialité</a> (texte du groupe, à adapter).",
+    "barreAppel": "Appel 24/7",
+    "legal": "Informations légales"
   },
   "plans": {
     "internet": "INTERNET",
@@ -130,6 +131,139 @@
       "nav": "Liaison introuvable",
       "partageAlt": "Page introuvable",
       "accroche": "Liaison introuvable"
+    },
+    "integration-conseil": {
+      "titre": "Intégration et conseil en sécurité : SECIA",
+      "description": "Notre équipe est composée d’ingénieurs et de consultants possédant une expertise approfondie des technologies de sécurité modernes et une connaissance des menaces et vulnérabilités actuelles.",
+      "nav": "Intégration et conseil en sécurité",
+      "partageAlt": "Intégration et conseil en sécurité par SECIA",
+      "accroche": "Notre équipe est composée d’ingénieurs et de consultants possédant une expertise approfondie des technologies de sécurité modernes et une connaissance des menaces et vulnérabilités actuelles."
+    },
+    "audits-securite": {
+      "titre": "Audits et évaluations de sécurité : SECIA",
+      "description": "Maintenir une architecture de sécurité solide et résiliente représente un défi dans un environnement commercial en constante évolution, devant supporter un large éventail d’applications et de services",
+      "nav": "Audits et évaluations de sécurité",
+      "partageAlt": "Audits et évaluations de sécurité par SECIA",
+      "accroche": "Maintenir une architecture de sécurité solide et résiliente représente un défi dans un environnement commercial en constante évolution, devant supporter un large éventail d’applications et de services"
+    },
+    "securite-managee": {
+      "titre": "Services de sécurité managés : SECIA",
+      "description": "Assurez une protection continue de votre environnement informatique grâce aux Services de Sécurité Managés (MSS) de SECIA.",
+      "nav": "Services de sécurité managés",
+      "partageAlt": "Services de sécurité managés par SECIA",
+      "accroche": "Assurez une protection continue de votre environnement informatique grâce aux Services de Sécurité Managés (MSS) de SECIA."
+    },
+    "surveillance-csoc": {
+      "titre": "Surveillance et renseignement (CSOC) : SECIA",
+      "description": "Repérez les menaces avant qu’elles n’agissent grâce au Centre d’Opérations de Cybersécurité (CSOC) de SECIA et à nos services de renseignement sur les menaces exploitables.",
+      "nav": "Surveillance et renseignement (CSOC)",
+      "partageAlt": "Surveillance et renseignement (CSOC) par SECIA",
+      "accroche": "Repérez les menaces avant qu’elles n’agissent grâce au Centre d’Opérations de Cybersécurité (CSOC) de SECIA et à nos services de renseignement sur les menaces exploitables."
+    },
+    "reponse-incidents": {
+      "titre": "Réponse aux incidents (CSIRT) : SECIA",
+      "description": "Réagissez rapidement et minimisez les dommages avec l’équipe de réponse aux incidents de cybersécurité (CSIRT) de SECIA.",
+      "nav": "Réponse aux incidents (CSIRT)",
+      "partageAlt": "Réponse aux incidents (CSIRT) par SECIA",
+      "accroche": "Réagissez rapidement et minimisez les dommages avec l’équipe de réponse aux incidents de cybersécurité (CSIRT) de SECIA."
+    },
+    "reseau-entreprise": {
+      "titre": "Réseau d'entreprise : SECIA",
+      "description": "Chez SECIA, nous construisons des infrastructures réseau d’entreprise garantissant stabilité, rapidité et évolutivité.",
+      "nav": "Réseau d'entreprise",
+      "partageAlt": "Réseau d'entreprise par SECIA",
+      "accroche": "Chez SECIA, nous construisons des infrastructures réseau d’entreprise garantissant stabilité, rapidité et évolutivité."
+    },
+    "connectivite-wan-cloud": {
+      "titre": "Connectivité WAN et cloud : SECIA",
+      "description": "Travailler avec SECIA signifie travailler avec une équipe qui combine excellence technique, certifications reconnues et expérience mondiale éprouvée dans les déploiements réseau.",
+      "nav": "Connectivité WAN et cloud",
+      "partageAlt": "Connectivité WAN et cloud par SECIA",
+      "accroche": "Travailler avec SECIA signifie travailler avec une équipe qui combine excellence technique, certifications reconnues et expérience mondiale éprouvée dans les déploiements réseau."
+    },
+    "sdn": {
+      "titre": "Réseaux définis par logiciel (SDN) : SECIA",
+      "description": "SECIA conçoit et fournit des solutions de connectivité WAN et cloud performantes, permettant une communication fluide entre vos bureaux, utilisateurs et environnements cloud.",
+      "nav": "Réseaux définis par logiciel (SDN)",
+      "partageAlt": "Réseaux définis par logiciel (SDN) par SECIA",
+      "accroche": "SECIA conçoit et fournit des solutions de connectivité WAN et cloud performantes, permettant une communication fluide entre vos bureaux, utilisateurs et environnements cloud."
+    },
+    "sans-fil": {
+      "titre": "Solutions sans fil : SECIA",
+      "description": "Chez SECIA, nous concevons et déployons des réseaux sans fil d’entreprise offrant rapidité, fiabilité et couverture dans toutes les parties de votre organisation.",
+      "nav": "Solutions sans fil",
+      "partageAlt": "Solutions sans fil par SECIA",
+      "accroche": "Chez SECIA, nous concevons et déployons des réseaux sans fil d’entreprise offrant rapidité, fiabilité et couverture dans toutes les parties de votre organisation."
+    },
+    "automatisation-surveillance": {
+      "titre": "Automatisation et surveillance : SECIA",
+      "description": "SECIA aide les organisations à mettre en place des réseaux plus intelligents et plus résilients grâce à l'automatisation et à la surveillance en temps réel.",
+      "nav": "Automatisation et surveillance",
+      "partageAlt": "Automatisation et surveillance par SECIA",
+      "accroche": "SECIA aide les organisations à mettre en place des réseaux plus intelligents et plus résilients grâce à l'automatisation et à la surveillance en temps réel."
+    },
+    "audits-reseau": {
+      "titre": "Audits et conformité des réseaux : SECIA",
+      "description": "SECIA fournit des services complets d’audit réseau et de conformité pour aider les organisations à évaluer, renforcer et aligner leurs infrastructures IT avec les réglementations et les meilleures pra",
+      "nav": "Audits et conformité des réseaux",
+      "partageAlt": "Audits et conformité des réseaux par SECIA",
+      "accroche": "SECIA fournit des services complets d’audit réseau et de conformité pour aider les organisations à évaluer, renforcer et aligner leurs infrastructures IT avec les réglementations et les meilleures pra"
+    },
+    "conception-migration": {
+      "titre": "Conception, mise en œuvre et migration : SECIA",
+      "description": "SECIA fournit des services complets de conception, mise en œuvre et migration de réseaux, adaptés aux objectifs de votre organisation.",
+      "nav": "Conception, mise en œuvre et migration",
+      "partageAlt": "Conception, mise en œuvre et migration par SECIA",
+      "accroche": "SECIA fournit des services complets de conception, mise en œuvre et migration de réseaux, adaptés aux objectifs de votre organisation."
+    },
+    "formation": {
+      "titre": "Formation et transfert de connaissances : SECIA",
+      "description": "Chez SECIA, nous croyons que la technologie n’est solide que grâce aux personnes qui la pilotent.",
+      "nav": "Formation et transfert de connaissances",
+      "partageAlt": "Formation et transfert de connaissances par SECIA",
+      "accroche": "Chez SECIA, nous croyons que la technologie n’est solide que grâce aux personnes qui la pilotent."
+    },
+    "laboratoires-poc": {
+      "titre": "Laboratoires de validation de concept : SECIA",
+      "description": "SECIA se distingue par sa capacité à combiner profondeur technique, expérience pédagogique et collaboration continue.",
+      "nav": "Laboratoires de validation de concept",
+      "partageAlt": "Laboratoires de validation de concept par SECIA",
+      "accroche": "SECIA se distingue par sa capacité à combiner profondeur technique, expérience pédagogique et collaboration continue."
+    },
+    "reseau": {
+      "titre": "Réseau : SECIA",
+      "description": "Réseau d’entreprise, WAN et cloud, SDN, sans fil, automatisation, audits, conception, formation et laboratoires : les neuf services réseau de SECIA.",
+      "nav": "Réseau",
+      "partageAlt": "Les services réseau de SECIA",
+      "accroche": "Des connexions rapides, fiables et sécurisées."
+    },
+    "nis2": {
+      "titre": "Conformité NIS2 : SECIA",
+      "description": "Champ d’application, seuils, secteurs, sanctions et dix mesures de l’article 21 : faites le point sur NIS2 avec SECIA.",
+      "nav": "Conformité NIS2",
+      "partageAlt": "Conformité NIS2 avec SECIA",
+      "accroche": "Où en êtes-vous des dix mesures NIS2 ?"
+    },
+    "carrieres": {
+      "titre": "Carrières : SECIA",
+      "description": "Offres d’emploi de SECIA et de NPS Consult Group à Mont-Saint-Guibert et à Dalheim, et candidature spontanée.",
+      "nav": "Carrières",
+      "partageAlt": "Carrières chez SECIA",
+      "accroche": "Votre prochain défi commence ici."
+    },
+    "confidentialite": {
+      "titre": "Politique de confidentialité : SECIA",
+      "description": "Données collectées, finalités, partage, transferts, droits et contact.",
+      "nav": "Confidentialité",
+      "partageAlt": "Politique de confidentialité",
+      "accroche": "Politique de confidentialité"
+    },
+    "conditions-generales": {
+      "titre": "Conditions générales : SECIA",
+      "description": "Services, utilisation du site, propriété intellectuelle, confidentialité, paiement et responsabilité.",
+      "nav": "Conditions générales",
+      "partageAlt": "Conditions générales",
+      "accroche": "Conditions générales"
     }
   },
   "accueil": {
@@ -261,7 +395,7 @@
     },
     "confidentialite": {
       "titre": "Confidentialité",
-      "texte": "Politique de confidentialité à compléter (RGPD) : données recueillies, finalité, durée de conservation, droits, contact du délégué à la protection des données."
+      "texte": "La politique de confidentialité a sa propre page. Elle reprend le texte actuel de NPS Consult Group S.A., à adapter pour SECIA."
     },
     "fiche": {
       "titre": "À fournir par le client",
@@ -489,5 +623,166 @@
       "texte": "Pour une cyberattaque en cours, n'attendez pas un rendez-vous : appelez la ligne d'urgence.",
       "alt": "Le plateau des bureaux, postes de travail et écrans"
     }
+  },
+  "service": {
+    "pole": {
+      "cyber": "Pôle cybersécurité",
+      "reseau": "Pôle réseau"
+    },
+    "retour": {
+      "cyber": "Tous les services cybersécurité",
+      "reseau": "Tous les services réseau"
+    },
+    "volets": "volets",
+    "lieux": "Belgique et Luxembourg",
+    "familles": {
+      "surtitre": "Ce que couvre le service",
+      "titre": "Le service, volet par volet."
+    },
+    "raisons": {
+      "surtitre": "Le contexte",
+      "titre": "Agir maintenant, avec la bonne équipe."
+    },
+    "maintenant": "Pourquoi maintenant ?",
+    "pourquoi": "Pourquoi SECIA ?",
+    "autres": {
+      "cyber": "Autres planches du pôle cybersécurité",
+      "reseau": "Autres planches du pôle réseau"
+    },
+    "aCompleter": "Contenu à fournir par SECIA : ce volet n'a pas de texte propre sur le site actuel.",
+    "fin": {
+      "cyber": "Parlons de votre sécurité.",
+      "reseau": "Parlons de votre réseau."
+    },
+    "finTexte": "Précisez votre besoin : un ingénieur revient vers vous."
+  },
+  "reseau": {
+    "surtitre": "Planche 03 · Pôle réseau",
+    "titre": "Réseau",
+    "intro1": "Votre réseau est la colonne vertébrale de vos opérations, et toute interruption peut s’avérer coûteuse. Protéger votre connectivité est essentiel pour maintenir performance et fiabilité.",
+    "intro2": "Nos services réseau garantissent des connexions rapides, fiables et sécurisées, de la conception et du développement jusqu’à la gestion et au support continus.",
+    "voir": "Voir les neuf services",
+    "info": "9 services · de la conception au support",
+    "services": {
+      "titre": "Neuf services, planche par planche.",
+      "texte": "Faites défiler : chaque planche décrit un service et ce qu’il couvre.",
+      "region": "Les neuf services réseau, à faire défiler",
+      "service": "Service"
+    },
+    "cycle": {
+      "surtitre": "Lecture du pôle",
+      "titre": "De la conception au support.",
+      "texte": "Nous fournissons des solutions sur mesure qui rendent vos systèmes efficaces, évolutifs et résilients. Les neuf services, regroupés par moment de la vie du réseau :"
+    },
+    "fin": {
+      "titre": "Parlons de votre réseau.",
+      "texte": "Vous souhaitez en savoir plus sur nos solutions réseau ? Un ingénieur vous répond.",
+      "alt": "Plateau de bureaux de SECIA"
+    }
+  },
+  "nis2p": {
+    "surtitre": "Planche 02.7 · Réglementation",
+    "titre": "Conformité NIS2",
+    "intro1": "La directive NIS2 (UE 2022/2555) est la loi européenne en matière de cybersécurité qui renforce la protection des services critiques et numériques. Elle élargit le périmètre de la première directive NIS, introduit des règles de sécurité et de déclaration plus strictes, et engage la responsabilité de la direction.",
+    "voir": "Les dix mesures",
+    "info": "Directive (UE) 2022/2555 · loi belge du 26 avril 2024",
+    "concerne": {
+      "surtitre": "Champ d'application",
+      "titre": "Êtes-vous concerné ?",
+      "texte": "NIS2 s’applique aux moyennes et grandes entités de 18 secteurs : 11 secteurs hautement critiques (annexe I) et 7 autres secteurs critiques (annexe II). Les États membres devaient identifier les entités essentielles et importantes au plus tard le 17 avril 2025, puis mettre cette liste à jour au moins tous les deux ans.",
+      "seuils": "Seuils de taille",
+      "categorie": "Catégorie",
+      "employes": "Salariés",
+      "ca": "Chiffre d'affaires annuel",
+      "moyenne": "Entité moyenne",
+      "grande": "Grande entité",
+      "seuilsNote": "Seuils simplifiés, tels que présentés sur le site actuel.",
+      "exceptions": "Exceptions : une petite organisation peut malgré tout être classée essentielle ou importante si elle est la seule à fournir un service vital, ou si une interruption aurait un impact sociétal ou économique majeur.",
+      "annexe1": "Secteurs hautement critiques (annexe I)",
+      "annexe2": "Autres secteurs critiques (annexe II)"
+    },
+    "sanctions": {
+      "surtitre": "Sanctions",
+      "titre": "Ce que coûte la non-conformité.",
+      "essentielles": "Entités essentielles",
+      "importantes": "Entités importantes",
+      "montant1": "10 M€",
+      "part1": "ou 2 % du chiffre d’affaires annuel mondial",
+      "montant2": "7 M€",
+      "part2": "ou 1,4 % du chiffre d’affaires annuel mondial",
+      "retenu": "Amendes administratives maximales, le montant le plus élevé étant retenu.",
+      "juridiction": "Complexités juridictionnelles",
+      "j1": "Les entités relèvent de la juridiction de chaque État membre dans lequel elles fournissent des services.",
+      "j2": "Les organisations opérant dans plusieurs pays sont supervisées par toutes les autorités compétentes.",
+      "j3": "Les entités qui dépendent d'activités situées hors UE doivent garantir que leurs opérations dans l'UE restent fonctionnelles en cas de perturbation de ces services."
+    },
+    "mesures": {
+      "texte": "L'article 21, paragraphe 2, de la directive fixe au minimum dix mesures techniques, opérationnelles et organisationnelles, proportionnées au niveau de risque de l'entité. Cochez celles déjà en place."
+    },
+    "fin": {
+      "titre": "Faites le point avec SECIA.",
+      "texte": "SECIA aide les entreprises à évaluer leur conformité, à renforcer leur résilience cyber et à éviter les sanctions.",
+      "alt": "Revue d’un rapport en salle de réunion"
+    }
+  },
+  "carrieres": {
+    "surtitre": "Planche 08 · Carrières",
+    "titre": "Votre prochain défi commence ici.",
+    "intro": "Offres d'emploi de SECIA et de NPS Consult Group, à Mont-Saint-Guibert et à Dalheim. Merci de revenir régulièrement pour voir les mises à jour.",
+    "voir": "Voir les offres",
+    "spontanee": "Candidature spontanée",
+    "info": "4 offres · Belgique et Luxembourg",
+    "offres": {
+      "surtitre": "Offres d'emploi",
+      "titre": "Offres en cours.",
+      "detail": "Description du poste à compléter",
+      "postuler": "Postuler",
+      "alt": "Plateau de bureaux de SECIA"
+    },
+    "form": {
+      "surtitre": "Candidature",
+      "titre": "Vous ne trouvez pas le poste que vous cherchez ?",
+      "texte": "Nous sommes toujours en quête de collaborateurs passionnés prêts à contribuer à notre croissance. Envoyez-nous votre candidature spontanée et laissez-nous découvrir ce que vous pouvez apporter à notre équipe.",
+      "poste": "Poste",
+      "prenom": "Prénom",
+      "nom": "Nom",
+      "email": "E-mail",
+      "tel": "Téléphone",
+      "langues": "Langues",
+      "contrat": "Type de contrat",
+      "choisir": "Choisir",
+      "experience": "Années d'expérience",
+      "cv": "CV",
+      "lettre": "Lettre de motivation (facultatif)",
+      "accord": "J'accepte que mes données soient utilisées pour traiter ma candidature.",
+      "envoyer": "Envoyer ma candidature",
+      "contrats": {
+        "employe": "Employé",
+        "freelance": "Freelance",
+        "stagiaire": "Stagiaire",
+        "etudiant": "Étudiant"
+      },
+      "listeLangues": {
+        "en": "Anglais",
+        "fr": "Français",
+        "de": "Allemand",
+        "nl": "Néerlandais",
+        "lb": "Luxembourgeois"
+      },
+      "alt": "Échange en salle de réunion"
+    }
+  },
+  "legal": {
+    "note": "Texte actuel du site de NPS Consult Group S.A., repris tel quel. À adapter pour SECIA et à faire valider par son conseil juridique.",
+    "noteConditions": "À vérifier : le code postal L-5787 (L-5687 ailleurs sur le site) et le numéro 621 196 349, donné sans indicatif. Le texte d'aide du modèle de l'éditeur de site, publié en tête de la page actuelle, n'est pas repris.",
+    "confidentialite": {
+      "surtitre": "Planche 07.1 · Données personnelles",
+      "titre": "Politique de confidentialité"
+    },
+    "conditions": {
+      "surtitre": "Planche 07.2 · Conditions",
+      "titre": "Conditions générales"
+    },
+    "preambule": "Préambule"
   }
 }

@@ -40,8 +40,9 @@
     "schemaIllustratif": "Illustrative diagram",
     "aCompleter": "to be completed",
     "formSimule": "Simulated form: nothing is sent in this mock-up.",
-    "mentionDonnees": "Your data is only used to handle your request. <a href=\"/en/mentions-legales#confidentialite\">Privacy policy</a> (to be completed).",
-    "barreAppel": "Call 24/7"
+    "mentionDonnees": "Your data is only used to handle your request. <a href=\"/en/confidentialite\">Privacy policy</a> (group text, to be adapted).",
+    "barreAppel": "Call 24/7",
+    "legal": "Legal information"
   },
   "plans": {
     "internet": "INTERNET",
@@ -130,6 +131,139 @@
       "nav": "Link not found",
       "partageAlt": "Page not found",
       "accroche": "Link not found"
+    },
+    "integration-conseil": {
+      "titre": "Security integration & consulting | SECIA",
+      "description": "Our team is composed of engineers and consultants with deep expertise in modern security technologies and awareness of current threats and vulnerabilities.",
+      "nav": "Security integration & consulting",
+      "partageAlt": "Security integration & consulting by SECIA",
+      "accroche": "Our team is composed of engineers and consultants with deep expertise in modern security technologies and awareness of current threats and vulnerabilities."
+    },
+    "audits-securite": {
+      "titre": "Security audits & assessments | SECIA",
+      "description": "Maintaining a solid and resilient security architecture is a challenge in an ever-changing business environment that must support a wide array of applications and services in an evolving threat landsc",
+      "nav": "Security audits & assessments",
+      "partageAlt": "Security audits & assessments by SECIA",
+      "accroche": "Maintaining a solid and resilient security architecture is a challenge in an ever-changing business environment that must support a wide array of applications and services in an evolving threat landsc"
+    },
+    "securite-managee": {
+      "titre": "Managed security services | SECIA",
+      "description": "Maintain continuous protection for your IT environment with SECIA’s Managed Security Services (MSS).",
+      "nav": "Managed security services",
+      "partageAlt": "Managed security services by SECIA",
+      "accroche": "Maintain continuous protection for your IT environment with SECIA’s Managed Security Services (MSS)."
+    },
+    "surveillance-csoc": {
+      "titre": "Monitoring & threat intelligence (CSOC) | SECIA",
+      "description": "See threats before they strike with SECIA’s Cyber Security Operations Center (CSOC) and actionable threat intelligence services.",
+      "nav": "Monitoring & threat intelligence (CSOC)",
+      "partageAlt": "Monitoring & threat intelligence (CSOC) by SECIA",
+      "accroche": "See threats before they strike with SECIA’s Cyber Security Operations Center (CSOC) and actionable threat intelligence services."
+    },
+    "reponse-incidents": {
+      "titre": "Incident response (CSIRT) | SECIA",
+      "description": "React quickly and minimize damage with SECIA’s Cyber Security Incident Response Team (CSIRT).",
+      "nav": "Incident response (CSIRT)",
+      "partageAlt": "Incident response (CSIRT) by SECIA",
+      "accroche": "React quickly and minimize damage with SECIA’s Cyber Security Incident Response Team (CSIRT)."
+    },
+    "reseau-entreprise": {
+      "titre": "Enterprise network | SECIA",
+      "description": "At SECIA, we build enterprise network infrastructures that ensure stability, speed, and scalability.",
+      "nav": "Enterprise network",
+      "partageAlt": "Enterprise network by SECIA",
+      "accroche": "At SECIA, we build enterprise network infrastructures that ensure stability, speed, and scalability."
+    },
+    "connectivite-wan-cloud": {
+      "titre": "WAN & cloud connectivity | SECIA",
+      "description": "Partnering with SECIA means working with a team that combines technical excellence, industry certifications, and proven global experience in network deployments.",
+      "nav": "WAN & cloud connectivity",
+      "partageAlt": "WAN & cloud connectivity by SECIA",
+      "accroche": "Partnering with SECIA means working with a team that combines technical excellence, industry certifications, and proven global experience in network deployments."
+    },
+    "sdn": {
+      "titre": "Software-defined networking (SDN) | SECIA",
+      "description": "SECIA designs and delivers high-performance WAN and cloud connectivity solutions that enable seamless communication between your offices, users, and cloud environments.",
+      "nav": "Software-defined networking (SDN)",
+      "partageAlt": "Software-defined networking (SDN) by SECIA",
+      "accroche": "SECIA designs and delivers high-performance WAN and cloud connectivity solutions that enable seamless communication between your offices, users, and cloud environments."
+    },
+    "sans-fil": {
+      "titre": "Wireless solutions | SECIA",
+      "description": "At SECIA, we design and deploy enterprise-grade wireless networks that deliver speed, reliability, and coverage across every part of your organization.",
+      "nav": "Wireless solutions",
+      "partageAlt": "Wireless solutions by SECIA",
+      "accroche": "At SECIA, we design and deploy enterprise-grade wireless networks that deliver speed, reliability, and coverage across every part of your organization."
+    },
+    "automatisation-surveillance": {
+      "titre": "Automation and monitoring | SECIA",
+      "description": "SECIA helps organizations achieve smarter, more resilient networks through automation and real-time monitoring.",
+      "nav": "Automation and monitoring",
+      "partageAlt": "Automation and monitoring by SECIA",
+      "accroche": "SECIA helps organizations achieve smarter, more resilient networks through automation and real-time monitoring."
+    },
+    "audits-reseau": {
+      "titre": "Network audits & compliance | SECIA",
+      "description": "SECIA provides comprehensive network audit and compliance services to help organizations assess, strengthen, and align their IT infrastructures with regulatory and industry best practices.",
+      "nav": "Network audits & compliance",
+      "partageAlt": "Network audits & compliance by SECIA",
+      "accroche": "SECIA provides comprehensive network audit and compliance services to help organizations assess, strengthen, and align their IT infrastructures with regulatory and industry best practices."
+    },
+    "conception-migration": {
+      "titre": "Design, implementation & migration | SECIA",
+      "description": "SECIA delivers end-to-end network design, implementation, and migration services tailored to your organization’s goals.",
+      "nav": "Design, implementation & migration",
+      "partageAlt": "Design, implementation & migration by SECIA",
+      "accroche": "SECIA delivers end-to-end network design, implementation, and migration services tailored to your organization’s goals."
+    },
+    "formation": {
+      "titre": "Training & knowledge transfer | SECIA",
+      "description": "At SECIA, we believe that technology is only as strong as the people behind it.",
+      "nav": "Training & knowledge transfer",
+      "partageAlt": "Training & knowledge transfer by SECIA",
+      "accroche": "At SECIA, we believe that technology is only as strong as the people behind it."
+    },
+    "laboratoires-poc": {
+      "titre": "Proof-of-concept labs | SECIA",
+      "description": "SECIA stands out for its ability to combine technical depth, educational experience, and continuous collaboration.",
+      "nav": "Proof-of-concept labs",
+      "partageAlt": "Proof-of-concept labs by SECIA",
+      "accroche": "SECIA stands out for its ability to combine technical depth, educational experience, and continuous collaboration."
+    },
+    "reseau": {
+      "titre": "Network | SECIA",
+      "description": "Enterprise network, WAN and cloud, SDN, wireless, automation, audits, design, training and labs: SECIA’s nine network services.",
+      "nav": "Network",
+      "partageAlt": "SECIA network services",
+      "accroche": "Fast, reliable and secure connections."
+    },
+    "nis2": {
+      "titre": "NIS2 compliance | SECIA",
+      "description": "Scope, thresholds, sectors, penalties and the ten Article 21 measures: take stock of NIS2 with SECIA.",
+      "nav": "NIS2 compliance",
+      "partageAlt": "NIS2 compliance with SECIA",
+      "accroche": "Where do you stand on the ten NIS2 measures?"
+    },
+    "carrieres": {
+      "titre": "Careers | SECIA",
+      "description": "Job openings at SECIA and NPS Consult Group in Mont-Saint-Guibert and Dalheim, and open applications.",
+      "nav": "Careers",
+      "partageAlt": "Careers at SECIA",
+      "accroche": "Your next challenge starts here."
+    },
+    "confidentialite": {
+      "titre": "Privacy policy | SECIA",
+      "description": "Data collected, purposes, sharing, transfers, rights and contact.",
+      "nav": "Privacy",
+      "partageAlt": "Privacy policy",
+      "accroche": "Privacy policy"
+    },
+    "conditions-generales": {
+      "titre": "Terms and conditions | SECIA",
+      "description": "Services, website use, intellectual property, confidentiality, payment and liability.",
+      "nav": "Terms and conditions",
+      "partageAlt": "Terms and conditions",
+      "accroche": "Terms and conditions"
     }
   },
   "accueil": {
@@ -261,7 +395,7 @@
     },
     "confidentialite": {
       "titre": "Privacy",
-      "texte": "Privacy policy to be completed (GDPR): data collected, purpose, retention period, rights, data protection officer contact."
+      "texte": "The privacy policy has its own page. It reproduces the current NPS Consult Group S.A. text, to be adapted for SECIA."
     },
     "fiche": {
       "titre": "To be provided by the client",
@@ -489,5 +623,166 @@
       "texte": "For a cyberattack in progress, don't wait for a meeting: call the emergency line.",
       "alt": "The open-plan office, workstations and screens"
     }
+  },
+  "service": {
+    "pole": {
+      "cyber": "Cybersecurity practice",
+      "reseau": "Network practice"
+    },
+    "retour": {
+      "cyber": "All cybersecurity services",
+      "reseau": "All network services"
+    },
+    "volets": "areas",
+    "lieux": "Belgium and Luxembourg",
+    "familles": {
+      "surtitre": "What the service covers",
+      "titre": "The service, area by area."
+    },
+    "raisons": {
+      "surtitre": "Context",
+      "titre": "Act now, with the right team."
+    },
+    "maintenant": "Why now?",
+    "pourquoi": "Why SECIA?",
+    "autres": {
+      "cyber": "Other sheets in the cybersecurity practice",
+      "reseau": "Other sheets in the network practice"
+    },
+    "aCompleter": "Content to be supplied by SECIA: this area has no text of its own on the current site.",
+    "fin": {
+      "cyber": "Let's talk about your security.",
+      "reseau": "Let's talk about your network."
+    },
+    "finTexte": "Tell us what you need: an engineer will get back to you."
+  },
+  "reseau": {
+    "surtitre": "Sheet 03 · Network practice",
+    "titre": "Network",
+    "intro1": "Your network is the backbone of your business operations, and any downtime can be costly. Protecting your connectivity is essential for maintaining performance and reliability.",
+    "intro2": "Our network services ensure fast, reliable and secure connections, from design and development to ongoing management and support.",
+    "voir": "See the nine services",
+    "info": "9 services · from design to support",
+    "services": {
+      "titre": "Nine services, sheet by sheet.",
+      "texte": "Scroll: each sheet describes a service and what it covers.",
+      "region": "The nine network services, scrollable",
+      "service": "Service"
+    },
+    "cycle": {
+      "surtitre": "Reading the practice",
+      "titre": "From design to support.",
+      "texte": "We deliver tailored solutions that keep your systems efficient, scalable and resilient. The nine services, grouped by stage in the life of the network:"
+    },
+    "fin": {
+      "titre": "Let's talk about your network.",
+      "texte": "Want to find out more about our network solutions? An engineer will answer.",
+      "alt": "SECIA open-plan office"
+    }
+  },
+  "nis2p": {
+    "surtitre": "Sheet 02.7 · Regulation",
+    "titre": "NIS2 compliance",
+    "intro1": "The NIS2 Directive (EU 2022/2555) is the European cybersecurity law that strengthens the protection of critical and digital services. It widens the scope of the first NIS Directive, introduces stricter security and reporting rules, and makes management accountable for compliance.",
+    "voir": "The ten measures",
+    "info": "Directive (EU) 2022/2555 · Belgian law of 26 April 2024",
+    "concerne": {
+      "surtitre": "Scope",
+      "titre": "Does NIS2 apply to you?",
+      "texte": "NIS2 applies to medium-sized and large entities in 18 sectors: 11 sectors of high criticality (Annex I) and 7 other critical sectors (Annex II). Member States had to identify essential and important entities by 17 April 2025, then update that list at least every two years.",
+      "seuils": "Size thresholds",
+      "categorie": "Category",
+      "employes": "Employees",
+      "ca": "Annual turnover",
+      "moyenne": "Medium-sized entity",
+      "grande": "Large entity",
+      "seuilsNote": "Simplified thresholds, as presented on the current website.",
+      "exceptions": "Exceptions: a small organisation can still be classed as essential or important if it is the sole provider of a vital service, or if a disruption would have a major societal or economic impact.",
+      "annexe1": "Sectors of high criticality (Annex I)",
+      "annexe2": "Other critical sectors (Annex II)"
+    },
+    "sanctions": {
+      "surtitre": "Penalties",
+      "titre": "What non-compliance costs.",
+      "essentielles": "Essential entities",
+      "importantes": "Important entities",
+      "montant1": "€10M",
+      "part1": "or 2% of total worldwide annual turnover",
+      "montant2": "€7M",
+      "part2": "or 1.4% of total worldwide annual turnover",
+      "retenu": "Maximum administrative fines, whichever amount is higher.",
+      "juridiction": "Jurisdictional complexities",
+      "j1": "Entities fall under the jurisdiction of each Member State in which they provide services.",
+      "j2": "Organisations operating in several countries are supervised by all competent authorities.",
+      "j3": "Entities that depend on activities located outside the EU must ensure their EU operations remain functional if those services are disrupted."
+    },
+    "mesures": {
+      "texte": "Article 21(2) of the Directive sets out at least ten technical, operational and organisational measures, proportionate to the entity’s risk exposure. Tick those already in place."
+    },
+    "fin": {
+      "titre": "Take stock with SECIA.",
+      "texte": "SECIA helps companies assess their compliance, strengthen their cyber resilience and avoid penalties.",
+      "alt": "Reviewing a report in a meeting room"
+    }
+  },
+  "carrieres": {
+    "surtitre": "Sheet 08 · Careers",
+    "titre": "Your next challenge starts here.",
+    "intro": "Job openings at SECIA and NPS Consult Group, in Mont-Saint-Guibert and Dalheim. Please check back regularly for new updates.",
+    "voir": "See the openings",
+    "spontanee": "Open application",
+    "info": "4 openings · Belgium and Luxembourg",
+    "offres": {
+      "surtitre": "Job board",
+      "titre": "Current openings.",
+      "detail": "Job description to be completed",
+      "postuler": "Apply",
+      "alt": "SECIA open-plan office"
+    },
+    "form": {
+      "surtitre": "Application",
+      "titre": "Can't find the job you're looking for?",
+      "texte": "We're always looking for passionate people ready to contribute to our growth. Send us your open application and let us discover what you can bring to our team.",
+      "poste": "Position",
+      "prenom": "First name",
+      "nom": "Last name",
+      "email": "E-mail",
+      "tel": "Phone",
+      "langues": "Languages",
+      "contrat": "Contract type",
+      "choisir": "Choose",
+      "experience": "Years of experience",
+      "cv": "CV",
+      "lettre": "Cover letter (optional)",
+      "accord": "I agree that my data may be used to process my application.",
+      "envoyer": "Send my application",
+      "contrats": {
+        "employe": "Employee",
+        "freelance": "Freelance",
+        "stagiaire": "Intern",
+        "etudiant": "Student"
+      },
+      "listeLangues": {
+        "en": "English",
+        "fr": "French",
+        "de": "German",
+        "nl": "Dutch",
+        "lb": "Luxembourgish"
+      },
+      "alt": "Discussion in a meeting room"
+    }
+  },
+  "legal": {
+    "note": "Current text from the NPS Consult Group S.A. website, reproduced as is. To be adapted for SECIA and approved by its legal counsel.",
+    "noteConditions": "To check: the postcode L-5787 (L-5687 elsewhere on the site) and the number 621 196 349, given without a country code. The website builder's template help text, published at the top of the current page, is not reproduced.",
+    "confidentialite": {
+      "surtitre": "Sheet 07.1 · Personal data",
+      "titre": "Privacy policy"
+    },
+    "conditions": {
+      "surtitre": "Sheet 07.2 · Terms",
+      "titre": "Terms and conditions"
+    },
+    "preambule": "Preamble"
   }
 }

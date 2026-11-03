@@ -28,7 +28,7 @@ ${tete(c, {
     <p data-anime>${c.t('contact.form.texte')}</p>
   </div>
   <div class="demande-grille">
-    <form class="formulaire etapes-form" data-formulaire data-etapes action="#" novalidate data-services="${JSON.stringify(Object.fromEntries([...c.donnees.services.cyber, c.donnees.services.nis2].map((s) => [s.cle, s.nom])))}">
+    <form class="formulaire etapes-form" data-formulaire data-etapes action="#" novalidate data-services="${JSON.stringify(Object.fromEntries([...c.donnees.services.cyber, ...c.donnees.services.reseau, c.donnees.services.nis2].map((s) => [s.cle, s.nom])))}">
       <ol class="etapes-fil" aria-label="${c.s('contact.form.fil')}">
         ${etapes.map((e, i) => html`<li data-fil="${i}"${i === 0 ? ' aria-current="step"' : ''}><span>${String(i + 1).padStart(2, '0')}</span>${c.t(`contact.form.etapes.${e}`)}</li>`)}
       </ol>
@@ -62,7 +62,7 @@ ${tete(c, {
         <fieldset class="etape" data-etape="3" hidden>
           <legend>${c.t('contact.form.etapes.recap')}</legend>
           <p>${c.t('contact.form.relire')}</p>
-          <div class="champ champ--case"><input id="c-accord" name="accord" type="checkbox" value="oui" required><label for="c-accord">${c.t('contact.form.accord')}</label></div>
+          <div class="champ champ--case"><label class="case-accord" for="c-accord"><input id="c-accord" name="accord" type="checkbox" value="oui" required><span>${c.t('contact.form.accord')}</span></label></div>
           <p class="mention-donnees">${c.tb('commun.mentionDonnees')}</p>
         </fieldset>
       </div>

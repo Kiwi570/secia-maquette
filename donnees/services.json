@@ -1,78 +1,438 @@
 {
   "cyber": [
     {
-      "cle": "integration-conseil", "image": "grok/service-integration-conseil",
-      "nom": { "fr": "Intégration et conseil en sécurité", "en": "Security integration & consulting" },
-      "resume": { "fr": "Du conseil en sécurité à la demande, par des ingénieurs et spécialistes expérimentés, pour renforcer la défense de votre organisation.", "en": "On-demand security consulting from experienced engineers and specialists to strengthen your organisation's defence." },
+      "cle": "integration-conseil",
+      "image": "grok/service-integration-conseil",
+      "nom": {
+        "fr": "Intégration et conseil en sécurité",
+        "en": "Security integration & consulting"
+      },
+      "resume": {
+        "fr": "Du conseil en sécurité à la demande, par des ingénieurs et spécialistes expérimentés, pour renforcer la défense de votre organisation.",
+        "en": "On-demand security consulting from experienced engineers and specialists to strengthen your organisation's defence."
+      },
       "points": {
-        "fr": ["Revue de l'architecture de sécurité", "Conseils sur la stratégie et les politiques de sécurité", "Sensibilisation aux menaces et suivi des vulnérabilités", "Intégration à l'environnement informatique existant"],
-        "en": ["Modern security architecture review", "Security strategy and policy guidance", "Threat awareness and vulnerability tracking", "Integration with the existing IT environment"]
+        "fr": [
+          "Revue de l'architecture de sécurité",
+          "Conseils sur la stratégie et les politiques de sécurité",
+          "Sensibilisation aux menaces et suivi des vulnérabilités",
+          "Intégration à l'environnement informatique existant"
+        ],
+        "en": [
+          "Modern security architecture review",
+          "Security strategy and policy guidance",
+          "Threat awareness and vulnerability tracking",
+          "Integration with the existing IT environment"
+        ]
+      },
+      "page": "integration-conseil"
+    },
+    {
+      "cle": "audits",
+      "image": "grok/service-audits",
+      "nom": {
+        "fr": "Audits et évaluations de sécurité",
+        "en": "Security audits & assessments"
+      },
+      "resume": {
+        "fr": "Des audits complets pour évaluer votre infrastructure, repérer les vulnérabilités et vérifier la conformité aux normes.",
+        "en": "Complete audits to evaluate your IT infrastructure, uncover vulnerabilities and check compliance with industry standards."
+      },
+      "points": {
+        "fr": [
+          "Revue des systèmes et des configurations",
+          "Analyse des vulnérabilités et des risques",
+          "Vérification de la conformité (ISO 27001, RGPD, NIS2)",
+          "Recommandations d'amélioration"
+        ],
+        "en": [
+          "System and configuration review",
+          "Vulnerability and risk analysis",
+          "Compliance verification (ISO 27001, GDPR, NIS2)",
+          "Recommendations for improvement"
+        ]
+      },
+      "page": "audits-securite"
+    },
+    {
+      "cle": "tests-intrusion",
+      "page": "tests-intrusion",
+      "image": "grok/service-tests-intrusion",
+      "nom": {
+        "fr": "Tests d'intrusion",
+        "en": "Penetration testing"
+      },
+      "resume": {
+        "fr": "Des attaques simulées pour repérer les faiblesses de vos réseaux, applications et systèmes avant qu'un attaquant ne les exploite.",
+        "en": "Simulated attacks to identify weaknesses in your networks, applications and systems before attackers do."
+      },
+      "points": {
+        "fr": [
+          "Tests d'intrusion externes et internes",
+          "Tests de sécurité Web et API",
+          "Simulations avancées Red Team",
+          "Recommandations de remédiation exploitables"
+        ],
+        "en": [
+          "External and internal penetration tests",
+          "Web and API security testing",
+          "Advanced Red Team simulations",
+          "Actionable remediation guidance"
+        ]
       }
     },
     {
-      "cle": "audits", "image": "grok/service-audits",
-      "nom": { "fr": "Audits et évaluations de sécurité", "en": "Security audits & assessments" },
-      "resume": { "fr": "Des audits complets pour évaluer votre infrastructure, repérer les vulnérabilités et vérifier la conformité aux normes.", "en": "Complete audits to evaluate your IT infrastructure, uncover vulnerabilities and check compliance with industry standards." },
+      "cle": "securite-managee",
+      "image": "grok/service-securite-managee",
+      "nom": {
+        "fr": "Services de sécurité managés",
+        "en": "Managed security services"
+      },
+      "resume": {
+        "fr": "Une protection continue : surveillance, gestion des équipements et support disponible 24/7.",
+        "en": "Continuous protection with monitoring, device management and 24/7 support."
+      },
       "points": {
-        "fr": ["Revue des systèmes et des configurations", "Analyse des vulnérabilités et des risques", "Vérification de la conformité (ISO 27001, RGPD, NIS2)", "Recommandations d'amélioration"],
-        "en": ["System and configuration review", "Vulnerability and risk analysis", "Compliance verification (ISO 27001, GDPR, NIS2)", "Recommendations for improvement"]
-      }
+        "fr": [
+          "Gestion des vulnérabilités des actifs critiques",
+          "Exploitation et maintenance des dispositifs de sécurité",
+          "Surveillance des services externes",
+          "Support et assistance aux incidents 24/7"
+        ],
+        "en": [
+          "Vulnerability management of critical assets",
+          "Security device operation and maintenance",
+          "External service monitoring",
+          "24/7 support and incident assistance"
+        ]
+      },
+      "page": "securite-managee"
     },
     {
-      "cle": "tests-intrusion", "page": "tests-intrusion", "image": "grok/service-tests-intrusion",
-      "nom": { "fr": "Tests d'intrusion", "en": "Penetration testing" },
-      "resume": { "fr": "Des attaques simulées pour repérer les faiblesses de vos réseaux, applications et systèmes avant qu'un attaquant ne les exploite.", "en": "Simulated attacks to identify weaknesses in your networks, applications and systems before attackers do." },
+      "cle": "csoc",
+      "image": "grok/service-csoc",
+      "nom": {
+        "fr": "Surveillance et renseignement (CSOC)",
+        "en": "Monitoring & threat intelligence (CSOC)"
+      },
+      "resume": {
+        "fr": "Repérer les menaces avant qu'elles n'agissent, grâce à une surveillance continue et à un renseignement exploitable.",
+        "en": "See threats before they strike with continuous monitoring and actionable threat intelligence."
+      },
       "points": {
-        "fr": ["Tests d'intrusion externes et internes", "Tests de sécurité Web et API", "Simulations avancées Red Team", "Recommandations de remédiation exploitables"],
-        "en": ["External and internal penetration tests", "Web and API security testing", "Advanced Red Team simulations", "Actionable remediation guidance"]
-      }
+        "fr": [
+          "Surveillance des événements de sécurité CSOC 24/7",
+          "Chasse aux menaces et détection proactive",
+          "Intégration aux systèmes SIEM et de défense",
+          "Renseignements exploitables pour la prévention"
+        ],
+        "en": [
+          "24/7 CSOC security event monitoring",
+          "Threat hunting and proactive detection",
+          "Integration with SIEM and defence systems",
+          "Actionable intelligence for prevention"
+        ]
+      },
+      "page": "surveillance-csoc"
     },
     {
-      "cle": "securite-managee", "image": "grok/service-securite-managee",
-      "nom": { "fr": "Services de sécurité managés", "en": "Managed security services" },
-      "resume": { "fr": "Une protection continue : surveillance, gestion des équipements et support disponible 24/7.", "en": "Continuous protection with monitoring, device management and 24/7 support." },
+      "cle": "csirt",
+      "image": "grok/service-reponse-incidents",
+      "nom": {
+        "fr": "Réponse aux incidents (CSIRT)",
+        "en": "Incident response (CSIRT)"
+      },
+      "resume": {
+        "fr": "Réagir vite pour contenir, enquêter et rétablir après un incident de sécurité.",
+        "en": "React quickly to contain, investigate and recover from security incidents."
+      },
       "points": {
-        "fr": ["Gestion des vulnérabilités des actifs critiques", "Exploitation et maintenance des dispositifs de sécurité", "Surveillance des services externes", "Support et assistance aux incidents 24/7"],
-        "en": ["Vulnerability management of critical assets", "Security device operation and maintenance", "External service monitoring", "24/7 support and incident assistance"]
-      }
-    },
-    {
-      "cle": "csoc", "image": "grok/service-csoc",
-      "nom": { "fr": "Surveillance et renseignement (CSOC)", "en": "Monitoring & threat intelligence (CSOC)" },
-      "resume": { "fr": "Repérer les menaces avant qu'elles n'agissent, grâce à une surveillance continue et à un renseignement exploitable.", "en": "See threats before they strike with continuous monitoring and actionable threat intelligence." },
-      "points": {
-        "fr": ["Surveillance des événements de sécurité CSOC 24/7", "Chasse aux menaces et détection proactive", "Intégration aux systèmes SIEM et de défense", "Renseignements exploitables pour la prévention"],
-        "en": ["24/7 CSOC security event monitoring", "Threat hunting and proactive detection", "Integration with SIEM and defence systems", "Actionable intelligence for prevention"]
-      }
-    },
-    {
-      "cle": "csirt", "image": "grok/service-reponse-incidents",
-      "nom": { "fr": "Réponse aux incidents (CSIRT)", "en": "Incident response (CSIRT)" },
-      "resume": { "fr": "Réagir vite pour contenir, enquêter et rétablir après un incident de sécurité.", "en": "React quickly to contain, investigate and recover from security incidents." },
-      "points": {
-        "fr": ["Réponse et atténuation des incidents de sécurité", "Chasse proactive aux menaces", "Enquête post-incident et remédiation", "Gestion de crise et simulations de préparation"],
-        "en": ["Security incident response and mitigation", "Proactive threat hunting", "Post-incident investigation and remediation", "Crisis management and preparedness simulations"]
-      }
+        "fr": [
+          "Réponse et atténuation des incidents de sécurité",
+          "Chasse proactive aux menaces",
+          "Enquête post-incident et remédiation",
+          "Gestion de crise et simulations de préparation"
+        ],
+        "en": [
+          "Security incident response and mitigation",
+          "Proactive threat hunting",
+          "Post-incident investigation and remediation",
+          "Crisis management and preparedness simulations"
+        ]
+      },
+      "page": "reponse-incidents"
     }
   ],
   "nis2": {
-    "cle": "nis2", "image": "grok/service-nis2",
-    "nom": { "fr": "Conformité NIS2", "en": "NIS2 compliance" },
-    "resume": { "fr": "Respecter les nouvelles exigences de cybersécurité NIS2 et renforcer la résilience opérationnelle.", "en": "Meet the new NIS2 cybersecurity requirements and strengthen operational resilience." },
+    "cle": "nis2",
+    "image": "grok/service-nis2",
+    "nom": {
+      "fr": "Conformité NIS2",
+      "en": "NIS2 compliance"
+    },
+    "resume": {
+      "fr": "Respecter les nouvelles exigences de cybersécurité NIS2 et renforcer la résilience opérationnelle.",
+      "en": "Meet the new NIS2 cybersecurity requirements and strengthen operational resilience."
+    },
     "points": {
-      "fr": ["Conformité réglementaire", "Évaluation et réduction des risques", "Rapports et documentation", "Surveillance continue et amélioration"],
-      "en": ["Regulatory compliance", "Risk assessment and mitigation", "Reporting and documentation", "Continuous monitoring and improvement"]
-    }
+      "fr": [
+        "Conformité réglementaire",
+        "Évaluation et réduction des risques",
+        "Rapports et documentation",
+        "Surveillance continue et amélioration"
+      ],
+      "en": [
+        "Regulatory compliance",
+        "Risk assessment and mitigation",
+        "Reporting and documentation",
+        "Continuous monitoring and improvement"
+      ]
+    },
+    "page": "nis2"
   },
   "reseau": [
-    { "cle": "reseau-entreprise", "nom": { "fr": "Réseau d'entreprise", "en": "Enterprise network" } },
-    { "cle": "wan-cloud", "nom": { "fr": "Connectivité WAN et cloud", "en": "WAN & cloud connectivity" } },
-    { "cle": "sdn", "nom": { "fr": "Réseaux définis par logiciel (SDN)", "en": "Software-defined networking (SDN)" } },
-    { "cle": "sans-fil", "nom": { "fr": "Solutions sans fil", "en": "Wireless solutions" } },
-    { "cle": "automatisation", "nom": { "fr": "Automatisation et surveillance", "en": "Automation and monitoring" } },
-    { "cle": "audits-reseau", "nom": { "fr": "Audits et conformité des réseaux", "en": "Network audits & compliance" } },
-    { "cle": "conception-migration", "nom": { "fr": "Conception, mise en œuvre et migration", "en": "Design, implementation & migration" } },
-    { "cle": "formation", "nom": { "fr": "Formation et transfert de connaissances", "en": "Training & knowledge transfer" } },
-    { "cle": "labs-poc", "nom": { "fr": "Laboratoires de validation de concept", "en": "Proof-of-concept labs" } }
+    {
+      "cle": "reseau-entreprise",
+      "nom": {
+        "fr": "Réseau d'entreprise",
+        "en": "Enterprise network"
+      },
+      "resume": {
+        "fr": "Créez une base solide pour votre infrastructure numérique grâce à des réseaux d’entreprise performants, fiables et évolutifs.",
+        "en": "Build a strong foundation for your digital infrastructure with high-performance, reliable, and scalable enterprise networks."
+      },
+      "points": {
+        "fr": [
+          "Conception et architecture réseau",
+          "Mise en œuvre réseau",
+          "Planification et exécution de la migration",
+          "Contrôle d’accès et intégration de la sécurité"
+        ],
+        "en": [
+          "Network Design & Architecture",
+          "Network Implementation",
+          "Migration Planning & Execution",
+          "Access Control & Security Integration"
+        ]
+      },
+      "image": "grok/service-reseau-entreprise",
+      "page": "reseau-entreprise"
+    },
+    {
+      "cle": "wan-cloud",
+      "nom": {
+        "fr": "Connectivité WAN et cloud",
+        "en": "WAN & cloud connectivity"
+      },
+      "resume": {
+        "fr": "Assurez une connectivité fluide entre les agences, les centres de données et les environnements cloud grâce à des solutions WAN sécurisées et flexibles.",
+        "en": "Ensure seamless connectivity across branches, data centers, and cloud environments with secure and flexible WAN solutions."
+      },
+      "points": {
+        "fr": [
+          "Connexion entre agences",
+          "Intégration des réseaux cloud",
+          "Routage flexible et basculement",
+          "Intégration multi-domaines"
+        ],
+        "en": [
+          "Branch-to-Branch Connectivity",
+          "Cloud Network Integration",
+          "Flexible Routing & Failover",
+          "Multi-Domain Integration"
+        ]
+      },
+      "image": "grok/service-wan-cloud",
+      "page": "connectivite-wan-cloud"
+    },
+    {
+      "cle": "sdn",
+      "nom": {
+        "fr": "Réseaux définis par logiciel (SDN)",
+        "en": "Software-defined networking (SDN)"
+      },
+      "resume": {
+        "fr": "Simplifiez et modernisez les opérations réseau avec les technologies SDN pour plus d’agilité, d’automatisation et de visibilité.",
+        "en": "Simplify and modernize network operations with SDN technologies for agility, automation, and visibility."
+      },
+      "points": {
+        "fr": [
+          "Migration SDN fluide",
+          "Cadres d’automatisation",
+          "Opérations simplifiées",
+          "Tableaux de bord et alertes personnalisés"
+        ],
+        "en": [
+          "Smooth SDN Migration",
+          "Automation Frameworks",
+          "Simplified Operations",
+          "Custom Dashboards & Alerts"
+        ]
+      },
+      "image": "grok/service-sdn",
+      "page": "sdn"
+    },
+    {
+      "cle": "sans-fil",
+      "nom": {
+        "fr": "Solutions sans fil",
+        "en": "Wireless solutions"
+      },
+      "resume": {
+        "fr": "Fournissez une connectivité sans fil fiable et sécurisée pour les organisations modernes axées sur le mobile.",
+        "en": "Deliver reliable and secure wireless connectivity for modern, mobile-first organizations."
+      },
+      "points": {
+        "fr": [
+          "Études de site et planification",
+          "Migration de réseau sans fil",
+          "Validation des normes et bonnes pratiques",
+          "Surveillance réseau en temps réel"
+        ],
+        "en": [
+          "Site Surveys & Planning",
+          "Wireless Network Migration",
+          "Standards & Best Practices Validation",
+          "Real-Time Network Monitoring"
+        ]
+      },
+      "image": "grok/service-sans-fil",
+      "page": "sans-fil"
+    },
+    {
+      "cle": "automatisation",
+      "nom": {
+        "fr": "Automatisation et surveillance",
+        "en": "Automation and monitoring"
+      },
+      "resume": {
+        "fr": "Obtenez une visibilité et un contrôle complets grâce à des solutions d’automatisation intelligente et de surveillance proactive.",
+        "en": "Gain full visibility and control with smart automation and proactive monitoring solutions."
+      },
+      "points": {
+        "fr": [
+          "Surveillance réseau en temps réel",
+          "Cadres d’automatisation",
+          "Tableaux de bord et alertes personnalisés",
+          "Opérations simplifiées"
+        ],
+        "en": [
+          "Real-Time Network Monitoring",
+          "Automation Frameworks",
+          "Custom Dashboards & Alerts",
+          "Simplified Operations"
+        ]
+      },
+      "image": "grok/service-automatisation",
+      "page": "automatisation-surveillance"
+    },
+    {
+      "cle": "audits-reseau",
+      "nom": {
+        "fr": "Audits et conformité des réseaux",
+        "en": "Network audits & compliance"
+      },
+      "resume": {
+        "fr": "Assurez-vous que votre infrastructure est sécurisée, conforme et optimisée grâce à des évaluations réseau professionnelles.",
+        "en": "Ensure your infrastructure is secure, compliant, and optimized through professional network assessments."
+      },
+      "points": {
+        "fr": [
+          "Audit de l’infrastructure et de la configuration",
+          "Analyse de la posture de sécurité",
+          "Validation des normes et bonnes pratiques",
+          "Rapports de conformité"
+        ],
+        "en": [
+          "Infrastructure & Configuration Audit",
+          "Security Posture Review",
+          "Standards & Best Practices Validation",
+          "Compliance Reporting"
+        ]
+      },
+      "image": "grok/service-audits-reseau",
+      "page": "audits-reseau"
+    },
+    {
+      "cle": "conception-migration",
+      "nom": {
+        "fr": "Conception, mise en œuvre et migration",
+        "en": "Design, implementation & migration"
+      },
+      "resume": {
+        "fr": "Concevez, déployez et faites évoluer des architectures réseau modernes qui soutiennent la croissance et l’agilité.",
+        "en": "Design, deploy, and evolve modern network architectures that support growth and agility."
+      },
+      "points": {
+        "fr": [
+          "Conception et architecture réseau",
+          "Mise en œuvre réseau",
+          "Planification de migration fluide",
+          "Validation et tests"
+        ],
+        "en": [
+          "Network Design & Architecture",
+          "Network Implementation",
+          "Seamless Migration Planning",
+          "Validation & Testing"
+        ]
+      },
+      "image": "grok/service-conception-migration",
+      "page": "conception-migration"
+    },
+    {
+      "cle": "formation",
+      "nom": {
+        "fr": "Formation et transfert de connaissances",
+        "en": "Training & knowledge transfer"
+      },
+      "resume": {
+        "fr": "Renforcez vos équipes grâce à l’expertise pratique de nos ingénieurs certifiés.",
+        "en": "Empower your teams with hands-on expertise from our certified engineers."
+      },
+      "points": {
+        "fr": [
+          "Sessions de formation sur site ou à distance",
+          "Ateliers de transfert de connaissances",
+          "Documentation technique et bonnes pratiques",
+          "Développement continu des compétences"
+        ],
+        "en": [
+          "On-site or remote training sessions",
+          "Knowledge transfer workshops",
+          "Technical documentation & best practices",
+          "Continuous skills development"
+        ]
+      },
+      "image": "grok/service-formation",
+      "page": "formation"
+    },
+    {
+      "cle": "labs-poc",
+      "nom": {
+        "fr": "Laboratoires de validation de concept",
+        "en": "Proof-of-concept labs"
+      },
+      "resume": {
+        "fr": "Validez votre architecture et vos solutions avant leur déploiement dans un environnement de test sécurisé.",
+        "en": "Validate your architecture and solutions before deployment in a safe test environment."
+      },
+      "points": {
+        "fr": [
+          "PoC et simulations en laboratoire",
+          "Scénarios réseau réels",
+          "Tests de performance et d’intégration",
+          "Préparation au déploiement fluide"
+        ],
+        "en": [
+          "PoC and Lab Simulations",
+          "Real-World Network Scenarios",
+          "Performance and Integration Tests",
+          "Seamless Deployment Preparation"
+        ]
+      },
+      "image": "grok/service-labs-poc",
+      "page": "laboratoires-poc"
+    }
   ]
 }

@@ -2,7 +2,7 @@
   "nom": "SECIA",
   "adresse": "https://secia-maquette.vercel.app",
   "siteActuel": "npsconsultgroup.com",
-  "version": 1,
+  "version": 2,
   "langues": [
     "fr",
     "en"
@@ -10,13 +10,16 @@
   "navigation": [
     "accueil",
     "cybersecurite",
-    "tests-intrusion",
+    "reseau",
+    "nis2",
     "alerte-cyberattaque",
     "secia",
+    "carrieres",
     "contact"
   ],
   "navigationEntete": [
     "cybersecurite",
+    "reseau",
     "secia",
     "contact"
   ],
@@ -71,7 +74,26 @@
     "secia": "05",
     "contact": "06",
     "mentions-legales": "07",
-    "404": "00"
+    "404": "00",
+    "reseau": "03",
+    "nis2": "02.7",
+    "carrieres": "08",
+    "confidentialite": "07.1",
+    "conditions-generales": "07.2",
+    "integration-conseil": "02.1",
+    "audits-securite": "02.2",
+    "securite-managee": "02.4",
+    "surveillance-csoc": "02.5",
+    "reponse-incidents": "02.6",
+    "reseau-entreprise": "03.1",
+    "connectivite-wan-cloud": "03.2",
+    "sdn": "03.3",
+    "sans-fil": "03.4",
+    "automatisation-surveillance": "03.5",
+    "audits-reseau": "03.6",
+    "conception-migration": "03.7",
+    "formation": "03.8",
+    "laboratoires-poc": "03.9"
   },
   "polices": [
     "/assets/fonts/geist.woff2"

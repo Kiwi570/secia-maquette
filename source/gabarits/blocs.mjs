@@ -88,11 +88,43 @@ export function planChemin(c) {
 }
 
 /* Frise du cycle de vie : de la conception à la réponse (trait tracé au défilement). */
-export function frise(c, etapes) {
-  return html`<div class="frise" data-visuel>
+export function frise(c, etapes, { classe = '' } = {}) {
+  return html`<div class="frise ${classe}" data-visuel>
   <svg class="frise-trait" viewBox="0 0 1000 24" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M2 12 H998"/><path d="M2 4 V20 M998 4 V20"/></svg>
   <ol class="frise-etapes" data-anime="cascade">
     ${etapes.map((e, i) => html`<li><span class="frise-point" aria-hidden="true"></span><p class="frise-phase">${e.phase}</p><p class="frise-num">${String(i + 1).padStart(2, '0')}</p><h3>${e.titre}</h3><p>${e.texte}</p></li>`)}
   </ol>
 </div>`;
+}
+
+/* Autodiagnostic NIS2 : les dix mesures de l'article 21 à cocher, jauge, appel (accueil et page NIS2). */
+export function diagnosticNis2(c, { id = 'nis2', surtitre, titre, texte, loi = '' }) {
+  return html`<section class="nis2" id="${id}">
+  <div class="conteneur nis2-grille">
+    <div class="nis2-texte">
+      <p class="surtitre">${surtitre}</p>
+      <h2 data-anime="lignes">${titre}</h2>
+      <p data-anime>${texte}</p>
+      ${loi ? html`<p class="nis2-loi" data-anime>${loi}</p>` : ''}
+      <ul class="nis2-mesures" data-anime="cascade" aria-label="${c.s('accueil.nis2.liste')}">
+        ${c.donnees.nis2.map((m, i) => html`<li><button type="button" class="mesure" aria-pressed="false" data-mesure="${i}"><span class="mesure-lettre">${m.lettre}</span><span class="mesure-nom">${m.nom}</span><span class="mesure-etat" aria-hidden="true"></span></button></li>`)}
+      </ul>
+    </div>
+    <div class="nis2-visuel">
+      ${c.media({ nom: 'grok/accueil-nis2', alt: '', cadrage: '70% 50%', classe: 'nis2-fond', sizes: '(max-width: 760px) 100vw, 45vw', attrs: 'data-fx="zoom"' })}
+      <div class="jauge" data-visuel>
+        <svg viewBox="0 0 240 240" aria-hidden="true">
+          <g class="jauge-cadre" data-fx="trace"><circle cx="120" cy="120" r="104"/><path d="M120 6 V22 M120 218 V234 M6 120 H22 M218 120 H234"/></g>
+          <g class="jauge-segments">${Array.from({ length: 10 }, (_, i) => {
+            const a0 = (-90 + i * 36 + 3) * Math.PI / 180, a1 = (-90 + (i + 1) * 36 - 3) * Math.PI / 180, r = 86;
+            return html`<path data-segment="${i}" d="M${(120 + r * Math.cos(a0)).toFixed(1)} ${(120 + r * Math.sin(a0)).toFixed(1)} A${r} ${r} 0 0 1 ${(120 + r * Math.cos(a1)).toFixed(1)} ${(120 + r * Math.sin(a1)).toFixed(1)}"/>`;
+          })}</g>
+        </svg>
+        <p class="jauge-valeur" aria-live="polite"><b data-jauge>0</b><span>/10</span><small>${c.t('accueil.nis2.enPlace')}</small></p>
+      </div>
+      <p class="mention-illustratif">${c.t('accueil.nis2.avertissement')}</p>
+      <p>${c.lien('contact', { params: 'sujet=nis2', classe: 'bouton', texte: c.t('accueil.nis2.action'), attrs: 'data-survol="magnetique"' })}</p>
+    </div>
+  </div>
+</section>`;
 }

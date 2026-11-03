@@ -1,5 +1,26 @@
 {
   "siteActuel": "npsconsultgroup.com",
-  "pagesTypes": ["/", "/cybersecurite", "/tests-intrusion", "/alerte-cyberattaque", "/secia", "/contact", "/mentions-legales"],
-  "effets": ["esquisse", "impulsions", "cotes", "plan-trois-etats", "confinement", "verification", "chemin-attaque", "cartouche"]
+  "pagesTypes": [
+    "/",
+    "/cybersecurite",
+    "/tests-intrusion",
+    "/reseau-entreprise",
+    "/nis2",
+    "/alerte-cyberattaque",
+    "/secia",
+    "/carrieres",
+    "/contact",
+    "/mentions-legales",
+    "/confidentialite"
+  ],
+  "effets": [
+    "esquisse",
+    "impulsions",
+    "cotes",
+    "plan-trois-etats",
+    "confinement",
+    "verification",
+    "chemin-attaque",
+    "cartouche"
+  ]
 }

@@ -1,4 +1,4 @@
-# Maquette SECIA — v1
+# Maquette SECIA — v2
 
 Maquette du site de SECIA (membre de NPS Consult Group), direction « Le plan », en français et en anglais.
 Adresse prévue : https://secia-maquette.vercel.app (noindex : la maquette n'est pas référencée).
@@ -8,12 +8,18 @@ Adresse prévue : https://secia-maquette.vercel.app (noindex : la maquette n'est
 | Page | Français | Anglais |
 |---|---|---|
 | Accueil | `/` | `/en/` |
-| Cybersécurité | `/cybersecurite` | `/en/cybersecurite` |
-| Tests d'intrusion | `/tests-intrusion` | `/en/tests-intrusion` |
+| Pôle cybersécurité | `/cybersecurite` | `/en/cybersecurite` |
+| Services cybersécurité (6) | `/integration-conseil`, `/audits-securite`, `/tests-intrusion`, `/securite-managee`, `/surveillance-csoc`, `/reponse-incidents` | mêmes adresses sous `/en/` |
+| Conformité NIS2 | `/nis2` | `/en/nis2` |
+| Pôle réseau | `/reseau` | `/en/reseau` |
+| Services réseau (9) | `/reseau-entreprise`, `/connectivite-wan-cloud`, `/sdn`, `/sans-fil`, `/automatisation-surveillance`, `/audits-reseau`, `/conception-migration`, `/formation`, `/laboratoires-poc` | mêmes adresses sous `/en/` |
 | Urgence cyberattaque | `/alerte-cyberattaque` | `/en/alerte-cyberattaque` |
 | SECIA (à propos) | `/secia` | `/en/secia` |
+| Carrières | `/carrieres` | `/en/carrieres` |
 | Contact | `/contact` | `/en/contact` |
-| Mentions légales | `/mentions-legales` | `/en/mentions-legales` |
+| Mentions légales, confidentialité, conditions générales | `/mentions-legales`, `/confidentialite`, `/conditions-generales` | mêmes adresses sous `/en/` |
+
+Les pages de services sont produites par un seul modèle (`source/gabarits/service.mjs`) à partir de `donnees/fiches.json`, lui-même tiré des textes du site actuel. Les corrections apportées au texte source sont listées dans `donnees/fiches.json` (`_corrections`).
 
 ## À fournir par SECIA
 
@@ -22,6 +28,9 @@ Adresse prévue : https://secia-maquette.vercel.app (noindex : la maquette n'est
 - Confirmation de la consigne « Éteignez les systèmes compromis » (premiers gestes, page Urgence).
 - Effectif du groupe (« à confirmer »), et validation des chiffres attribués à NPS Consult Group.
 - Liste des 42 badges de certification, reprise du site du groupe (elle mêle badges techniques et commerciaux) : à confirmer pour l'équipe SECIA.
+- Services de sécurité managés : le contenu du volet « Surveillance externe » (absent du site actuel).
+- Description des quatre offres d'emploi (seuls l'intitulé et le lieu figurent sur le site actuel).
+- Politique de confidentialité et conditions générales : textes actuels de NPS Consult Group S.A., à adapter pour SECIA et à faire valider (code postal L-5787, numéro sans indicatif).
 - Mention « Hackers éthiques certifiés (CEH, OSCP) » (page Tests d'intrusion, reprise du site du groupe) : à confirmer, ces certifications ne figurent pas parmi les badges.
 
 ## À la mise en ligne définitive

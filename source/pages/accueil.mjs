@@ -4,6 +4,7 @@
    Chaque section a au moins un effet au défilement, visible aussi sur téléphone. */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { planOuverture, planMethode, planConfinement, carte } from '../gabarits/plans.mjs';
+import { diagnosticNis2 } from '../gabarits/blocs.mjs';
 
 export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'photos/bureaux-secia-1280.webp' };
 
@@ -149,34 +150,7 @@ export default (c) => {
   </div>
 </section>
 
-<section class="nis2" id="nis2">
-  <div class="conteneur nis2-grille">
-    <div class="nis2-texte">
-      <p class="surtitre">${c.t('accueil.nis2.surtitre')}</p>
-      <h2 data-anime="lignes">${c.t('accueil.nis2.titre')}</h2>
-      <p data-anime>${c.t('accueil.nis2.texte')}</p>
-      <p class="nis2-loi" data-anime>${c.t('accueil.nis2.loi')}</p>
-      <ul class="nis2-mesures" data-anime="cascade" aria-label="${c.s('accueil.nis2.liste')}">
-        ${c.donnees.nis2.map((m, i) => html`<li><button type="button" class="mesure" aria-pressed="false" data-mesure="${i}"><span class="mesure-lettre">${m.lettre}</span><span class="mesure-nom">${m.nom}</span><span class="mesure-etat" aria-hidden="true"></span></button></li>`)}
-      </ul>
-    </div>
-    <div class="nis2-visuel">
-      ${c.media({ nom: 'grok/accueil-nis2', alt: '', cadrage: '70% 50%', classe: 'nis2-fond', sizes: '(max-width: 760px) 100vw, 45vw', attrs: 'data-fx="zoom"' })}
-      <div class="jauge" data-visuel>
-        <svg viewBox="0 0 240 240" aria-hidden="true">
-          <g class="jauge-cadre" data-fx="trace"><circle cx="120" cy="120" r="104"/><path d="M120 6 V22 M120 218 V234 M6 120 H22 M218 120 H234"/></g>
-          <g class="jauge-segments">${Array.from({ length: 10 }, (_, i) => {
-            const a0 = (-90 + i * 36 + 3) * Math.PI / 180, a1 = (-90 + (i + 1) * 36 - 3) * Math.PI / 180, r = 86;
-            return html`<path data-segment="${i}" d="M${(120 + r * Math.cos(a0)).toFixed(1)} ${(120 + r * Math.sin(a0)).toFixed(1)} A${r} ${r} 0 0 1 ${(120 + r * Math.cos(a1)).toFixed(1)} ${(120 + r * Math.sin(a1)).toFixed(1)}"/>`;
-          })}</g>
-        </svg>
-        <p class="jauge-valeur" aria-live="polite"><b data-jauge>0</b><span>/10</span><small>${c.t('accueil.nis2.enPlace')}</small></p>
-      </div>
-      <p class="mention-illustratif">${c.t('accueil.nis2.avertissement')}</p>
-      <p>${c.lien('contact', { params: 'sujet=nis2', classe: 'bouton', texte: c.t('accueil.nis2.action'), attrs: 'data-survol="magnetique"' })}</p>
-    </div>
-  </div>
-</section>
+${diagnosticNis2(c, { id: 'nis2', surtitre: c.t('accueil.nis2.surtitre'), titre: c.t('accueil.nis2.titre'), texte: c.t('accueil.nis2.texte'), loi: c.t('accueil.nis2.loi') })}
 
 <section class="equipe conteneur" id="equipe">
   <div class="equipe-tete">

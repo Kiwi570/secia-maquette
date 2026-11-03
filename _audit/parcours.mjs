@@ -181,4 +181,62 @@ export default async function ({ contexte, attendrePret, attendre, BASE, R, T })
       }
     } finally { await ctx.close(); }
   }
+
+  /* ---------- 6. Candidature (carrières) : poste prérempli depuis une offre, champs obligatoires, CV, double clic ---------- */
+  for (const taille of tailles) {
+    const ou = { page: '/carrieres', taille: taille.nom };
+    const { ctx, page } = await contexte({ taille });
+    try {
+      await page.goto(BASE + '/carrieres', { waitUntil: 'load' });
+      await attendrePret(page);
+      const href = await page.getAttribute('.offre a.bouton', 'href');
+      await page.goto(BASE + href, { waitUntil: 'load' });
+      await attendrePret(page);
+      const poste = await page.inputValue('#j-poste');
+      if (!href.includes(`poste=${poste}`) || poste === 'spontanee') R.echec('candidature', `le bouton Postuler ne préremplit pas le poste (${poste})`, ou);
+      const envoi = page.locator('#candidature button[type="submit"]');
+      await envoi.scrollIntoViewIfNeeded();
+      await envoi.click();
+      await attendre(300);
+      const erreurs = await page.locator('#candidature .champ-erreur:not(:empty)').count();
+      if (erreurs < 5) R.echec('candidature', `${erreurs} champ(s) signalé(s) sur 5 obligatoires (prénom, nom, e-mail, CV, accord)`, ou);
+      await page.fill('#j-prenom', 'Camille');
+      await page.fill('#j-nom', 'Test');
+      await page.fill('#j-email', 'camille@exemple.be');
+      await page.locator('input[name="langues"][value="fr"]').check({ force: true });
+      await page.setInputFiles('#j-cv', { name: 'cv.pdf', mimeType: 'application/pdf', buffer: Buffer.from('%PDF-1.4 essai') });
+      await page.locator('#j-accord').check({ force: true });
+      await envoi.dblclick();
+      await attendre(500);
+      const r = await page.evaluate(() => ({
+        messages: [...document.querySelectorAll('#candidature [data-message-envoi]')].filter((m) => !m.hidden && m.textContent.trim()).length,
+        desactive: document.querySelector('#candidature button[type="submit"]').disabled,
+      }));
+      if (r.messages !== 1 || !r.desactive) R.echec('candidature', `après un double clic : ${r.messages} message(s), bouton ${r.desactive ? 'désactivé' : 'actif'}`, ou);
+    } finally { await ctx.close(); }
+  }
+
+  /* ---------- 7. Pages de services : chaque fiche des pôles mène à sa page, chaque page renvoie au formulaire prérempli ---------- */
+  {
+    const taille = T('1366×768');
+    const { ctx, page } = await contexte({ taille });
+    try {
+      for (const pole of ['/cybersecurite', '/reseau']) {
+        await page.goto(BASE + pole, { waitUntil: 'load' });
+        await attendrePret(page);
+        const liens = await page.evaluate(() => [...document.querySelectorAll('.fiche .fiche-lien a')].map((a) => a.getAttribute('href')));
+        for (const h of liens) {
+          const rep = await page.request.get(BASE + h.split('#')[0]);
+          if (rep.status() !== 200) R.echec('pages de services', `la fiche mène à ${h} (${rep.status()})`, { page: pole, taille: taille.nom });
+        }
+      }
+      await page.goto(BASE + '/sdn', { waitUntil: 'load' });
+      await attendrePret(page);
+      const h = await page.getAttribute('[data-action-principale]', 'href');
+      await page.goto(BASE + h, { waitUntil: 'load' });
+      await attendrePret(page);
+      const r = await page.evaluate(() => ({ sujet: (document.querySelector('input[name="sujet"]:checked') || {}).value, service: document.querySelector('input[name="service"]').value, recap: document.querySelector('[data-recap="sujet"]').textContent }));
+      if (r.sujet !== 'reseau' || r.service !== 'sdn' || !/SDN/.test(r.recap)) R.echec('pages de services', `demande depuis la page SDN mal préremplie : ${JSON.stringify(r)}`, { page: '/sdn', taille: taille.nom });
+    } finally { await ctx.close(); }
+  }
 }

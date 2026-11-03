@@ -1,0 +1,24 @@
+{
+  "annexe1": [
+    { "fr": "Énergie", "en": "Energy" },
+    { "fr": "Transports", "en": "Transport" },
+    { "fr": "Secteur bancaire", "en": "Banking" },
+    { "fr": "Infrastructures des marchés financiers", "en": "Financial market infrastructures" },
+    { "fr": "Santé", "en": "Health" },
+    { "fr": "Eau potable", "en": "Drinking water" },
+    { "fr": "Eaux usées", "en": "Waste water" },
+    { "fr": "Infrastructures numériques", "en": "Digital infrastructure" },
+    { "fr": "Gestion des services TIC (entre entreprises)", "en": "ICT service management (B2B)" },
+    { "fr": "Administration publique", "en": "Public administration" },
+    { "fr": "Espace", "en": "Space" }
+  ],
+  "annexe2": [
+    { "fr": "Services postaux et d'expédition", "en": "Postal and courier services" },
+    { "fr": "Gestion des déchets", "en": "Waste management" },
+    { "fr": "Produits chimiques", "en": "Chemicals" },
+    { "fr": "Denrées alimentaires", "en": "Food" },
+    { "fr": "Fabrication (dont dispositifs médicaux)", "en": "Manufacturing (including medical devices)" },
+    { "fr": "Fournisseurs numériques", "en": "Digital providers" },
+    { "fr": "Recherche", "en": "Research" }
+  ]
+}

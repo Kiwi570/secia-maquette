@@ -1,0 +1,558 @@
+{
+ "confidentialite": {
+  "fr": [
+   {
+    "titre": "",
+    "blocs": [
+     {
+      "p": "La société NPS Consult Group S.A. (ci-après « NPS Consult Group », « nous » ou « notre ») accorde une attention particulière à la protection de vos données personnelles. Cette politique explique de manière claire comment nous collectons, utilisons et protégeons les informations que vous nous transmettez lorsque vous utilisez notre site Internet (ci-après le « Site »)."
+     },
+     {
+      "p": "Elle complète nos Conditions Générales ainsi que notre Politique en matière de cookies. Nous vous invitons à lire attentivement ce document afin de comprendre les traitements que nous appliquons à vos données personnelles."
+     },
+     {
+      "p": "En accédant au Site de NPS Consult Group, vous acceptez les principes décrits dans cette Politique de Confidentialité"
+     }
+    ]
+   },
+   {
+    "titre": "1. Données personnelles que nous collectons",
+    "blocs": [
+     {
+      "p": "Les données personnelles sont toutes les informations permettant de vous identifier, directement (ex. : nom, prénom) ou indirectement (ex. : numéro de téléphone, adresse IP, entreprise)."
+     },
+     {
+      "p": "Dans le cadre de nos interactions, nous pouvons recueillir :"
+     },
+     {
+      "ul": [
+       "Informations d’identification (nom, prénom, adresse, e-mail, téléphone).",
+       "Informations professionnelles.",
+       "Informations techniques (adresse IP, données de navigation).",
+       "Informations liées à l’utilisation du Site et à vos interactions avec nous."
+      ]
+     }
+    ]
+   },
+   {
+    "titre": "2. Moment et finalité de la collecte",
+    "blocs": [
+     {
+      "h": "Formulaire de contact"
+     },
+     {
+      "p": "Lorsque vous nous contactez via le formulaire du Site, nous recueillons votre nom, prénom, entreprise, e-mail et numéro de téléphone."
+     },
+     {
+      "p": "Ces données nous permettent de répondre à votre demande et d’assurer un suivi si nécessaire."
+     },
+     {
+      "p": "Les échanges liés à ces demandes sont conservés jusqu’à deux (2) ans avant suppression définitive."
+     },
+     {
+      "h": "Inscription à la newsletter"
+     },
+     {
+      "p": "Pour vous inscrire à notre newsletter, nous demandons votre nom et votre adresse e-mail."
+     },
+     {
+      "p": "Votre inscription constitue un consentement à recevoir nos actualités, informations et communications professionnelles."
+     },
+     {
+      "p": "Vous pouvez retirer votre consentement à tout moment. Vos données sont conservées tant que vous restez inscrit(e)."
+     },
+     {
+      "h": "Navigation sur le Site"
+     },
+     {
+      "p": "Des données techniques (telles que des logs serveur) peuvent être collectées pour assurer la sécurité, le fonctionnement et l’amélioration du Site."
+     }
+    ]
+   },
+   {
+    "titre": "3. Partage de vos données",
+    "blocs": [
+     {
+      "p": "Vos données personnelles peuvent être transmises à des prestataires agissant pour notre compte et liés contractuellement à NPS Consult Group."
+     },
+     {
+      "p": "Ils n’ont accès qu’aux informations nécessaires à l’exécution de leur mission et sont soumis à des obligations strictes de confidentialité et de sécurité."
+     },
+     {
+      "p": "En dehors de ces cas, vos données ne sont pas communiquées à des tiers, sauf obligation légale."
+     }
+    ]
+   },
+   {
+    "titre": "4. Transfert de données hors Union Européenne",
+    "blocs": [
+     {
+      "p": "Nous privilégions le stockage et le traitement de vos données au sein de l’Union Européenne."
+     },
+     {
+      "p": "Lorsque certains prestataires sont situés hors UE, nous nous assurons que les transferts respectent la législation applicable et offrent un niveau de protection adéquat (notamment via les clauses contractuelles types de la Commission Européenne)"
+     }
+    ]
+   },
+   {
+    "titre": "5. Vos droits",
+    "blocs": [
+     {
+      "p": "Vous disposez des droits suivants concernant vos données personnelles :"
+     },
+     {
+      "ul": [
+       "Droit d’accès",
+       "Droit de rectification",
+       "Droit à l’effacement",
+       "Droit à la limitation",
+       "Droit à la portabilité"
+      ]
+     }
+    ]
+   },
+   {
+    "titre": "6. Liens externes",
+    "blocs": [
+     {
+      "p": "Le Site peut contenir des liens vers des services externes ou sites tiers."
+     },
+     {
+      "p": "Nous ne sommes pas responsables de leurs pratiques en matière de confidentialité. Nous vous recommandons de consulter leurs politiques respectives avant de fournir des données personnelles."
+     }
+    ]
+   },
+   {
+    "titre": "7. Mise à jour de la Politique",
+    "blocs": [
+     {
+      "p": "Nous pouvons modifier cette Politique afin de l’adapter à nos pratiques ou aux obligations légales."
+     },
+     {
+      "p": "En cas de changement important, nous informerons les utilisateurs via une notification sur le Site ou par e-mail."
+     },
+     {
+      "p": "La poursuite de l’utilisation du Site vaut acceptation des modifications"
+     }
+    ]
+   },
+   {
+    "titre": "8. Contact",
+    "blocs": [
+     {
+      "p": "Pour toute question relative à cette Politique de Confidentialité ou à vos données personnelles, vous pouvez nous contacter :"
+     },
+     {
+      "p": "E-mail : contact@npsconsult.com"
+     },
+     {
+      "p": "Téléphone : 621 196 349"
+     }
+    ]
+   }
+  ],
+  "en": [
+   {
+    "titre": "",
+    "blocs": [
+     {
+      "p": "NPS Consult Group S.A. (referred “NPS Consult Group”, “we”, or “our”) places great importance on protecting your personal data. This policy explains how we collect, use, and safeguard the information you provide when using our website (referred the “Site”)."
+     },
+     {
+      "p": "It complements our General Terms and Conditions as well as our Cookie Policy. We encourage you to read this document carefully to understand how we process your personal data."
+     },
+     {
+      "p": "By accessing the NPS Consult Group website, you agree to the principles described in this Privacy Policy."
+     }
+    ]
+   },
+   {
+    "titre": "1. Personal data we collect",
+    "blocs": [
+     {
+      "p": "Personal data refers to any information that can identify you directly (e.g., name, surname) or indirectly (e.g., phone number, IP address, company name)."
+     },
+     {
+      "p": "During our interactions, we may collect:"
+     },
+     {
+      "ul": [
+       "Identification details (name, surname, address, email, phone number)",
+       "Professional information",
+       "Technical information (IP address, browsing data)",
+       "Information related to your use of the Site and your interactions with us"
+      ]
+     }
+    ]
+   },
+   {
+    "titre": "2. When and why we collect your data",
+    "blocs": [
+     {
+      "h": "Contact form"
+     },
+     {
+      "p": "When you contact us via the Site, we collect your name, surname, company name, email address, and phone number."
+     },
+     {
+      "p": "This information allows us to respond to your request and follow up if necessary."
+     },
+     {
+      "p": "Correspondence related to such requests is kept for up to two (2) years before being permanently deleted."
+     },
+     {
+      "h": "Newsletter subscription"
+     },
+     {
+      "p": "To subscribe to our newsletter, we ask for your name and email address."
+     },
+     {
+      "p": "Your registration constitutes consent to receive updates, news, and professional communications from us."
+     },
+     {
+      "p": "You may withdraw your consent at any time. Your data is kept as long as you remain subscribed."
+     },
+     {
+      "h": "Website navigation"
+     },
+     {
+      "p": "Technical data (such as server logs) may be collected to ensure the security, functionality, and continuous improvement of the Site."
+     }
+    ]
+   },
+   {
+    "titre": "3. Sharing your data",
+    "blocs": [
+     {
+      "p": "Your personal data may be shared with service providers working on our behalf and contractually bound to NPS Consult Group."
+     },
+     {
+      "p": "They only have access to the information required for their tasks and are bound by strict confidentiality and security obligations."
+     },
+     {
+      "p": "Apart from these cases, your data will not be shared with third parties unless required by law."
+     }
+    ]
+   },
+   {
+    "titre": "4. Data transfers outside the European Union",
+    "blocs": [
+     {
+      "p": "We primarily store and process your personal data within the European Union."
+     },
+     {
+      "p": "If some service providers are located outside the EU, we ensure that any data transfer complies with applicable regulations and provides an adequate level of protection (including the European Commission’s Standard Contractual Clauses)."
+     }
+    ]
+   },
+   {
+    "titre": "5. Your rights",
+    "blocs": [
+     {
+      "p": "You have the following rights regarding your personal data:"
+     },
+     {
+      "ul": [
+       "Right of access",
+       "Right to rectification",
+       "Right to erasure",
+       "Right to restriction of processing",
+       "Right to data portability"
+      ]
+     }
+    ]
+   },
+   {
+    "titre": "6. External Links",
+    "blocs": [
+     {
+      "p": "The Site may include links to third-party websites or services."
+     },
+     {
+      "p": "We are not responsible for their privacy practices. We recommend reviewing their respective privacy policies before providing personal information."
+     }
+    ]
+   },
+   {
+    "titre": "7. Updates to this Policy",
+    "blocs": [
+     {
+      "p": "We may update this Privacy Policy to reflect changes in our practices or legal requirements."
+     },
+     {
+      "p": "If significant changes occur, we will notify users via a notice on the Site or by email."
+     },
+     {
+      "p": "Continued use of the Site constitutes acceptance of the updated Policy."
+     }
+    ]
+   },
+   {
+    "titre": "8. Contact",
+    "blocs": [
+     {
+      "p": "For any questions regarding this Privacy Policy or your personal data, you may contact us at:"
+     },
+     {
+      "p": "Email: contact@npsconsult.com"
+     },
+     {
+      "p": "Phone: 621 196 349"
+     }
+    ]
+   }
+  ]
+ },
+ "conditions": {
+  "fr": [
+   {
+    "titre": "Conditions générales – les notions de base",
+    "blocs": [
+     {
+      "p": "Nom de l’entreprise : NPS Consult Group S.A."
+     },
+     {
+      "p": "Adresse enregistrée : 25, Hossegaass, Dalheim, L-5787 Luxembourg"
+     },
+     {
+      "p": "Adresse e-mail de contact : contact@npsconsult.com"
+     },
+     {
+      "p": "Numéro de téléphone : 621 196 349"
+     },
+     {
+      "p": "Site web : www.npsconsult.com"
+     }
+    ]
+   },
+   {
+    "titre": "Services",
+    "blocs": [
+     {
+      "p": "NPS Consult Group S.A. fournit des services de conseil en informatique et des services professionnels associés, incluant notamment :"
+     },
+     {
+      "p": "Services Réseau, Services Cloud, Services de Sécurité, Services Data Center, Conseil IT, Services Managés ainsi que Licensing & Support."
+     },
+     {
+      "p": "Tous les services sont fournis conformément aux accords écrits ou aux propositions de projet conclus entre le client et NPS Consult Group S.A."
+     }
+    ]
+   },
+   {
+    "titre": "Utilisation du site Web",
+    "blocs": [
+     {
+      "p": "Vous acceptez d’utiliser notre site web et nos services uniquement à des fins légales et d’une manière qui ne porte pas atteinte à l’utilisation et à la jouissance du site par d’autres utilisateurs."
+     },
+     {
+      "p": "Vous ne devez pas :"
+     },
+     {
+      "p": "Utiliser notre site web à des fins frauduleuses ou illégales."
+     },
+     {
+      "p": "Tenter d’accéder sans autorisation à tout système ou donnée."
+     },
+     {
+      "p": "Copier, distribuer ou modifier tout contenu sans consentement écrit préalable."
+     }
+    ]
+   },
+   {
+    "titre": "Propriété intellectuelle",
+    "blocs": [
+     {
+      "p": "Tous les contenus, marques, designs, logiciels et autres éléments affichés sur ce site web sont la propriété intellectuelle de NPS Consult Group S.A., sauf indication contraire."
+     },
+     {
+      "p": "Vous ne pouvez pas reproduire, republier ou distribuer ces éléments sans notre autorisation écrite préalable."
+     }
+    ]
+   },
+   {
+    "titre": "Confidentialité",
+    "blocs": [
+     {
+      "p": "Toutes les informations échangées entre vous et NPS Consult Group S.A. dans le cadre de la prestation de services seront traitées comme strictement confidentielles, sauf si leur divulgation est requise par la loi ou faite avec votre consentement préalable."
+     }
+    ]
+   },
+   {
+    "titre": "Frais et paiement",
+    "blocs": [
+     {
+      "p": "Les frais de service sont définis dans les contrats, propositions ou factures émis par NPS Consult Group S.A."
+     },
+     {
+      "p": "Les conditions de paiement sont « net à 30 jours à compter de la date de la facture », sauf indication contraire."
+     },
+     {
+      "p": "Un défaut de paiement dans les délais peut entraîner la suspension des services et/ou des frais supplémentaires."
+     }
+    ]
+   },
+   {
+    "titre": "Limitation de responsabilité",
+    "blocs": [
+     {
+      "p": "NPS Consult Group S.A. ne pourra être tenue responsable d’aucun dommage indirect, accessoire ou consécutif résultant de l’utilisation ou de l’impossibilité d’utiliser notre site web ou nos services."
+     },
+     {
+      "p": "Notre responsabilité totale ne pourra pas dépasser le montant total payé par le client pour le service spécifique à l’origine de la réclamation."
+     }
+    ]
+   },
+   {
+    "titre": "Liens tiers",
+    "blocs": [
+     {
+      "p": "Notre site web peut inclure des liens vers des sites ou ressources tiers."
+     },
+     {
+      "p": "Nous ne sommes pas responsables du contenu, des politiques ou des pratiques de ces sites tiers."
+     }
+    ]
+   },
+   {
+    "titre": "Contact",
+    "blocs": [
+     {
+      "p": "Si vous avez des questions concernant ces Conditions Générales, veuillez nous contacter :"
+     },
+     {
+      "p": "E-mail : contact@npsconsult.com"
+     },
+     {
+      "p": "Téléphone : 621 196 349"
+     }
+    ]
+   }
+  ],
+  "en": [
+   {
+    "titre": "Company Information",
+    "blocs": [
+     {
+      "p": "Business Name: NPS Consult Group S.A."
+     },
+     {
+      "p": "Registered Address: 25, Hossegaass, Dalheim, L-5787 Luxembourg"
+     },
+     {
+      "p": "Contact Email: contact@npsconsult.com"
+     },
+     {
+      "p": "Phone Number: 621 196 349"
+     },
+     {
+      "p": "Website: www.npsconsult.com"
+     }
+    ]
+   },
+   {
+    "titre": "Services",
+    "blocs": [
+     {
+      "p": "NPS Consult Group S.A. provides IT consulting and related professional services, including but not limited to:"
+     },
+     {
+      "p": "Network Services, Cloud Services, Security Services, Data Center Services, IT Consulting, Managed Services and Licensing & Support"
+     },
+     {
+      "p": "All services are provided in accordance with written agreements or project proposals between the client and NPS Consult Group S.A"
+     }
+    ]
+   },
+   {
+    "titre": "Use of Website",
+    "blocs": [
+     {
+      "p": "You agree to use our website and services only for lawful purposes and in a manner that does not infringe upon or restrict the use and enjoyment of the website by others."
+     },
+     {
+      "p": "You must not:"
+     },
+     {
+      "p": "Use our website for fraudulent or unlawful purposes."
+     },
+     {
+      "p": "Attempt to gain unauthorized access to any systems or data."
+     },
+     {
+      "p": "Copy, distribute, or modify content without prior written consent."
+     }
+    ]
+   },
+   {
+    "titre": "Intellectual Property",
+    "blocs": [
+     {
+      "p": "All content, trademarks, designs, software, and other materials displayed on this website are the intellectual property of NPS Consult Group S.A., unless otherwise stated."
+     },
+     {
+      "p": "You may not reproduce, republish, or distribute any materials without our prior written authorization."
+     }
+    ]
+   },
+   {
+    "titre": "Confidentiality",
+    "blocs": [
+     {
+      "p": "All information exchanged between you and NPS Consult Group S.A. during the provision of services will be treated as strictly confidential, unless disclosure is required by law or with your prior consent."
+     }
+    ]
+   },
+   {
+    "titre": "Fees and Payment",
+    "blocs": [
+     {
+      "p": "Service fees are defined in individual contracts, proposals, or invoices provided by NPS Consult Group S.A.."
+     },
+     {
+      "p": "Payment terms are “net 30 days from the date of invoice unless otherwise specified."
+     },
+     {
+      "p": "Failure to make timely payments may result in suspension of services and/or additional charges."
+     }
+    ]
+   },
+   {
+    "titre": "Limitation of Liability",
+    "blocs": [
+     {
+      "p": "NPS Consult Group S.A. shall not be held liable for any indirect, incidental, or consequential damages resulting from the use or inability to use our website or services."
+     },
+     {
+      "p": "Our total liability shall not exceed the total amount paid by the client for the specific service giving rise to the claim."
+     }
+    ]
+   },
+   {
+    "titre": "Third-Party Links",
+    "blocs": [
+     {
+      "p": "Our website may include links to third-party websites or resources."
+     },
+     {
+      "p": "We are not responsible for the content, policies, or practices of any third-party websites."
+     }
+    ]
+   },
+   {
+    "titre": "Contact",
+    "blocs": [
+     {
+      "p": "If you have any questions about these Terms and Conditions, please contact us:"
+     },
+     {
+      "p": "Email: contact@npsconsult.com"
+     },
+     {
+      "p": "Phone: 621 196 349"
+     }
+    ]
+   }
+  ]
+ }
+}

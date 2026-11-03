@@ -1,0 +1,6 @@
+[
+  { "cle": "securite-mont-saint-guibert", "titre": { "fr": "Ingénieur sécurité", "en": "Security engineer" }, "lieu": { "fr": "Mont-Saint-Guibert, Belgique", "en": "Mont-Saint-Guibert, Belgium" } },
+  { "cle": "reseau-mont-saint-guibert", "titre": { "fr": "Ingénieur réseau", "en": "Network engineer" }, "lieu": { "fr": "Mont-Saint-Guibert, Belgique", "en": "Mont-Saint-Guibert, Belgium" } },
+  { "cle": "reseau-dalheim", "titre": { "fr": "Ingénieur réseau", "en": "Network engineer" }, "lieu": { "fr": "Dalheim, Luxembourg", "en": "Dalheim, Luxembourg" } },
+  { "cle": "securite-dalheim", "titre": { "fr": "Ingénieur sécurité", "en": "Security engineer" }, "lieu": { "fr": "Dalheim, Luxembourg", "en": "Dalheim, Luxembourg" } }
+]

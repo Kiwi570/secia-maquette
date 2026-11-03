@@ -1,0 +1,17 @@
+{
+  "presentation-ecran": { "fr": "Présentation d’un tableau de bord sur grand écran en réunion", "en": "Dashboard presentation on a large screen in a meeting" },
+  "conseil-analyse": { "fr": "Analyse d’un rapport sur ordinateur portable", "en": "Reviewing a report on a laptop" },
+  "revue-tableau-de-bord": { "fr": "Revue d’un tableau de bord de sécurité en équipe", "en": "Team reviewing a security dashboard" },
+  "relecture-rapport": { "fr": "Relecture d’un rapport en salle de réunion", "en": "Reviewing a report in a meeting room" },
+  "supervision-postes": { "fr": "Ingénieurs à leurs postes de travail", "en": "Engineers at their workstations" },
+  "echange-ordinateur": { "fr": "Échange autour d’un ordinateur portable", "en": "Discussion around a laptop" },
+  "surveillance-carte": { "fr": "Carte des cybermenaces en direct sur un ordinateur portable", "en": "Live cyber threat map on a laptop" },
+  "plateau-bureaux": { "fr": "Plateau de bureaux de SECIA", "en": "SECIA open-plan office" },
+  "cellule-crise": { "fr": "Réunion de l’équipe dans une salle de SECIA", "en": "Team meeting in a SECIA room" },
+  "alerte-tableau": { "fr": "Écran d’alerte de cyberattaque sur un poste de travail", "en": "Cyberattack alert on a workstation screen" },
+  "schema-reseau": { "fr": "Schéma de réseau affiché sur un écran", "en": "Network diagram displayed on a screen" },
+  "reunion-equipe": { "fr": "Réunion de l’équipe autour de la table", "en": "Team meeting around the table" },
+  "atelier-analyse": { "fr": "Atelier d’analyse autour d’ordinateurs portables", "en": "Analysis workshop around laptops" },
+  "revue-securite": { "fr": "Revue de sécurité devant un écran", "en": "Security review in front of a screen" },
+  "echange-noir-blanc": { "fr": "Échange en salle de réunion", "en": "Discussion in a meeting room" }
+}

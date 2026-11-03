@@ -1,0 +1,58 @@
+[
+  {
+    "phase": {
+      "fr": "Concevoir",
+      "en": "Design"
+    },
+    "titre": {
+      "fr": "Conception et audits",
+      "en": "Design and audits"
+    },
+    "texte": {
+      "fr": "Conception, mise en œuvre et migration · Audits et conformité des réseaux.",
+      "en": "Design, implementation & migration · Network audits & compliance."
+    }
+  },
+  {
+    "phase": {
+      "fr": "Déployer",
+      "en": "Deploy"
+    },
+    "titre": {
+      "fr": "Réseaux et connectivité",
+      "en": "Networks and connectivity"
+    },
+    "texte": {
+      "fr": "Réseau d'entreprise · Connectivité WAN et cloud · Réseaux définis par logiciel (SDN) · Solutions sans fil.",
+      "en": "Enterprise network · WAN & cloud connectivity · Software-defined networking (SDN) · Wireless solutions."
+    }
+  },
+  {
+    "phase": {
+      "fr": "Exploiter",
+      "en": "Operate"
+    },
+    "titre": {
+      "fr": "Automatisation et surveillance",
+      "en": "Automation and monitoring"
+    },
+    "texte": {
+      "fr": "Surveillance en temps réel, cadres d'automatisation, tableaux de bord et alertes.",
+      "en": "Real-time monitoring, automation frameworks, dashboards and alerts."
+    }
+  },
+  {
+    "phase": {
+      "fr": "Transmettre",
+      "en": "Transfer"
+    },
+    "titre": {
+      "fr": "Formation et laboratoires",
+      "en": "Training and labs"
+    },
+    "texte": {
+      "fr": "Formation et transfert de connaissances · Laboratoires de validation de concept.",
+      "en": "Training & knowledge transfer · Proof-of-concept labs."
+    }
+  }
+]

@@ -1,6 +1,6 @@
 /* Pôle Cybersécurité (modèle « Pôle ») : ouverture, les six services et NIS2 en galerie horizontale épinglée,
    cycle de vie en frise, urgence compacte, appel final.
-   Les services dont la page arrive en v2 ouvrent le contact prérempli : aucun lien mort. */
+   Chaque fiche ouvre la page de son service. */
 import { html } from '../../outils/gabarit.mjs';
 import { tete, urgenceCompacte, fin, frise } from '../gabarits/blocs.mjs';
 

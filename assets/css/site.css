@@ -737,6 +737,7 @@ html.calme .fiche-media, html:not(.js) .fiche-media { aspect-ratio: 3 / 2; flex:
 .champ--case { display: flex; align-items: flex-start; gap: 12px; }
 .champ--case input { width: 22px; height: 22px; min-height: 0; margin: 2px 0 0; accent-color: var(--signal); flex: none; }
 .champ--case label { font-weight: 500; }
+.case-accord { display: flex; align-items: flex-start; gap: 12px; min-height: 44px; cursor: pointer; }
 .etapes-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; margin-top: 8px; }
 .recap { position: sticky; top: calc(var(--entete-h) + 24px); background: var(--encre); color: var(--calque); padding: 22px; }
 .recap .surtitre { color: #AEB9CF; }
@@ -792,3 +793,93 @@ nav li > a, .pied li > a { min-width: 44px; }
 }
 /* Récapitulatif de la demande : photo en tête. */
 .recap-media { aspect-ratio: 16 / 9; margin: -22px -22px 18px; border-radius: 0; }
+
+/* ---------- v2 : pages de services (modèle « Service ») ---------- */
+.familles { padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--trait); }
+.familles-grille { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
+.familles-grille--2, .familles-grille--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.famille { background: color-mix(in srgb, var(--calque) 50%, #fff); border: 1px solid var(--trait); padding: clamp(16px, 2vw, 24px); display: flex; flex-direction: column; min-width: 0; }
+.famille-entete { display: flex; justify-content: space-between; gap: 12px; margin: 0; max-width: none; font-family: var(--police-mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--encre-douce); }
+.famille .planche-cote { display: block; width: 100%; height: 12px; margin: 10px 0 16px; color: var(--signal); }
+.famille h3 { font-size: clamp(1.25rem, 1.05rem + .7vw, 1.6rem); margin-bottom: .45em; }
+.famille-accroche { font-weight: 500; margin: 0 0 14px; }
+.famille .liste-points { font-size: .95rem; gap: 8px; }
+.famille-conclusion { margin: auto 0 0; padding-top: 12px; border-top: 1px dashed var(--trait); color: var(--encre-douce); font-size: .95rem; }
+.famille--a-completer { border-style: dashed; }
+.raisons { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 80px); align-items: start; padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--trait); }
+.raisons-media { aspect-ratio: 4 / 5; max-height: 680px; position: sticky; top: calc(var(--entete-h) + 24px); }
+.raisons-grille { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); }
+.raison h3 { font-size: 1.3rem; padding-bottom: .5em; border-bottom: 1px solid var(--trait); }
+.raison-accroche { font-weight: 500; }
+.raison-conclusion { color: var(--encre-douce); }
+.autres-planches { padding-block: 28px 40px; border-top: 1px solid var(--trait); }
+.autres-planches ul { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.autres-planches a { display: inline-flex; align-items: baseline; gap: .5em; min-height: 44px; align-items: center; text-underline-offset: .25em; }
+.autres-num { font-family: var(--police-mono); font-size: .8rem; color: var(--signal-texte); }
+.frise--4 .frise-etapes { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1000px) {
+  .familles-grille, .familles-grille--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .raisons { grid-template-columns: minmax(0, 1fr); }
+  .raisons-media { position: static; aspect-ratio: 16 / 10; }
+  .frise--4 .frise-etapes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .familles-grille, .familles-grille--2, .familles-grille--4, .raisons-grille { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ---------- v2 : NIS2 ---------- */
+.nis2-champ { padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--trait); }
+.nis2-champ-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 72px); align-items: start; }
+.seuils { margin: 0; background: color-mix(in srgb, var(--calque) 50%, #fff); border: 1px solid var(--trait); padding: clamp(16px, 2.4vw, 28px); }
+.seuils .planche-cote { display: block; width: 100%; height: 12px; margin: 8px 0 14px; color: var(--signal); }
+.seuils table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.seuils th, .seuils td { text-align: left; padding: 12px 8px 12px 0; border-bottom: 1px solid var(--trait); vertical-align: top; }
+.seuils thead th { font-family: var(--police-mono); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--encre-douce); font-weight: 500; }
+.seuils td { font-family: var(--police-titres); font-weight: 600; font-size: clamp(1.2rem, 1rem + .8vw, 1.7rem); letter-spacing: -.02em; }
+.nis2-exceptions { margin: 18px 0 0; color: var(--encre-douce); }
+.secteurs h3 { display: flex; justify-content: space-between; gap: 12px; font-size: 1.15rem; padding-bottom: .5em; border-bottom: 1px solid var(--encre); }
+.secteurs h3 span { font-family: var(--police-mono); color: var(--signal-texte); }
+.secteurs-liste { list-style: none; margin: 0 0 28px; padding: 0; columns: 2; column-gap: 24px; }
+.secteurs-liste li { break-inside: avoid; padding: 8px 0; border-bottom: 1px solid var(--trait); }
+.sanctions { padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--trait); }
+.sanctions-grille { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
+.sanction { background: color-mix(in srgb, var(--calque) 50%, #fff); border: 1px solid var(--trait); padding: clamp(16px, 2vw, 24px); min-width: 0; }
+.sanction .planche-cote { display: block; width: 100%; height: 12px; margin: 0 0 14px; color: var(--signal); }
+.sanction-cat { font-family: var(--police-mono); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--encre-douce); margin: 0 0 6px; }
+.sanction-montant { font-family: var(--police-titres); font-weight: 600; font-size: clamp(2.6rem, 1.8rem + 3vw, 4.4rem); letter-spacing: -.05em; line-height: 1.1; margin: 0 0 10px; }
+.sanction--texte h3 { font-size: 1.2rem; }
+@media (max-width: 1000px) { .nis2-champ-grille, .sanctions-grille { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 520px) { .secteurs-liste { columns: 1; } }
+
+/* ---------- v2 : Carrières ---------- */
+.offres { padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--trait); }
+.offres-tete { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 72px); align-items: end; margin-bottom: clamp(24px, 4vw, 48px); }
+.offres-media { aspect-ratio: 16 / 10; }
+.offres-liste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 2vw, 20px); }
+.offre { background: color-mix(in srgb, var(--calque) 50%, #fff); border: 1px solid var(--trait); padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.offre h3 { font-size: 1.35rem; margin: 6px 0 0; }
+.offre .a-confirmer { margin: 0; }
+.offre p:last-child { margin: auto 0 0; }
+.candidature { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 72px); align-items: start; padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--trait); }
+.candidature-media { aspect-ratio: 4 / 3; margin-top: 24px; }
+.champ--groupe { border: 0; padding: 0; margin: 0 0 18px; min-width: 0; }
+.champ--groupe legend { font-weight: 600; padding: 0; margin-bottom: 6px; }
+.cases { display: flex; flex-wrap: wrap; gap: 8px; }
+.case { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border: 1px solid var(--trait); background: var(--calque); cursor: pointer; }
+.case input { width: 18px; height: 18px; accent-color: var(--encre); }
+.champ { min-width: 0; }
+.champ select, .champ input:not([type="checkbox"]):not([type="radio"]) { width: 100%; min-width: 0; max-width: 100%; }
+.champ input[type="file"] { padding: 10px; width: 100%; min-width: 0; max-width: 100%; }
+.offre-lieu { margin: 0; font-family: var(--police-mono); font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--encre-douce); }
+@media (max-width: 1000px) { .offres-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); } .offres-tete, .candidature { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 520px) { .offres-liste { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- v2 : pages légales ---------- */
+.note-legale { margin: 0 0 24px; padding: 16px 18px; border: 1px dashed var(--signal); background: color-mix(in srgb, var(--signal) 6%, var(--calque)); }
+.note-legale p { margin: 0; color: var(--encre); }
+.note-legale p + p { margin-top: .6em; }
+.texte-long h3 { font-size: 1.1rem; margin: 1.2em 0 .4em; }
+.texte-long ul { padding-left: 1.2em; }
+
+/* Pages de services : titre un peu plus petit, l'ouverture tient dans le premier écran. */
+.page-tete--service h1 { font-size: clamp(2.4rem, min(4.8vw, 8.4vh), 4.6rem); }
