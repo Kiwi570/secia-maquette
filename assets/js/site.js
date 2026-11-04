@@ -2,9 +2,9 @@
    le mode calme, les boucles, les mesures et la bibliothèque d'effets (lignes, mots, cascade, rideau, parallaxe,
    zoom, trace, galerie, onde, magnétique, incline). Ici, seulement les effets du plan d'animation, chacun marqué
    data-effet="nom" dans les pages : esquisse, impulsions, cotes, plan-trois-etats, confinement, verification,
-   chemin-attaque, cartouche. Aucune lecture de mise en page pendant le défilement : tout est mesuré au
+   chemin-attaque, cartouche ; et, sur tout le site, fil, decode, ruban, la grille sous la souris et les photos scannées. Aucune lecture de mise en page pendant le défilement : tout est mesuré au
    rafraîchissement de ScrollTrigger ; les tracés SVG sont échantillonnés une fois au démarrage. */
-import { demarrer, boucle, etat } from './socle/index.js?v=3';
+import { demarrer, boucle, etat, quand } from './socle/index.js?v=4';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -259,6 +259,240 @@ function chemin() {
   }));
 }
 
+/* ---------- decode : surtitres, numéros de planche et chiffres se décodent comme un terminal à leur arrivée ----------
+   Le vrai texte reste en place (transparent) : la mise en page ne bouge pas d'un pixel et les lecteurs d'écran le lisent.
+   Les signes tirés au sort sont posés par-dessus ; à la fin, le texte d'origine est remis tel quel. */
+const GLYPHES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#/<>*+=';
+const A_DECODER = '.surtitre, .planche-entete > span, .fiche-entete > span, .famille-entete > span, .cote-valeur, .cote-libelle, .valeur-num';
+function decode() {
+  if (calme() || !('IntersectionObserver' in window)) return;
+  const cibles = $$(A_DECODER).filter((el) => !el.closest('[data-ouverture], [data-voile], [data-menu], .pied')
+    && el.childNodes.length && [...el.childNodes].every((n) => n.nodeType === 3) && el.textContent.trim().length > 1);
+  const lancer = (el) => {
+    const fin = el.textContent;
+    const chiffres = el.matches('.cote-valeur, .valeur-num');
+    const lot = chiffres ? '0123456789' : GLYPHES;
+    const fixe = (ch) => (chiffres ? !/\d/.test(ch) : !/[A-Za-zÀ-ÿ0-9]/.test(ch));
+    const reel = document.createElement('span');
+    reel.className = 'decode-reel';
+    reel.textContent = fin;
+    el.textContent = '';
+    el.append(reel);
+    const rb = el.getBoundingClientRect(), rr = reel.getBoundingClientRect();
+    if (!rr.width || !rr.height) { el.textContent = fin; return; }
+    const statique = getComputedStyle(el).position === 'static';
+    if (statique) el.style.position = 'relative';
+    const vu = document.createElement('span');
+    vu.className = 'decode-vu';
+    vu.setAttribute('aria-hidden', 'true');
+    vu.setAttribute('data-audit-ignorer', '');
+    vu.style.cssText = `left:${(rr.left - rb.left - el.clientLeft).toFixed(2)}px;top:${(rr.top - rb.top - el.clientTop).toFixed(2)}px;width:${Math.ceil(rr.width + 1)}px;height:${Math.ceil(rr.height)}px`;
+    vu.textContent = fin;
+    el.append(vu);
+    el.classList.add('decodage');
+    const n = fin.length, duree = Math.min(950, 420 + n * 16), t0 = performance.now();
+    let derniere = -1;
+    const image = (t) => {
+      const p = Math.min(1, (t - t0) / duree);
+      if (p >= 1) { el.textContent = fin; if (statique) el.style.position = ''; return; }
+      if (t - derniere >= 40) {
+        derniere = t;
+        const net = Math.floor((1 - (1 - p) * (1 - p)) * n);
+        let txt = fin.slice(0, net);
+        for (let i = net; i < n; i++) txt += fixe(fin[i]) ? fin[i] : lot[(Math.random() * lot.length) | 0];
+        vu.textContent = txt;
+      }
+      requestAnimationFrame(image);
+    };
+    requestAnimationFrame(image);
+  };
+  const attente = [];
+  const io = new IntersectionObserver((entrees) => entrees.forEach((e) => {
+    if (!e.isIntersecting) return;
+    io.unobserve(e.target);
+    if (etat.pret) lancer(e.target); else attente.push(e.target);
+  }), { threshold: 0.01, rootMargin: '0px 0px -8% 0px' });
+  quand('pret', () => attente.splice(0).forEach(lancer));
+  /* Dans une galerie (défilement horizontal sur téléphone), le décodage a lieu mais n'est pas compté comme effet de section. */
+  cibles.forEach((el) => { if (!el.dataset.effet && !el.closest('[data-fx="galerie"]')) el.dataset.effet = 'decode'; io.observe(el); });
+}
+
+/* ---------- fil : un trait orange relie les sections et se trace au fil de la lecture (ordinateur, 1100 px et plus) ----------
+   Positions mesurées au rafraîchissement de ScrollTrigger ; au défilement, seulement des transformations. */
+function fil() {
+  const main = $('main');
+  if (!main || !ST || !gsap) return;
+  const boite = document.createElement('div');
+  boite.className = 'fil';
+  boite.setAttribute('aria-hidden', 'true');
+  boite.setAttribute('data-audit-ignorer', '');
+  boite.dataset.effet = 'fil';
+  boite.innerHTML = '<span class="fil-rail"></span><span class="fil-trace"></span><span class="fil-tete"></span>';
+  document.body.appendChild(boite);
+  const trace = $('.fil-trace', boite), tete = $('.fil-tete', boite);
+  const grand = window.matchMedia('(min-width: 1100px)');
+  let noeuds = [], y0 = 0, y1 = 1, haut = 0;
+  const maj = (defile) => {
+    const y = defile + window.innerHeight * 0.62 - haut;
+    const p = gsap.utils.clamp(0, 1, (y - y0) / (y1 - y0));
+    trace.style.transform = `scaleY(${p.toFixed(4)})`;
+    tete.style.transform = `translate3d(0, ${(y0 + p * (y1 - y0)).toFixed(1)}px, 0)`;
+    tete.style.opacity = p > 0 && p < 1 ? '1' : '0';
+    noeuds.forEach((n) => { const a = y >= n.y - 2; if (a !== n.a) { n.a = a; n.el.classList.toggle('atteint', a); } });
+  };
+  const mesurer = () => {
+    noeuds.forEach((n) => n.el.remove());
+    noeuds = [];
+    if (!grand.matches) { boite.hidden = true; return; }
+    const sy = window.scrollY;
+    haut = main.getBoundingClientRect().top + sy;
+    const cont = $('.conteneur', main);
+    const x = Math.max(14, Math.round((cont ? cont.getBoundingClientRect().left : 48) - 28));
+    const pts = [];
+    [...main.children].forEach((bloc) => {
+      const sec = bloc.classList.contains('pin-spacer') ? bloc.firstElementChild : bloc;
+      if (!sec || !sec.matches('section, [data-section]')) return;
+      const cible = $('.surtitre', sec) || $('h1, h2', sec);
+      if (!cible) return;
+      const r = cible.getBoundingClientRect(), rs = sec.getBoundingClientRect(), rb = bloc.getBoundingClientRect();
+      if (!r.height) return;
+      const branche = cible.classList.contains('surtitre') && r.left > x && r.left - x < 160 ? Math.round(r.left - x) : 0;
+      pts.push({ y: Math.round(rb.top + sy - haut + (r.top - rs.top) + r.height / 2), branche });
+    });
+    if (pts.length < 2) { boite.hidden = true; return; }
+    boite.hidden = false;
+    y0 = pts[0].y; y1 = pts[pts.length - 1].y;
+    boite.style.top = `${haut}px`;
+    boite.style.left = `${x}px`;
+    boite.style.setProperty('--y0', `${y0}px`);
+    boite.style.setProperty('--h', `${y1 - y0}px`);
+    noeuds = pts.map((p) => {
+      const el = document.createElement('span');
+      el.className = 'fil-noeud';
+      el.style.top = `${p.y}px`;
+      if (p.branche) el.style.setProperty('--branche', `${p.branche}px`);
+      boite.appendChild(el);
+      return { el, y: p.y, a: false };
+    });
+    if (calme()) { trace.style.transform = 'scaleY(1)'; noeuds.forEach((n) => n.el.classList.add('atteint')); return; }
+    maj(sy);
+  };
+  ST.addEventListener('refresh', mesurer);
+  mesurer();
+  if (!calme()) ST.create({ start: 0, end: 'max', onUpdate: (st) => maj(st.scroll()) });
+  grand.addEventListener('change', () => ST.refresh());
+}
+
+/* ---------- grille sous la souris : la grille du calque s'allume autour du curseur (souris seulement) ----------
+   Un petit canvas qui suit le curseur, derrière le contenu, calé sur la grille de 48 px ;
+   il s'éteint et sort de l'affichage dès que la souris s'arrête (rien à composer pendant le défilement). */
+function grilleSouris() {
+  if (calme() || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  const R = 200, PAS = 48, COTE = R * 2 + 24;
+  const cv = document.createElement('canvas');
+  cv.className = 'grille-souris';
+  cv.setAttribute('aria-hidden', 'true');
+  cv.setAttribute('data-audit-ignorer', '');
+  cv.setAttribute('data-souris', '');
+  cv.hidden = true;
+  document.body.appendChild(cv);
+  const ctx = cv.getContext('2d');
+  const signal = (getComputedStyle(document.documentElement).getPropertyValue('--signal') || '#FF5A1F').trim();
+  const rgb = /^#([0-9a-f]{6})$/i.test(signal) ? [1, 3, 5].map((i) => parseInt(signal.slice(i, i + 2), 16)).join(',') : '255,90,31';
+  let mx = 0, my = 0, cx = 0, cy = 0, force = 0, derniere = 0, raf = 0, place = false, dpr = 1;
+  const taille = () => {
+    dpr = Math.min(2, window.devicePixelRatio || 1);
+    cv.width = cv.height = Math.round(COTE * dpr);
+    cv.style.width = cv.style.height = `${COTE}px`;
+  };
+  taille();
+  window.addEventListener('resize', taille);
+  const dessiner = (t) => {
+    raf = 0;
+    const actif = t - derniere < 200;
+    force += ((actif ? 1 : 0) - force) * (actif ? 0.2 : 0.12);
+    cx += (mx - cx) * 0.32;
+    cy += (my - cy) * 0.32;
+    if (!actif && force < 0.02) { force = 0; cv.hidden = true; return; }
+    cv.hidden = false;
+    const x0 = Math.round(cx) - COTE / 2, y0 = Math.round(cy) - COTE / 2;
+    cv.style.transform = `translate3d(${x0}px, ${y0}px, 0)`;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    ctx.setTransform(dpr, 0, 0, dpr, -x0 * dpr, -y0 * dpr);
+    const W = document.documentElement.clientWidth;
+    const ox = (((W - PAS) / 2) % PAS + PAS) % PAS;
+    const oy = ((-(window.scrollY * 0.12) % PAS) + PAS) % PAS;
+    const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, R);
+    g.addColorStop(0, `rgba(${rgb},${(0.75 * force).toFixed(3)})`);
+    g.addColorStop(0.5, `rgba(${rgb},${(0.3 * force).toFixed(3)})`);
+    g.addColorStop(1, `rgba(${rgb},0)`);
+    const xa = Math.floor((cx - R - ox) / PAS) * PAS + ox, ya = Math.floor((cy - R - oy) / PAS) * PAS + oy;
+    ctx.strokeStyle = g;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (let x = xa; x <= cx + R; x += PAS) { ctx.moveTo(x + 0.5, cy - R); ctx.lineTo(x + 0.5, cy + R); }
+    for (let y = ya; y <= cy + R; y += PAS) { ctx.moveTo(cx - R, y + 0.5); ctx.lineTo(cx + R, y + 0.5); }
+    ctx.stroke();
+    ctx.fillStyle = g;
+    for (let x = xa; x <= cx + R; x += PAS) {
+      for (let y = ya; y <= cy + R; y += PAS) {
+        const k = 1 - Math.hypot(x - cx, y - cy) / R;
+        if (k <= 0) continue;
+        const b = 2 + 7 * k * force;
+        ctx.fillRect(x + 0.5 - b, y - 0.25, b * 2, 1.5);
+        ctx.fillRect(x - 0.25, y + 0.5 - b, 1.5, b * 2);
+      }
+    }
+    raf = requestAnimationFrame(dessiner);
+  };
+  window.addEventListener('pointermove', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    mx = e.clientX; my = e.clientY;
+    if (!place) { cx = mx; cy = my; place = true; }
+    derniere = performance.now();
+    if (!raf) raf = requestAnimationFrame(dessiner);
+  }, { passive: true });
+  document.documentElement.addEventListener('pointerleave', () => { derniere = 0; place = false; });
+}
+
+/* ---------- photos scannées : à leur arrivée, une ligne orange balaie l'image et des repères de visée se posent ---------- */
+function scan() {
+  if (calme() || !('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver((entrees) => entrees.forEach((e) => {
+    if (!e.isIntersecting) return;
+    const f = e.target;
+    io.unobserve(f);
+    f.style.setProperty('--scan-h', `${f.offsetHeight}px`);
+    f.classList.add('scanne');
+    setTimeout(() => { f.classList.remove('scanne'); f.classList.add('scan-fait'); }, 2600);
+  }), { threshold: 0.45 });
+  $$('figure.media').filter((f) => !f.matches('.tirage, .hero-photo, .badge-media, .urgence-fond, .nis2-fond')
+    && !f.closest('[data-ouverture], [data-voile], [data-menu], .mur') && f.offsetWidth >= 160).forEach((f) => {
+    f.classList.add('scan');
+    if (f.dataset.anime === 'rideau') f.style.setProperty('--scan-delai', '.6s');
+    io.observe(f);
+  });
+}
+
+/* ---------- rubans : les mots glissent en sens contraire au défilement et s'inclinent selon sa vitesse ---------- */
+function rubans() {
+  if (calme() || !ST) return;
+  $$('[data-ruban]').forEach((r) => {
+    const pistes = $$('.ruban-piste', r);
+    pistes.forEach((p, i) => {
+      const gauche = i % 2 === 0;
+      gsap.fromTo(p, { xPercent: gauche ? 0 : -25 }, { xPercent: gauche ? -25 : 0, ease: 'none', scrollTrigger: { trigger: r, start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
+    });
+    const pencher = gsap.quickTo(pistes, 'skewX', { duration: 0.5, ease: 'power3' });
+    const redresser = gsap.delayedCall(0.14, () => pencher(0)).pause();
+    ST.create({
+      trigger: r, start: 'top bottom', end: 'bottom top',
+      onUpdate: (st) => { pencher(gsap.utils.clamp(-7, 7, st.getVelocity() / -260)); redresser.restart(true); },
+    });
+  });
+}
+
 /* ---------- Demande de rendez-vous en étapes (contact) : validation par étape, hauteur animée, récapitulatif ---------- */
 function demande() {
   const f = $('[data-etapes]');
@@ -373,6 +607,11 @@ demarrer({
     cartouche();
     grille();
     reticule();
+    rubans();
+    decode();
+    scan();
+    grilleSouris();
+    fil();
   },
   /* Intro « esquisse », environ 2,6 s : la grille se trace, un trait orange dessine le logo, il se remplit,
      le cartouche s'écrit, puis la feuille se replie vers le haut et découvre le premier écran. */

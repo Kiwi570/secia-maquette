@@ -128,3 +128,12 @@ export function diagnosticNis2(c, { id = 'nis2', surtitre, titre, texte, loi = '
   </div>
 </section>`;
 }
+
+/* Ruban : une ou deux lignes de mots qui glissent en sens contraire au défilement (site.js, rubans).
+   Décor : la liste réelle est ailleurs sur la page, d'où aria-hidden. La deuxième ligne est en chasse fixe. */
+export function ruban(c, rangees) {
+  /* Au moins six mots par passage, pour que la piste couvre toujours l'écran pendant son glissement d'un quart. */
+  const serie = (mots) => { let s = mots; while (s.length < 6) s = s.concat(mots); return s; };
+  const piste = (mots, k) => html`<div class="ruban-piste${k ? ' ruban-piste--mono' : ''}">${[0, 1, 2, 3].flatMap(() => serie(mots).map((m) => html`<span class="ruban-mot">${m}</span><i class="ruban-sep"></i>`))}</div>`;
+  return html`<div class="ruban" data-ruban data-effet="ruban" aria-hidden="true">${rangees.map(piste)}</div>`;
+}

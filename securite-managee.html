@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="3" data-curseur data-page="securite-managee">
+<html lang="fr" data-v="4" data-curseur data-page="securite-managee">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -43,14 +43,14 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=3">
-<link rel="stylesheet" href="/assets/css/site.css?v=3">
-<link rel="modulepreload" href="/assets/js/site.js?v=3">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=3">
+<link rel="stylesheet" href="/assets/css/socle.css?v=4">
+<link rel="stylesheet" href="/assets/css/site.css?v=4">
+<link rel="modulepreload" href="/assets/js/site.js?v=4">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=4">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=3"></script>
+<script type="module" src="/assets/js/site.js?v=4"></script>
 <meta name="theme-color" content="#EEF2F5">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -144,6 +144,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
 </section>
+<div class="ruban" data-ruban data-effet="ruban" aria-hidden="true"><div class="ruban-piste"><span class="ruban-mot">Gestion des vulnérabilités</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des dispositifs de sécurité</span><i class="ruban-sep"></i><span class="ruban-mot">Surveillance externe</span><i class="ruban-sep"></i><span class="ruban-mot">Soutien</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des vulnérabilités</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des dispositifs de sécurité</span><i class="ruban-sep"></i><span class="ruban-mot">Surveillance externe</span><i class="ruban-sep"></i><span class="ruban-mot">Soutien</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des vulnérabilités</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des dispositifs de sécurité</span><i class="ruban-sep"></i><span class="ruban-mot">Surveillance externe</span><i class="ruban-sep"></i><span class="ruban-mot">Soutien</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des vulnérabilités</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des dispositifs de sécurité</span><i class="ruban-sep"></i><span class="ruban-mot">Surveillance externe</span><i class="ruban-sep"></i><span class="ruban-mot">Soutien</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des vulnérabilités</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des dispositifs de sécurité</span><i class="ruban-sep"></i><span class="ruban-mot">Surveillance externe</span><i class="ruban-sep"></i><span class="ruban-mot">Soutien</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des vulnérabilités</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des dispositifs de sécurité</span><i class="ruban-sep"></i><span class="ruban-mot">Surveillance externe</span><i class="ruban-sep"></i><span class="ruban-mot">Soutien</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des vulnérabilités</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des dispositifs de sécurité</span><i class="ruban-sep"></i><span class="ruban-mot">Surveillance externe</span><i class="ruban-sep"></i><span class="ruban-mot">Soutien</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des vulnérabilités</span><i class="ruban-sep"></i><span class="ruban-mot">Gestion des dispositifs de sécurité</span><i class="ruban-sep"></i><span class="ruban-mot">Surveillance externe</span><i class="ruban-sep"></i><span class="ruban-mot">Soutien</span><i class="ruban-sep"></i></div></div>
 <section class="familles conteneur" id="volets">
   <div class="section-tete">
     <p class="surtitre">Ce que couvre le service</p>
@@ -151,26 +152,26 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p data-anime>Nous aidons les organisations à surveiller, exploiter et optimiser les technologies de sécurité afin de réduire les risques et garantir une sécurité opérationnelle constante.</p>
   </div>
   <ol class="familles-grille familles-grille--4" data-anime="cascade" data-visuel>
-    <li class="famille" id="volet-1">
+    <li class="famille" id="volet-1" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>Planche 02.4.1</span><span>01 / 04</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       <h3>Gestion des vulnérabilités</h3>
       <p class="famille-accroche">Maintenez une vue claire de vos vulnérabilités les plus critiques.</p>
       <ul class="liste-points"><li><b>Analyse des actifs :</b> identifiez les vulnérabilités dans les actifs les plus exposés.</li><li><b>Priorisation :</b> concentrez les efforts de remédiation sur les problèmes les plus critiques.</li><li><b>Rapports détaillés :</b> recevez des informations exploitables pour la mitigation.</li><li><b>Évaluation continue :</b> assurez la visibilité des nouvelles menaces et de leur évolution.</li></ul>
       <p class="famille-conclusion">La gestion des vulnérabilités permet aux organisations de rester en avance sur les menaces et de réduire l’exposition potentielle.</p>
-    </li><li class="famille" id="volet-2">
+    </li><li class="famille" id="volet-2" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>Planche 02.4.2</span><span>02 / 04</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       <h3>Gestion des dispositifs de sécurité</h3>
       <p class="famille-accroche">Maintenez le contrôle et la visibilité sur votre infrastructure de sécurité.</p>
       <ul class="liste-points"><li><b>Exploitation et maintenance des dispositifs :</b> gérez et exploitez les technologies de sécurité tierces.</li><li><b>Surveillance et alertes :</b> assurez le bon fonctionnement des dispositifs et la détection des menaces.</li><li><b>Configuration et mises à jour :</b> maintenez les dispositifs optimisés et conformes.</li><li><b>Rapports de performance :</b> mesurez et améliorez l’efficacité.</li></ul>
       <p class="famille-conclusion">Une gestion efficace des dispositifs garantit que vos technologies de sécurité fonctionnent de manière fiable et performante.</p>
-    </li><li class="famille famille--a-completer" id="volet-3">
+    </li><li class="famille famille--a-completer" id="volet-3" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>Planche 02.4.3</span><span>03 / 04</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       <h3>Surveillance externe</h3>
       <p class="a-confirmer">Contenu à fournir par SECIA : ce volet n’a pas de texte propre sur le site actuel.</p>
-    </li><li class="famille" id="volet-4">
+    </li><li class="famille" id="volet-4" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>Planche 02.4.4</span><span>04 / 04</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       <h3>Soutien</h3>

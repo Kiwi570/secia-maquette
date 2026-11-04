@@ -2,7 +2,7 @@
    Ouverture (illustration du service), volets du service en planches cotées, contexte (pourquoi maintenant,
    pourquoi SECIA) avec une photo du shooting, autres planches du pôle, appel final avec le service prérempli. */
 import { html } from '../../outils/gabarit.mjs';
-import { tete, fin } from './blocs.mjs';
+import { tete, fin, ruban } from './blocs.mjs';
 
 /* Deux photos réelles par service : contexte, appel final (jamais la même deux fois sur une page). */
 const PHOTOS = {
@@ -59,6 +59,8 @@ ${tete(c, {
   media: c.media({ nom: f.image, alt: '', cadrage: '55% 50%', priorite: true, classe: 'page-tete-media', sizes: '(max-width: 760px) 100vw, 46vw', attrs: 'data-fx="zoom"' }),
 })}
 
+${ruban(c, [f.familles.map((x) => x.titre)])}
+
 <section class="familles conteneur" id="volets">
   <div class="section-tete">
     <p class="surtitre">${c.t('service.familles.surtitre')}</p>
@@ -66,7 +68,7 @@ ${tete(c, {
     ${reste.length ? html`<p data-anime>${reste.join(' ')}</p>` : ''}
   </div>
   <ol class="familles-grille familles-grille--${f.familles.length}" data-anime="cascade" data-visuel>
-    ${f.familles.map((x, k) => html`<li class="famille${x.aCompleter ? ' famille--a-completer' : ''}" id="volet-${k + 1}">
+    ${f.familles.map((x, k) => html`<li class="famille${x.aCompleter ? ' famille--a-completer' : ''}" id="volet-${k + 1}" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>${c.t('commun.planche')} ${num}.${k + 1}</span><span>${String(k + 1).padStart(2, '0')} / ${String(f.familles.length).padStart(2, '0')}</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       <h3>${x.titre}</h3>

@@ -2,6 +2,44 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v4 — un site plus vivant : « Plan vivant + cyber »
+
+Comparaison faite fichier par fichier avec l'archive secia-maquette-v3.zip : aucun fichier ajouté ni retiré, 84 modifiés (ce fichier compris). Les 53 pages sont régénérées ; les 16 fichiers du socle ne changent que par leur numéro de version (?v=4).
+
+**Sur toutes les pages**
+- Fil de lecture (ordinateur, 1100 px et plus) : un trait orange relie les sections dans la marge de gauche et se trace au défilement. Une tête lumineuse avance avec la lecture et chaque section atteinte s'allume.
+- Grille du plan : la grille de calque de 48 px, qui existait mais restait cachée sous le fond de la page, est désormais visible. Sur ordinateur, elle s'allume en orange autour de la souris et s'éteint dès que la souris s'arrête (le petit calque lumineux sort alors de l'affichage, pour garder un défilement fluide).
+- Textes décodés : les surtitres, numéros de planche et chiffres des repères se « décodent » comme dans un terminal à leur arrivée. Le vrai texte reste en place sous les signes qui défilent : la page ne bouge pas d'un pixel et les lecteurs d'écran lisent le vrai texte.
+- Photos scannées : à leur arrivée, une ligne orange balaie chaque photo et des repères de visée se posent aux coins. À la souris, les repères reviennent au survol.
+- Boutons : un reflet orange traverse le bouton au survol.
+- Schémas : une case survolée se soulève et s'entoure d'orange.
+
+**Rubans**
+- De grands bandeaux de mots glissent au défilement, en sens contraire d'une ligne à l'autre, et penchent selon la vitesse.
+- Accueil : les services cybersécurité et réseau. Pôles cybersécurité et réseau : leurs services. SECIA : les six valeurs. Chaque page de service : ses volets.
+
+**Cartes en relief (souris)**
+- Cartes des pôles et repères de l'accueil, fiches des galeries, volets des services, offres d'emploi et sanctions NIS2 s'inclinent en 3D au survol.
+
+**Mode calme et accessibilité**
+- Le mode calme coupe le décodage, les balayages, les reflets, la grille sous la souris et le glissement des rubans. Le fil y est dessiné en entier, sans mouvement.
+- Les rubans sont décoratifs (aria-hidden) : la liste réelle des services figure ailleurs sur la page.
+
+**Correction**
+- Téléphone : les photos du contexte des services et de la FAQ gardent leur cadre, ce qui supprime un débordement horizontal de 3 px.
+
+**Fichiers touchés**
+- `assets/js/site.js` : fil, decode, ruban, grille sous la souris, photos scannées.
+- `assets/css/site.css` : styles des nouveaux effets. Le contenu passe au-dessus de la grille du calque.
+- `source/gabarits/blocs.mjs` : bloc `ruban`. Rubans et cartes en relief ajoutés dans `source/gabarits/service.mjs` et dans les pages accueil, cybersécurité, réseau, SECIA, carrières et NIS2.
+- `_audit/config.json` : effets fil, decode et ruban ajoutés au plan d'animation.
+- `donnees/site.json` et `_audit/version-livree.txt` : version 4. `README.md` : note sur la v4.
+
+**Audit standard (53 pages)**
+- 0 échec.
+- À regarder, déjà connus en v3 : 6 % d'images lentes au défilement de l'accueil avec le processeur ralenti 4 fois (4 à 6 % en v3), et la ligne de cote tracée de l'accueil et du contact, qui ne compte pas comme effet de section.
+- Safari ne peut pas être lancé ici : à vérifier sur le Mac (ouverture et changement de page, défilement, menu sur iPhone, polices et formulaires).
+
 ## v3 — plus de photos au début de l'accueil
 
 Comparaison faite fichier par fichier avec l'archive secia-maquette-v2.zip : aucun fichier ajouté ni retiré, 75 modifiés. Hors accueil, les changements se limitent au numéro de version des fichiers (?v=3).

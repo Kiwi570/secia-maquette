@@ -2,7 +2,7 @@
    équipe d'après le site du groupe (portraits sans nom tant que la correspondance n'est pas fournie),
    nomenclature des certifications et des partenaires, groupe NPS Consult Group. */
 import { html } from '../../outils/gabarit.mjs';
-import { tete, fin } from '../gabarits/blocs.mjs';
+import { tete, fin, ruban } from '../gabarits/blocs.mjs';
 
 export const page = { cle: 'secia', fichier: 'secia', imagePartage: 'photos/bureaux-secia-1280.webp' };
 
@@ -20,6 +20,8 @@ ${tete(c, {
   info: c.t('secia.info'),
   media: c.media({ nom: 'photos/bureaux-secia', alt: c.s('accueil.hero.tirageAlt'), cadrage: '46% 42%', priorite: true, classe: 'page-tete-media', sizes: '(max-width: 760px) 100vw, 44vw', attrs: 'data-fx="parallaxe" data-fx-force="6"' }),
 })}
+
+${ruban(c, [c.donnees.valeurs.map((v) => v.titre)])}
 
 <section class="histoire conteneur" id="histoire">
   <div class="histoire-grille">

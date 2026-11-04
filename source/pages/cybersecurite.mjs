@@ -2,7 +2,7 @@
    cycle de vie en frise, urgence compacte, appel final.
    Chaque fiche ouvre la page de son service. */
 import { html } from '../../outils/gabarit.mjs';
-import { tete, urgenceCompacte, fin, frise } from '../gabarits/blocs.mjs';
+import { tete, urgenceCompacte, fin, frise, ruban } from '../gabarits/blocs.mjs';
 
 export const page = { cle: 'cybersecurite', fichier: 'cybersecurite', imagePartage: 'photos/revue-securite-1280.webp' };
 
@@ -24,7 +24,7 @@ ${tete(c, {
     <p>${c.t('cyber.services.texte')}</p>
   </div>
   <div class="piste services-piste" data-galerie tabindex="0" role="region" aria-label="${c.s('cyber.services.region')}">
-    ${services.map((s, i) => html`<article class="fiche" id="service-${s.cle}">
+    ${services.map((s, i) => html`<article class="fiche" id="service-${s.cle}" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>${c.t('commun.planche')} 02.${i + 1}</span><span>${s.cle === 'nis2' ? c.t('cyber.services.reglementation') : c.t('cyber.services.service')}</span></p>
       ${c.media({ nom: s.image, alt: '', cadrage: '50% 50%', classe: 'fiche-media', sizes: '(max-width: 760px) 82vw, 30vw' })}
       <h3>${s.nom}</h3>
@@ -37,6 +37,8 @@ ${tete(c, {
   </div>
   <div class="galerie-progres" aria-hidden="true"><span></span></div>
 </section>
+
+${ruban(c, [c.donnees.services.cyber.map((s) => s.nom)])}
 
 <section class="cycle conteneur" id="cycle">
   <div class="section-tete">

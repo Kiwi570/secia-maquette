@@ -1,7 +1,7 @@
 /* Pôle Réseau (modèle « Pôle ») : ouverture, les neuf services en galerie horizontale épinglée,
    lecture du pôle en frise (de la conception au support), appel final. */
 import { html } from '../../outils/gabarit.mjs';
-import { tete, fin, frise } from '../gabarits/blocs.mjs';
+import { tete, fin, frise, ruban } from '../gabarits/blocs.mjs';
 
 export const page = { cle: 'reseau', fichier: 'reseau', imagePartage: 'grok/reseau-ouverture-1168.webp' };
 
@@ -23,7 +23,7 @@ ${tete(c, {
     <p>${c.t('reseau.services.texte')}</p>
   </div>
   <div class="piste services-piste" data-galerie tabindex="0" role="region" aria-label="${c.s('reseau.services.region')}">
-    ${services.map((s, i) => html`<article class="fiche" id="service-${s.cle}">
+    ${services.map((s, i) => html`<article class="fiche" id="service-${s.cle}" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>${c.t('commun.planche')} 03.${i + 1}</span><span>${c.t('reseau.services.service')}</span></p>
       ${c.media({ nom: s.image, alt: '', cadrage: '50% 50%', classe: 'fiche-media', sizes: '(max-width: 760px) 82vw, 30vw' })}
       <h3>${s.nom}</h3>
@@ -34,6 +34,8 @@ ${tete(c, {
   </div>
   <div class="galerie-progres" aria-hidden="true"><span></span></div>
 </section>
+
+${ruban(c, [c.donnees.services.reseau.map((s) => s.nom)])}
 
 <section class="cycle conteneur" id="cycle">
   <div class="section-tete">

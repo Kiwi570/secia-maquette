@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-v="3" data-curseur data-page="reseau">
+<html lang="en" data-v="4" data-curseur data-page="reseau">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -43,14 +43,14 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=3">
-<link rel="stylesheet" href="/assets/css/site.css?v=3">
-<link rel="modulepreload" href="/assets/js/site.js?v=3">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=3">
+<link rel="stylesheet" href="/assets/css/socle.css?v=4">
+<link rel="stylesheet" href="/assets/css/site.css?v=4">
+<link rel="modulepreload" href="/assets/js/site.js?v=4">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=4">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=3"></script>
+<script type="module" src="/assets/js/site.js?v=4"></script>
 <meta name="theme-color" content="#EEF2F5">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -150,7 +150,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p>Scroll: each sheet describes a service and what it covers.</p>
   </div>
   <div class="piste services-piste" data-galerie tabindex="0" role="region" aria-label="The nine network services, scrollable">
-    <article class="fiche" id="service-reseau-entreprise">
+    <article class="fiche" id="service-reseau-entreprise" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.1</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-reseau-entreprise-mobile-640.webp 640w, /assets/images/grok/service-reseau-entreprise-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -161,7 +161,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="fiche-resume">Build a strong foundation for your digital infrastructure with high-performance, reliable, and scalable enterprise networks.</p>
       <ul class="fiche-points"><li>Network Design &amp; Architecture</li><li>Network Implementation</li><li>Migration Planning &amp; Execution</li><li>Access Control &amp; Security Integration</li></ul>
       <p class="fiche-lien"><a href="/en/reseau-entreprise" class="bouton" data-libelle="Enterprise network">See the service</a></p>
-    </article><article class="fiche" id="service-wan-cloud">
+    </article><article class="fiche" id="service-wan-cloud" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.2</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-wan-cloud-mobile-640.webp 640w, /assets/images/grok/service-wan-cloud-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -172,7 +172,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="fiche-resume">Ensure seamless connectivity across branches, data centers, and cloud environments with secure and flexible WAN solutions.</p>
       <ul class="fiche-points"><li>Branch-to-Branch Connectivity</li><li>Cloud Network Integration</li><li>Flexible Routing &amp; Failover</li><li>Multi-Domain Integration</li></ul>
       <p class="fiche-lien"><a href="/en/connectivite-wan-cloud" class="bouton" data-libelle="WAN &amp; cloud connectivity">See the service</a></p>
-    </article><article class="fiche" id="service-sdn">
+    </article><article class="fiche" id="service-sdn" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.3</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-sdn-mobile-640.webp 640w, /assets/images/grok/service-sdn-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -183,7 +183,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="fiche-resume">Simplify and modernize network operations with SDN technologies for agility, automation, and visibility.</p>
       <ul class="fiche-points"><li>Smooth SDN Migration</li><li>Automation Frameworks</li><li>Simplified Operations</li><li>Custom Dashboards &amp; Alerts</li></ul>
       <p class="fiche-lien"><a href="/en/sdn" class="bouton" data-libelle="Software-defined networking (SDN)">See the service</a></p>
-    </article><article class="fiche" id="service-sans-fil">
+    </article><article class="fiche" id="service-sans-fil" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.4</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-sans-fil-mobile-640.webp 640w, /assets/images/grok/service-sans-fil-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -194,7 +194,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="fiche-resume">Deliver reliable and secure wireless connectivity for modern, mobile-first organizations.</p>
       <ul class="fiche-points"><li>Site Surveys &amp; Planning</li><li>Wireless Network Migration</li><li>Standards &amp; Best Practices Validation</li><li>Real-Time Network Monitoring</li></ul>
       <p class="fiche-lien"><a href="/en/sans-fil" class="bouton" data-libelle="Wireless solutions">See the service</a></p>
-    </article><article class="fiche" id="service-automatisation">
+    </article><article class="fiche" id="service-automatisation" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.5</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-automatisation-mobile-640.webp 640w, /assets/images/grok/service-automatisation-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -205,7 +205,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="fiche-resume">Gain full visibility and control with smart automation and proactive monitoring solutions.</p>
       <ul class="fiche-points"><li>Real-Time Network Monitoring</li><li>Automation Frameworks</li><li>Custom Dashboards &amp; Alerts</li><li>Simplified Operations</li></ul>
       <p class="fiche-lien"><a href="/en/automatisation-surveillance" class="bouton" data-libelle="Automation and monitoring">See the service</a></p>
-    </article><article class="fiche" id="service-audits-reseau">
+    </article><article class="fiche" id="service-audits-reseau" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.6</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-audits-reseau-mobile-640.webp 640w, /assets/images/grok/service-audits-reseau-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -216,7 +216,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="fiche-resume">Ensure your infrastructure is secure, compliant, and optimized through professional network assessments.</p>
       <ul class="fiche-points"><li>Infrastructure &amp; Configuration Audit</li><li>Security Posture Review</li><li>Standards &amp; Best Practices Validation</li><li>Compliance Reporting</li></ul>
       <p class="fiche-lien"><a href="/en/audits-reseau" class="bouton" data-libelle="Network audits &amp; compliance">See the service</a></p>
-    </article><article class="fiche" id="service-conception-migration">
+    </article><article class="fiche" id="service-conception-migration" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.7</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-conception-migration-mobile-640.webp 640w, /assets/images/grok/service-conception-migration-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -227,7 +227,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="fiche-resume">Design, deploy, and evolve modern network architectures that support growth and agility.</p>
       <ul class="fiche-points"><li>Network Design &amp; Architecture</li><li>Network Implementation</li><li>Seamless Migration Planning</li><li>Validation &amp; Testing</li></ul>
       <p class="fiche-lien"><a href="/en/conception-migration" class="bouton" data-libelle="Design, implementation &amp; migration">See the service</a></p>
-    </article><article class="fiche" id="service-formation">
+    </article><article class="fiche" id="service-formation" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.8</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-formation-mobile-640.webp 640w, /assets/images/grok/service-formation-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -238,7 +238,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="fiche-resume">Empower your teams with hands-on expertise from our certified engineers.</p>
       <ul class="fiche-points"><li>On-site or remote training sessions</li><li>Knowledge transfer workshops</li><li>Technical documentation &amp; best practices</li><li>Continuous skills development</li></ul>
       <p class="fiche-lien"><a href="/en/formation" class="bouton" data-libelle="Training &amp; knowledge transfer">See the service</a></p>
-    </article><article class="fiche" id="service-labs-poc">
+    </article><article class="fiche" id="service-labs-poc" data-survol="incline" data-survol-force="4">
       <p class="fiche-entete"><span>Sheet 03.9</span><span>Service</span></p>
       <figure class="media fiche-media" data-grok style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-labs-poc-mobile-640.webp 640w, /assets/images/grok/service-labs-poc-mobile-784.webp 784w" sizes="(max-width: 760px) 82vw, 30vw">
@@ -253,6 +253,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
   <div class="galerie-progres" aria-hidden="true"><span></span></div>
 </section>
+<div class="ruban" data-ruban data-effet="ruban" aria-hidden="true"><div class="ruban-piste"><span class="ruban-mot">Enterprise network</span><i class="ruban-sep"></i><span class="ruban-mot">WAN &amp; cloud connectivity</span><i class="ruban-sep"></i><span class="ruban-mot">Software-defined networking (SDN)</span><i class="ruban-sep"></i><span class="ruban-mot">Wireless solutions</span><i class="ruban-sep"></i><span class="ruban-mot">Automation and monitoring</span><i class="ruban-sep"></i><span class="ruban-mot">Network audits &amp; compliance</span><i class="ruban-sep"></i><span class="ruban-mot">Design, implementation &amp; migration</span><i class="ruban-sep"></i><span class="ruban-mot">Training &amp; knowledge transfer</span><i class="ruban-sep"></i><span class="ruban-mot">Proof-of-concept labs</span><i class="ruban-sep"></i><span class="ruban-mot">Enterprise network</span><i class="ruban-sep"></i><span class="ruban-mot">WAN &amp; cloud connectivity</span><i class="ruban-sep"></i><span class="ruban-mot">Software-defined networking (SDN)</span><i class="ruban-sep"></i><span class="ruban-mot">Wireless solutions</span><i class="ruban-sep"></i><span class="ruban-mot">Automation and monitoring</span><i class="ruban-sep"></i><span class="ruban-mot">Network audits &amp; compliance</span><i class="ruban-sep"></i><span class="ruban-mot">Design, implementation &amp; migration</span><i class="ruban-sep"></i><span class="ruban-mot">Training &amp; knowledge transfer</span><i class="ruban-sep"></i><span class="ruban-mot">Proof-of-concept labs</span><i class="ruban-sep"></i><span class="ruban-mot">Enterprise network</span><i class="ruban-sep"></i><span class="ruban-mot">WAN &amp; cloud connectivity</span><i class="ruban-sep"></i><span class="ruban-mot">Software-defined networking (SDN)</span><i class="ruban-sep"></i><span class="ruban-mot">Wireless solutions</span><i class="ruban-sep"></i><span class="ruban-mot">Automation and monitoring</span><i class="ruban-sep"></i><span class="ruban-mot">Network audits &amp; compliance</span><i class="ruban-sep"></i><span class="ruban-mot">Design, implementation &amp; migration</span><i class="ruban-sep"></i><span class="ruban-mot">Training &amp; knowledge transfer</span><i class="ruban-sep"></i><span class="ruban-mot">Proof-of-concept labs</span><i class="ruban-sep"></i><span class="ruban-mot">Enterprise network</span><i class="ruban-sep"></i><span class="ruban-mot">WAN &amp; cloud connectivity</span><i class="ruban-sep"></i><span class="ruban-mot">Software-defined networking (SDN)</span><i class="ruban-sep"></i><span class="ruban-mot">Wireless solutions</span><i class="ruban-sep"></i><span class="ruban-mot">Automation and monitoring</span><i class="ruban-sep"></i><span class="ruban-mot">Network audits &amp; compliance</span><i class="ruban-sep"></i><span class="ruban-mot">Design, implementation &amp; migration</span><i class="ruban-sep"></i><span class="ruban-mot">Training &amp; knowledge transfer</span><i class="ruban-sep"></i><span class="ruban-mot">Proof-of-concept labs</span><i class="ruban-sep"></i></div></div>
 <section class="cycle conteneur" id="cycle">
   <div class="section-tete">
     <p class="surtitre">Reading the practice</p>

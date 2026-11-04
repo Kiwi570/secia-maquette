@@ -21,6 +21,9 @@
     "confinement",
     "verification",
     "chemin-attaque",
-    "cartouche"
+    "cartouche",
+    "fil",
+    "decode",
+    "ruban"
   ]
 }

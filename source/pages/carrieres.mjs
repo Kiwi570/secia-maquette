@@ -27,7 +27,7 @@ ${tete(c, {
     ${c.media({ nom: 'photos/plateau-bureaux', alt: c.s('carrieres.offres.alt'), cadrage: '50% 55%', classe: 'offres-media', sizes: '(max-width: 760px) 100vw, 40vw', attrs: 'data-anime="rideau"' })}
   </div>
   <ol class="offres-liste" data-anime="cascade">
-    ${offres.map((o, i) => html`<li class="offre">
+    ${offres.map((o, i) => html`<li class="offre" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>${c.t('commun.planche')} 08.${i + 1}</span><span>${String(i + 1).padStart(2, '0')} / ${String(offres.length).padStart(2, '0')}</span></p>
       <h3>${o.titre}</h3>
       <p class="offre-lieu">${o.lieu}</p>

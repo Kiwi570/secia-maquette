@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="3" data-curseur data-page="laboratoires-poc">
+<html lang="fr" data-v="4" data-curseur data-page="laboratoires-poc">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -43,14 +43,14 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=3">
-<link rel="stylesheet" href="/assets/css/site.css?v=3">
-<link rel="modulepreload" href="/assets/js/site.js?v=3">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=3">
+<link rel="stylesheet" href="/assets/css/socle.css?v=4">
+<link rel="stylesheet" href="/assets/css/site.css?v=4">
+<link rel="modulepreload" href="/assets/js/site.js?v=4">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=4">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=3"></script>
+<script type="module" src="/assets/js/site.js?v=4"></script>
 <meta name="theme-color" content="#EEF2F5">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -144,27 +144,28 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
 </section>
+<div class="ruban" data-ruban data-effet="ruban" aria-hidden="true"><div class="ruban-piste"><span class="ruban-mot">Contrôle d’accès</span><i class="ruban-sep"></i><span class="ruban-mot">Architecture réseau</span><i class="ruban-sep"></i><span class="ruban-mot">Intégration transparente</span><i class="ruban-sep"></i><span class="ruban-mot">Contrôle d’accès</span><i class="ruban-sep"></i><span class="ruban-mot">Architecture réseau</span><i class="ruban-sep"></i><span class="ruban-mot">Intégration transparente</span><i class="ruban-sep"></i><span class="ruban-mot">Contrôle d’accès</span><i class="ruban-sep"></i><span class="ruban-mot">Architecture réseau</span><i class="ruban-sep"></i><span class="ruban-mot">Intégration transparente</span><i class="ruban-sep"></i><span class="ruban-mot">Contrôle d’accès</span><i class="ruban-sep"></i><span class="ruban-mot">Architecture réseau</span><i class="ruban-sep"></i><span class="ruban-mot">Intégration transparente</span><i class="ruban-sep"></i><span class="ruban-mot">Contrôle d’accès</span><i class="ruban-sep"></i><span class="ruban-mot">Architecture réseau</span><i class="ruban-sep"></i><span class="ruban-mot">Intégration transparente</span><i class="ruban-sep"></i><span class="ruban-mot">Contrôle d’accès</span><i class="ruban-sep"></i><span class="ruban-mot">Architecture réseau</span><i class="ruban-sep"></i><span class="ruban-mot">Intégration transparente</span><i class="ruban-sep"></i><span class="ruban-mot">Contrôle d’accès</span><i class="ruban-sep"></i><span class="ruban-mot">Architecture réseau</span><i class="ruban-sep"></i><span class="ruban-mot">Intégration transparente</span><i class="ruban-sep"></i><span class="ruban-mot">Contrôle d’accès</span><i class="ruban-sep"></i><span class="ruban-mot">Architecture réseau</span><i class="ruban-sep"></i><span class="ruban-mot">Intégration transparente</span><i class="ruban-sep"></i></div></div>
 <section class="familles conteneur" id="volets">
   <div class="section-tete">
     <p class="surtitre">Ce que couvre le service</p>
     <h2 data-anime="lignes">Le service, volet par volet.</h2>
   </div>
   <ol class="familles-grille familles-grille--3" data-anime="cascade" data-visuel>
-    <li class="famille" id="volet-1">
+    <li class="famille" id="volet-1" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>Planche 03.9.1</span><span>01 / 03</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       <h3>Contrôle d’accès</h3>
       <p class="famille-accroche">Validez vos stratégies d’identité et d’accès dans un environnement de test sécurisé.</p>
       <ul class="liste-points"><li>Simulation des frameworks NAC et ZTNA dans un laboratoire contrôlé</li><li>Tests des politiques d’authentification et d’autorisation</li><li>Évaluation du comportement d’accès des utilisateurs, appareils et applications</li><li>Intégration avec l’infrastructure de sécurité existante</li><li>Vérification de la conformité et de la préparation opérationnelle</li></ul>
       <p class="famille-conclusion">Nos tests de PoC garantissent que seuls les utilisateurs et appareils de confiance ont accès, renforçant ainsi la posture de sécurité de votre organisation.</p>
-    </li><li class="famille" id="volet-2">
+    </li><li class="famille" id="volet-2" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>Planche 03.9.2</span><span>02 / 03</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       <h3>Architecture réseau</h3>
       <p class="famille-accroche">Concevez et validez un réseau évolutif répondant aux exigences du monde réel.</p>
       <ul class="liste-points"><li>Modélisation des couches cœur, distribution et accès pour la résilience</li><li>Évaluation des performances sous charges simulées de production</li><li>Tests de redondance, basculement et mécanismes de routage</li><li>Analyse des intégrations cloud et hybrides</li><li>Validation de la documentation de conception et des plans de scalabilité</li></ul>
       <p class="famille-conclusion">Grâce à une évaluation complète du PoC, nous garantissons que votre architecture réseau est prête pour la production avec une fiabilité et des performances optimisées.</p>
-    </li><li class="famille" id="volet-3">
+    </li><li class="famille" id="volet-3" data-survol="incline" data-survol-force="4">
       <p class="famille-entete"><span>Planche 03.9.3</span><span>03 / 03</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       <h3>Intégration transparente</h3>

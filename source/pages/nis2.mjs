@@ -56,8 +56,8 @@ ${diagnosticNis2(c, { id: 'mesures', surtitre: c.t('accueil.nis2.liste'), titre:
     <h2 data-anime="lignes">${c.t('nis2p.sanctions.titre')}</h2>
   </div>
   <div class="sanctions-grille" data-visuel data-anime="cascade">
-    <div class="sanction"><svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg><p class="sanction-cat">${c.t('nis2p.sanctions.essentielles')}</p><p class="sanction-montant">${c.t('nis2p.sanctions.montant1')}</p><p>${c.t('nis2p.sanctions.part1')}</p></div>
-    <div class="sanction"><svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg><p class="sanction-cat">${c.t('nis2p.sanctions.importantes')}</p><p class="sanction-montant">${c.t('nis2p.sanctions.montant2')}</p><p>${c.t('nis2p.sanctions.part2')}</p></div>
+    <div class="sanction" data-survol="incline" data-survol-force="3"><svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg><p class="sanction-cat">${c.t('nis2p.sanctions.essentielles')}</p><p class="sanction-montant">${c.t('nis2p.sanctions.montant1')}</p><p>${c.t('nis2p.sanctions.part1')}</p></div>
+    <div class="sanction" data-survol="incline" data-survol-force="3"><svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg><p class="sanction-cat">${c.t('nis2p.sanctions.importantes')}</p><p class="sanction-montant">${c.t('nis2p.sanctions.montant2')}</p><p>${c.t('nis2p.sanctions.part2')}</p></div>
     <div class="sanction sanction--texte">
       <h3>${c.t('nis2p.sanctions.juridiction')}</h3>
       <ul class="liste-points"><li>${c.t('nis2p.sanctions.j1')}</li><li>${c.t('nis2p.sanctions.j2')}</li><li>${c.t('nis2p.sanctions.j3')}</li></ul>

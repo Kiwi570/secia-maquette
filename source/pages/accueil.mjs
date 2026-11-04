@@ -4,7 +4,7 @@
    Chaque section a au moins un effet au défilement, visible aussi sur téléphone. */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { planOuverture, planMethode, planConfinement, carte } from '../gabarits/plans.mjs';
-import { diagnosticNis2 } from '../gabarits/blocs.mjs';
+import { diagnosticNis2, ruban } from '../gabarits/blocs.mjs';
 
 /* Photos réelles des repères (fondation, support, certifications, services) et des trois temps de la méthode. */
 const REPERES = ['duo-direction', 'supervision-postes', 'atelier-analyse', 'presentation-ecran'];
@@ -47,7 +47,7 @@ export default (c) => {
 <section class="reperes" id="reperes" aria-labelledby="reperes-titre">
   <h2 id="reperes-titre" class="visuellement-cache">${c.t('accueil.reperes.titre')}</h2>
   <ul class="cotes conteneur" data-effet="cotes" data-visuel>
-    ${['r1', 'r2', 'r3', 'r4'].map((r, i) => html`<li class="cote">
+    ${['r1', 'r2', 'r3', 'r4'].map((r, i) => html`<li class="cote" data-survol="incline" data-survol-force="6">
       ${c.media({ nom: `photos/${REPERES[i]}`, alt: REPERES[i] === 'duo-direction' ? c.s('secia.fin.alt') : c.donnees.photos[REPERES[i]], cadrage: '50% 45%', classe: 'cote-media', sizes: '(max-width: 760px) 46vw, 22vw', attrs: 'data-anime="rideau"' })}
       <svg class="cote-trait" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M1 10 H199"/><path d="M1 2 V18 M199 2 V18"/><path d="M1 10 l8 -5 M1 10 l8 5 M199 10 l-8 -5 M199 10 l-8 5"/></svg>
       <strong class="cote-valeur">${c.t(`accueil.reperes.${r}v`)}</strong>
@@ -82,6 +82,8 @@ export default (c) => {
   </div>
 </section>
 
+${ruban(c, [c.donnees.services.cyber.map((s) => s.nom), c.donnees.services.reseau.map((s) => s.nom)])}
+
 <section class="poles conteneur" id="poles">
   <div class="section-tete">
     <p class="surtitre">${c.t('accueil.poles.surtitre')}</p>
@@ -90,7 +92,7 @@ export default (c) => {
   <div class="poles-grille">
     ${['cyber', 'reseau'].map((p, i) => {
       const liste = c.donnees.services[p];
-      return html`<article class="planche" id="pole-${p}">
+      return html`<article class="planche" id="pole-${p}" data-survol="incline" data-survol-force="3">
       <p class="planche-entete"><span>${c.t('commun.planche')} 0${i + 2}</span><span>${c.t(`accueil.poles.${p}.compte`)}</span></p>
       <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
       ${c.media({ nom: p === 'cyber' ? 'grok/accueil-cyber' : 'grok/accueil-reseau', alt: c.s(`accueil.poles.${p}.alt`), cadrage: '50% 45%', classe: 'planche-media', sizes: '(max-width: 760px) 100vw, 30vw', attrs: 'data-anime="rideau"' })}
