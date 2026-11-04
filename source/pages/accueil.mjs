@@ -6,6 +6,10 @@ import { html, brut } from '../../outils/gabarit.mjs';
 import { planOuverture, planMethode, planConfinement, carte } from '../gabarits/plans.mjs';
 import { diagnosticNis2 } from '../gabarits/blocs.mjs';
 
+/* Photos réelles des repères (fondation, support, certifications, services) et des trois temps de la méthode. */
+const REPERES = ['duo-direction', 'supervision-postes', 'atelier-analyse', 'presentation-ecran'];
+const METHODE = ['schema-reseau', 'revue-tableau-de-bord', 'surveillance-carte'];
+
 export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'photos/bureaux-secia-1280.webp' };
 
 const EDITEURS = ['cisco', 'checkpoint', 'extreme', 'sentinelone', 'isc2'];
@@ -31,6 +35,8 @@ export default (c) => {
       <p class="hero-info" data-info-cle data-anime="gsap"><span class="voyant" aria-hidden="true"></span>${c.t('accueil.hero.info')}</p>
     </div>
     <div class="hero-plan" id="plan-ouverture" data-effet="impulsions" data-impulsions data-visuel>
+      ${c.media({ nom: 'photos/cellule-crise', alt: c.donnees.photos['cellule-crise'], cadrage: '42% 50%', cadrageMobile: '40% 50%', priorite: true, classe: 'hero-photo', sizes: '(max-width: 760px) 100vw, 48vw', attrs: 'data-superpose' })}
+      <div class="hero-calque" aria-hidden="true"></div>
       ${planOuverture(c)}
       ${c.media({ nom: 'photos/bureaux-secia', alt: c.s('accueil.hero.tirageAlt'), cadrage: '46% 42%', priorite: true, classe: 'tirage hero-tirage', sizes: '(max-width: 760px) 40vw, 18vw', legende: c.t('accueil.hero.tirageLegende'), attrs: 'data-superpose' })}
       <button type="button" class="plan-pause" data-pause-pour="plan-ouverture" data-libelle-pause="${c.s('commun.pauseImpulsions')}" data-libelle-lecture="${c.s('commun.lectureImpulsions')}"><span data-libelle-bouton>${c.t('commun.pauseImpulsions')}</span></button>
@@ -41,7 +47,8 @@ export default (c) => {
 <section class="reperes" id="reperes" aria-labelledby="reperes-titre">
   <h2 id="reperes-titre" class="visuellement-cache">${c.t('accueil.reperes.titre')}</h2>
   <ul class="cotes conteneur" data-effet="cotes" data-visuel>
-    ${['r1', 'r2', 'r3', 'r4'].map((r) => html`<li class="cote">
+    ${['r1', 'r2', 'r3', 'r4'].map((r, i) => html`<li class="cote">
+      ${c.media({ nom: `photos/${REPERES[i]}`, alt: REPERES[i] === 'duo-direction' ? c.s('secia.fin.alt') : c.donnees.photos[REPERES[i]], cadrage: '50% 45%', classe: 'cote-media', sizes: '(max-width: 760px) 46vw, 22vw', attrs: 'data-anime="rideau"' })}
       <svg class="cote-trait" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M1 10 H199"/><path d="M1 2 V18 M199 2 V18"/><path d="M1 10 l8 -5 M1 10 l8 5 M199 10 l-8 -5 M199 10 l-8 5"/></svg>
       <strong class="cote-valeur">${c.t(`accueil.reperes.${r}v`)}</strong>
       <span class="cote-libelle">${c.t(`accueil.reperes.${r}l`)}</span>
@@ -60,6 +67,7 @@ export default (c) => {
           <p class="etape-num"><span>0${i}</span>${c.t(`accueil.methode.e${i}.nom`)}</p>
           <h3 data-anime="lignes">${c.t(`accueil.methode.e${i}.titre`)}</h3>
           <p data-anime>${c.t(`accueil.methode.e${i}.texte`)}</p>
+          ${c.media({ nom: `photos/${METHODE[i - 1]}`, alt: c.donnees.photos[METHODE[i - 1]], cadrage: '50% 50%', classe: 'etape-media', sizes: '(max-width: 760px) 100vw, 36vw', attrs: 'data-anime="rideau"' })}
           <p class="etiquettes" data-anime>${c.s(`accueil.methode.e${i}.services`).split(' · ').map((x) => html`<span>${x}</span>`)}</p>
         </li>`)}
       </ol>

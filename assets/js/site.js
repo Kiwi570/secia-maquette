@@ -4,7 +4,7 @@
    data-effet="nom" dans les pages : esquisse, impulsions, cotes, plan-trois-etats, confinement, verification,
    chemin-attaque, cartouche. Aucune lecture de mise en page pendant le défilement : tout est mesuré au
    rafraîchissement de ScrollTrigger ; les tracés SVG sont échantillonnés une fois au démarrage. */
-import { demarrer, boucle, etat } from './socle/index.js?v=2';
+import { demarrer, boucle, etat } from './socle/index.js?v=3';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;

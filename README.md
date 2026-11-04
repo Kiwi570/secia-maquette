@@ -1,4 +1,4 @@
-# Maquette SECIA — v2
+# Maquette SECIA — v3
 
 Maquette du site de SECIA (membre de NPS Consult Group), direction « Le plan », en français et en anglais.
 Adresse prévue : https://secia-maquette.vercel.app (noindex : la maquette n'est pas référencée).
@@ -18,6 +18,8 @@ Adresse prévue : https://secia-maquette.vercel.app (noindex : la maquette n'est
 | Carrières | `/carrieres` | `/en/carrieres` |
 | Contact | `/contact` | `/en/contact` |
 | Mentions légales, confidentialité, conditions générales | `/mentions-legales`, `/confidentialite`, `/conditions-generales` | mêmes adresses sous `/en/` |
+
+L'accueil (v3) montre davantage de photos réelles dès le début : l'ouverture pose le plan animé sur une photo de l'équipe, vue comme à travers une feuille de calque ; chaque repère chiffré et chaque temps de la méthode a sa photo. Les noms des photos sont dans `source/pages/accueil.mjs` (`REPERES`, `METHODE`).
 
 Les pages de services sont produites par un seul modèle (`source/gabarits/service.mjs`) à partir de `donnees/fiches.json`, lui-même tiré des textes du site actuel. Les corrections apportées au texte source sont listées dans `donnees/fiches.json` (`_corrections`).
 

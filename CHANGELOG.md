@@ -2,6 +2,25 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v3 — plus de photos au début de l'accueil
+
+Comparaison faite fichier par fichier avec l'archive secia-maquette-v2.zip : aucun fichier ajouté ni retiré, 75 modifiés. Hors accueil, les changements se limitent au numéro de version des fichiers (?v=3).
+
+**Accueil (français et anglais)**
+- Ouverture : le plan animé est désormais dessiné sur une grande photo réelle de l'équipe en réunion, vue à travers une feuille de calque. La photo des bureaux reste posée dessus comme un tirage.
+- Les textes du plan gardent leur case pleine ; la cote « Infrastructure résiliente » reçoit un liseré clair pour rester lisible sur la photo.
+- Repères chiffrés : une photo réelle au-dessus de chaque chiffre (2009, 24/7, 42, 15), dévoilée au défilement.
+- Méthode : une photo réelle par temps (concevoir, sécuriser, exploiter), dévoilée au défilement sous le texte de l'étape.
+- Toutes ces photos viennent du shooting déjà fourni ; aucune image générée en plus.
+
+**Fichiers touchés**
+- `source/pages/accueil.mjs` : photos de l'ouverture, des repères et de la méthode (listes `REPERES` et `METHODE`).
+- `assets/css/site.css` : calque de l'ouverture, textes du plan, formats des nouvelles photos.
+- `donnees/site.json` et `_audit/version-livree.txt` : version 3. `README.md` : note sur l'accueil.
+
+**Audit (accueil, français et anglais)**
+- 0 échec. À regarder, déjà connus en v2 : 4 à 6 % d'images lentes au défilement avec le processeur ralenti 4 fois, et la ligne de cote tracée qui ne compte pas comme effet de section.
+
 ## v2 — les pages des services, NIS2, Carrières et les pages légales
 
 Comparaison faite fichier par fichier avec l'archive secia-maquette-v1.zip : 141 fichiers ajoutés, 45 modifiés, aucun retiré.

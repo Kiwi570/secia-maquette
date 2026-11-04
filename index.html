@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="2" data-curseur data-page="accueil">
+<html lang="fr" data-v="3" data-curseur data-page="accueil">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -43,14 +43,14 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=2">
-<link rel="stylesheet" href="/assets/css/site.css?v=2">
-<link rel="modulepreload" href="/assets/js/site.js?v=2">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
+<link rel="stylesheet" href="/assets/css/socle.css?v=3">
+<link rel="stylesheet" href="/assets/css/site.css?v=3">
+<link rel="modulepreload" href="/assets/js/site.js?v=3">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=3">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=2"></script>
+<script type="module" src="/assets/js/site.js?v=3"></script>
 <meta name="theme-color" content="#EEF2F5">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -147,6 +147,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="hero-info" data-info-cle data-anime="gsap"><span class="voyant" aria-hidden="true"></span>Support opérationnel 24/7</p>
     </div>
     <div class="hero-plan" id="plan-ouverture" data-effet="impulsions" data-impulsions data-visuel>
+      <figure class="media hero-photo" data-superpose style="--cadrage:42% 50%;--cadrage-mobile:40% 50%">
+  <picture>
+    <img src="/assets/images/photos/cellule-crise-1280.webp" srcset="/assets/images/photos/cellule-crise-640.webp 640w, /assets/images/photos/cellule-crise-1280.webp 1280w, /assets/images/photos/cellule-crise-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 48vw" alt="Réunion de l’équipe dans une salle de SECIA" width="1280" height="853" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+      <div class="hero-calque" aria-hidden="true"></div>
       <svg class="plan plan--ouverture" viewBox="0 0 640 600" aria-hidden="true" focusable="false">
   <g class="plan-reperes">
     <path d="M20 20 H48 M20 20 V48 M620 20 H592 M620 20 V48 M20 580 H48 M20 580 V552 M620 580 H592 M620 580 V552"/>
@@ -209,18 +215,38 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h2 id="reperes-titre" class="visuellement-cache">Repères</h2>
   <ul class="cotes conteneur" data-effet="cotes" data-visuel>
     <li class="cote">
+      <figure class="media cote-media" data-anime="rideau" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/photos/duo-direction-1280.webp" srcset="/assets/images/photos/duo-direction-640.webp 640w, /assets/images/photos/duo-direction-1280.webp 1280w, /assets/images/photos/duo-direction-1920.webp 1920w" sizes="(max-width: 760px) 46vw, 22vw" alt="Deux membres de l’équipe posent ensemble, en studio" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
       <svg class="cote-trait" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M1 10 H199"/><path d="M1 2 V18 M199 2 V18"/><path d="M1 10 l8 -5 M1 10 l8 5 M199 10 l-8 -5 M199 10 l-8 5"/></svg>
       <strong class="cote-valeur">2009</strong>
       <span class="cote-libelle">fondation, sous le nom NS Consulting</span>
     </li><li class="cote">
+      <figure class="media cote-media" data-anime="rideau" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/photos/supervision-postes-1280.webp" srcset="/assets/images/photos/supervision-postes-640.webp 640w, /assets/images/photos/supervision-postes-1280.webp 1280w, /assets/images/photos/supervision-postes-1920.webp 1920w" sizes="(max-width: 760px) 46vw, 22vw" alt="Ingénieurs à leurs postes de travail" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
       <svg class="cote-trait" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M1 10 H199"/><path d="M1 2 V18 M199 2 V18"/><path d="M1 10 l8 -5 M1 10 l8 5 M199 10 l-8 -5 M199 10 l-8 5"/></svg>
       <strong class="cote-valeur">24/7</strong>
       <span class="cote-libelle">support opérationnel</span>
     </li><li class="cote">
+      <figure class="media cote-media" data-anime="rideau" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/photos/atelier-analyse-1280.webp" srcset="/assets/images/photos/atelier-analyse-640.webp 640w, /assets/images/photos/atelier-analyse-1280.webp 1280w, /assets/images/photos/atelier-analyse-1920.webp 1920w" sizes="(max-width: 760px) 46vw, 22vw" alt="Atelier d’analyse autour d’ordinateurs portables" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
       <svg class="cote-trait" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M1 10 H199"/><path d="M1 2 V18 M199 2 V18"/><path d="M1 10 l8 -5 M1 10 l8 5 M199 10 l-8 -5 M199 10 l-8 5"/></svg>
       <strong class="cote-valeur">42</strong>
       <span class="cote-libelle">certifications de l’équipe</span>
     </li><li class="cote">
+      <figure class="media cote-media" data-anime="rideau" style="--cadrage:50% 45%">
+  <picture>
+    <img src="/assets/images/photos/presentation-ecran-1280.webp" srcset="/assets/images/photos/presentation-ecran-640.webp 640w, /assets/images/photos/presentation-ecran-1280.webp 1280w, /assets/images/photos/presentation-ecran-1920.webp 1920w" sizes="(max-width: 760px) 46vw, 22vw" alt="Présentation d’un tableau de bord sur grand écran en réunion" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
       <svg class="cote-trait" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M1 10 H199"/><path d="M1 2 V18 M199 2 V18"/><path d="M1 10 l8 -5 M1 10 l8 5 M199 10 l-8 -5 M199 10 l-8 5"/></svg>
       <strong class="cote-valeur">15</strong>
       <span class="cote-libelle">services, cybersécurité et réseau</span>
@@ -238,16 +264,31 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
           <p class="etape-num"><span>01</span>Concevoir</p>
           <h3 data-anime="lignes">Un plan pensé pour vos contraintes</h3>
           <p data-anime>Architecture, intégration, migration : le réseau et la sécurité sont conçus ensemble, à partir de vos enjeux métier et de l’existant.</p>
+          <figure class="media etape-media" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/schema-reseau-1280.webp" srcset="/assets/images/photos/schema-reseau-640.webp 640w, /assets/images/photos/schema-reseau-1280.webp 1280w, /assets/images/photos/schema-reseau-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 36vw" alt="Schéma de réseau affiché sur un écran" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
           <p class="etiquettes" data-anime><span>Conseil en sécurité</span><span>Conception et migration</span><span>Laboratoires de validation</span></p>
         </li><li class="methode-etape" data-etape="2">
           <p class="etape-num"><span>02</span>Sécuriser</p>
           <h3 data-anime="lignes">Chaque zone protégée</h3>
           <p data-anime>Segmentation, pare-feu, contrôle d’accès, audits et tests d’intrusion : chaque segment est isolé, vérifié, éprouvé.</p>
+          <figure class="media etape-media" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/revue-tableau-de-bord-1280.webp" srcset="/assets/images/photos/revue-tableau-de-bord-640.webp 640w, /assets/images/photos/revue-tableau-de-bord-1280.webp 1280w, /assets/images/photos/revue-tableau-de-bord-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 36vw" alt="Revue d’un tableau de bord de sécurité en équipe" width="1280" height="684" loading="lazy" decoding="async">
+  </picture>
+</figure>
           <p class="etiquettes" data-anime><span>Audits</span><span>Tests d’intrusion</span><span>Conformité NIS2</span></p>
         </li><li class="methode-etape" data-etape="3">
           <p class="etape-num"><span>03</span>Exploiter</p>
           <h3 data-anime="lignes">Un plan qui vit, sous surveillance</h3>
           <p data-anime>Supervision 24/7, sécurité managée et réponse aux incidents : l’infrastructure reste observée, maintenue et défendue.</p>
+          <figure class="media etape-media" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/surveillance-carte-1280.webp" srcset="/assets/images/photos/surveillance-carte-640.webp 640w, /assets/images/photos/surveillance-carte-1280.webp 1280w, /assets/images/photos/surveillance-carte-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 36vw" alt="Carte des cybermenaces en direct sur un ordinateur portable" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
           <p class="etiquettes" data-anime><span>Sécurité managée</span><span>Surveillance CSOC</span><span>Réponse CSIRT</span></p>
         </li>
       </ol>

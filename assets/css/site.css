@@ -188,7 +188,17 @@ html.menu-ouvert .menu-icone::after { transform: rotate(-45deg); }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 0 0 18px; }
 .hero-info { display: flex; align-items: center; gap: 10px; font-family: var(--police-mono); font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; margin: 0; }
 .hero-plan { position: relative; aspect-ratio: 640 / 600; max-height: calc(100svh - var(--entete-h) - 64px); width: 100%; justify-self: end; }
-.hero-plan .plan { width: 100%; height: 100%; }
+.hero-plan .plan { position: relative; z-index: 2; width: 100%; height: 100%; }
+/* v3 : la photo de l'équipe sous le plan, vue à travers une feuille de calque. */
+.hero-photo { position: absolute; inset: 0; z-index: 0; border-radius: 0; }
+.hero-calque { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, color-mix(in srgb, var(--calque) 34%, transparent), color-mix(in srgb, var(--calque) 48%, transparent) 45%, color-mix(in srgb, var(--calque) 66%, transparent)); box-shadow: inset 0 0 0 1px var(--trait); }
+.hero-tirage, .hero-plan .plan-pause { z-index: 3; }
+/* Textes du plan d'ouverture : couleur portée par color (fill: currentColor) ; la cote garde un liseré de calque pour rester lisible sur la photo. */
+.plan.plan--ouverture .noeud text, .plan.plan--ouverture .cote-texte { color: var(--encre); fill: currentColor; }
+/* Nœud SOC : texte clair sur case pleine encre. background-color ne se peint pas dans un SVG ; il déclare le fond réel aux contrôles de contraste. */
+.plan.plan--ouverture .noeud--veille { background-color: var(--encre); }
+.plan.plan--ouverture .noeud--veille text { color: var(--calque); }
+.plan.plan--ouverture .cote-texte { color: var(--encre); paint-order: stroke; stroke: var(--calque); stroke-width: 8px; stroke-linejoin: round; }
 .hero-tirage { position: absolute; left: 72.5%; top: 47%; width: 27.5%; aspect-ratio: 1457 / 2000; transform: rotate(2.5deg); height: auto; }
 .hero-tirage picture { height: calc(100% - 22px); }
 .plan-pause {
@@ -883,3 +893,8 @@ nav li > a, .pied li > a { min-width: 44px; }
 
 /* Pages de services : titre un peu plus petit, l'ouverture tient dans le premier écran. */
 .page-tete--service h1 { font-size: clamp(2.4rem, min(4.8vw, 8.4vh), 4.6rem); }
+
+/* v3 : photos des repères et des trois temps de la méthode. */
+.cote-media { aspect-ratio: 4 / 3; margin-bottom: 4px; }
+.etape-media { aspect-ratio: 16 / 9; max-width: 520px; margin: 4px 0 18px; }
+@media (max-width: 760px) { .etape-media { max-width: none; } }
