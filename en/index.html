@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-v="4" data-curseur data-page="accueil">
+<html lang="en" data-v="5" data-curseur data-page="accueil">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -43,14 +43,14 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=4">
-<link rel="stylesheet" href="/assets/css/site.css?v=4">
-<link rel="modulepreload" href="/assets/js/site.js?v=4">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=4">
+<link rel="stylesheet" href="/assets/css/socle.css?v=5">
+<link rel="stylesheet" href="/assets/css/site.css?v=5">
+<link rel="modulepreload" href="/assets/js/site.js?v=5">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=5">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=4"></script>
+<script type="module" src="/assets/js/site.js?v=5"></script>
 <meta name="theme-color" content="#EEF2F5">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -374,40 +374,271 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="surtitre">Expertise</p>
     <h2 data-anime="lignes">Cybersecurity and networks.</h2>
   </div>
-  <div class="poles-grille">
-    <article class="planche" id="pole-cyber" data-survol="incline" data-survol-force="3">
-      <p class="planche-entete"><span>Sheet 02</span><span>6 services</span></p>
-      <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
-      <figure class="media planche-media" data-grok data-anime="rideau" style="--cadrage:50% 45%">
-  <picture>
-    <img src="/assets/images/grok/accueil-cyber-784.webp" srcset="/assets/images/grok/accueil-cyber-640.webp 640w, /assets/images/grok/accueil-cyber-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Network rack with neatly dressed blue cables" width="784" height="1168" loading="lazy" decoding="async">
+  <div class="console" id="console-poles" data-console data-boucle-css>
+    <div class="console-barre">
+      <div class="console-onglets" role="tablist" aria-label="Areas of expertise">
+        <span class="console-onglets-curseur" aria-hidden="true"></span>
+        <button type="button" class="console-onglet" role="tab" id="onglet-cyber" aria-controls="panneau-cyber" aria-selected="true" tabindex="0"><span>Cybersecurity</span><span class="console-onglet-n" aria-hidden="true">06</span></button><button type="button" class="console-onglet" role="tab" id="onglet-reseau" aria-controls="panneau-reseau" aria-selected="false" tabindex="-1"><span>Network</span><span class="console-onglet-n" aria-hidden="true">09</span></button>
+      </div>
+      <p class="console-etat" aria-hidden="true"><span class="console-etat-code" data-console-code>02.1</span><span class="console-etat-trait"></span><span data-console-compteur>01 / 06</span></p>
+      <button type="button" class="console-pause" data-pause-pour="console-poles" data-libelle-pause="Pause" data-libelle-lecture="Play"><span data-libelle-bouton>Pause</span><span class="visuellement-cache"> : automatic service rotation</span></button>
+    </div>
+    <div class="console-panneaux">
+      <div class="console-panneau actif" role="tabpanel" id="panneau-cyber" aria-labelledby="onglet-cyber" data-pole="cyber">
+        <p class="console-pole-nom">Cybersecurity</p>
+        <p class="console-pole-texte">Protecting your systems, networks and data, from threat detection to continuous protection.</p>
+        <div class="console-cote">
+          <ul class="console-liste" aria-labelledby="onglet-cyber">
+            <li class="console-curseur" aria-hidden="true"><i class="console-progres"></i></li>
+            <li><button type="button" class="console-item" aria-controls="fiche-integration-conseil" aria-current="true" data-i="0"><span class="console-item-n">01</span><span class="console-item-nom">Security integration &amp; consulting</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-audits" aria-current="false" data-i="1"><span class="console-item-n">02</span><span class="console-item-nom">Security audits &amp; assessments</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-tests-intrusion" aria-current="false" data-i="2"><span class="console-item-n">03</span><span class="console-item-nom">Penetration testing</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-securite-managee" aria-current="false" data-i="3"><span class="console-item-n">04</span><span class="console-item-nom">Managed security services</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-csoc" aria-current="false" data-i="4"><span class="console-item-n">05</span><span class="console-item-nom">Monitoring &amp; threat intelligence (CSOC)</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-csirt" aria-current="false" data-i="5"><span class="console-item-n">06</span><span class="console-item-nom">Incident response (CSIRT)</span></button></li>
+          </ul>
+        </div>
+        <div class="console-ecran">
+          <article class="fiche-pole active" id="fiche-integration-conseil" data-code="02.1">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-integration-conseil-mobile-640.webp 640w, /assets/images/grok/service-integration-conseil-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-integration-conseil-1168.webp" srcset="/assets/images/grok/service-integration-conseil-640.webp 640w, /assets/images/grok/service-integration-conseil-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Generated illustration</figcaption>
 </figure>
-      <div class="planche-texte">
-        <h3>Cybersecurity</h3>
-        <p>Protecting your systems, networks and data, from threat detection to continuous protection.</p>
-        <ul class="planche-services" data-anime="cascade">
-          <li><span class="num">01</span><a href="/en/integration-conseil" data-libelle="Security integration &amp; consulting">Security integration &amp; consulting</a></li><li><span class="num">02</span><a href="/en/audits-securite" data-libelle="Security audits &amp; assessments">Security audits &amp; assessments</a></li><li><span class="num">03</span><a href="/en/tests-intrusion" data-libelle="Penetration testing">Penetration testing</a></li><li><span class="num">04</span><a href="/en/securite-managee" data-libelle="Managed security services">Managed security services</a></li><li><span class="num">05</span><a href="/en/surveillance-csoc" data-libelle="Monitoring &amp; threat intelligence (CSOC)">Monitoring &amp; threat intelligence (CSOC)</a></li><li><span class="num">06</span><a href="/en/reponse-incidents" data-libelle="Incident response (CSIRT)">Incident response (CSIRT)</a></li>
-        </ul>
-        <p><a href="/en/cybersecurite" class="bouton" data-libelle="Cybersecurity" data-survol="magnetique">Explore cybersecurity</a></p>
-      </div>
-    </article><article class="planche" id="pole-reseau" data-survol="incline" data-survol-force="3">
-      <p class="planche-entete"><span>Sheet 03</span><span>9 services</span></p>
-      <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
-      <figure class="media planche-media" data-grok data-anime="rideau" style="--cadrage:50% 45%">
-  <picture>
-    <img src="/assets/images/grok/accueil-reseau-784.webp" srcset="/assets/images/grok/accueil-reseau-640.webp 640w, /assets/images/grok/accueil-reseau-784.webp 784w" sizes="(max-width: 760px) 100vw, 30vw" alt="Fibre optic patch panel" width="784" height="1168" loading="lazy" decoding="async">
+              <p class="fp-code" aria-hidden="true"><span>02.1</span></p>
+              <h3 class="fp-titre">Security integration &amp; consulting</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">On-demand security consulting from experienced engineers and specialists to strengthen your organisation&#39;s defence.</p>
+              <ul class="fp-points"><li>Modern security architecture review</li><li>Security strategy and policy guidance</li><li>Threat awareness and vulnerability tracking</li><li>Integration with the existing IT environment</li></ul>
+              <a href="/en/integration-conseil" class="bouton fp-lien" data-libelle="Security integration &amp; consulting">See the service<span class="visuellement-cache"> : Security integration &amp; consulting</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-audits" data-code="02.2">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-audits-mobile-640.webp 640w, /assets/images/grok/service-audits-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-audits-1168.webp" srcset="/assets/images/grok/service-audits-640.webp 640w, /assets/images/grok/service-audits-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Generated illustration</figcaption>
 </figure>
-      <div class="planche-texte">
-        <h3>Network</h3>
-        <p>Fast, reliable and secure connections, from design and build to ongoing management and support.</p>
-        <ul class="planche-services" data-anime="cascade">
-          <li><span class="num">01</span><a href="/en/reseau-entreprise" data-libelle="Enterprise network">Enterprise network</a></li><li><span class="num">02</span><a href="/en/connectivite-wan-cloud" data-libelle="WAN &amp; cloud connectivity">WAN &amp; cloud connectivity</a></li><li><span class="num">03</span><a href="/en/sdn" data-libelle="Software-defined networking (SDN)">Software-defined networking (SDN)</a></li><li><span class="num">04</span><a href="/en/sans-fil" data-libelle="Wireless solutions">Wireless solutions</a></li><li><span class="num">05</span><a href="/en/automatisation-surveillance" data-libelle="Automation and monitoring">Automation and monitoring</a></li><li><span class="num">06</span><a href="/en/audits-reseau" data-libelle="Network audits &amp; compliance">Network audits &amp; compliance</a></li><li><span class="num">07</span><a href="/en/conception-migration" data-libelle="Design, implementation &amp; migration">Design, implementation &amp; migration</a></li><li><span class="num">08</span><a href="/en/formation" data-libelle="Training &amp; knowledge transfer">Training &amp; knowledge transfer</a></li><li><span class="num">09</span><a href="/en/laboratoires-poc" data-libelle="Proof-of-concept labs">Proof-of-concept labs</a></li>
-        </ul>
-        <p><a href="/en/contact?sujet=reseau" class="bouton bouton--contour" data-libelle="Contact" data-survol="magnetique">Talk about your network</a></p>
+              <p class="fp-code" aria-hidden="true"><span>02.2</span></p>
+              <h3 class="fp-titre">Security audits &amp; assessments</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Complete audits to evaluate your IT infrastructure, uncover vulnerabilities and check compliance with industry standards.</p>
+              <ul class="fp-points"><li>System and configuration review</li><li>Vulnerability and risk analysis</li><li>Compliance verification (ISO 27001, GDPR, NIS2)</li><li>Recommendations for improvement</li></ul>
+              <a href="/en/audits-securite" class="bouton fp-lien" data-libelle="Security audits &amp; assessments">See the service<span class="visuellement-cache"> : Security audits &amp; assessments</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-tests-intrusion" data-code="02.3">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-tests-intrusion-mobile-640.webp 640w, /assets/images/grok/service-tests-intrusion-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-tests-intrusion-1168.webp" srcset="/assets/images/grok/service-tests-intrusion-640.webp 640w, /assets/images/grok/service-tests-intrusion-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>02.3</span></p>
+              <h3 class="fp-titre">Penetration testing</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Simulated attacks to identify weaknesses in your networks, applications and systems before attackers do.</p>
+              <ul class="fp-points"><li>External and internal penetration tests</li><li>Web and API security testing</li><li>Advanced Red Team simulations</li><li>Actionable remediation guidance</li></ul>
+              <a href="/en/tests-intrusion" class="bouton fp-lien" data-libelle="Penetration testing">See the service<span class="visuellement-cache"> : Penetration testing</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-securite-managee" data-code="02.4">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-securite-managee-mobile-640.webp 640w, /assets/images/grok/service-securite-managee-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-securite-managee-1168.webp" srcset="/assets/images/grok/service-securite-managee-640.webp 640w, /assets/images/grok/service-securite-managee-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>02.4</span></p>
+              <h3 class="fp-titre">Managed security services</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Continuous protection with monitoring, device management and 24/7 support.</p>
+              <ul class="fp-points"><li>Vulnerability management of critical assets</li><li>Security device operation and maintenance</li><li>External service monitoring</li><li>24/7 support and incident assistance</li></ul>
+              <a href="/en/securite-managee" class="bouton fp-lien" data-libelle="Managed security services">See the service<span class="visuellement-cache"> : Managed security services</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-csoc" data-code="02.5">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-csoc-mobile-640.webp 640w, /assets/images/grok/service-csoc-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-csoc-1168.webp" srcset="/assets/images/grok/service-csoc-640.webp 640w, /assets/images/grok/service-csoc-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>02.5</span></p>
+              <h3 class="fp-titre">Monitoring &amp; threat intelligence (CSOC)</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">See threats before they strike with continuous monitoring and actionable threat intelligence.</p>
+              <ul class="fp-points"><li>24/7 CSOC security event monitoring</li><li>Threat hunting and proactive detection</li><li>Integration with SIEM and defence systems</li><li>Actionable intelligence for prevention</li></ul>
+              <a href="/en/surveillance-csoc" class="bouton fp-lien" data-libelle="Monitoring &amp; threat intelligence (CSOC)">See the service<span class="visuellement-cache"> : Monitoring &amp; threat intelligence (CSOC)</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-csirt" data-code="02.6">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-reponse-incidents-mobile-640.webp 640w, /assets/images/grok/service-reponse-incidents-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-reponse-incidents-1168.webp" srcset="/assets/images/grok/service-reponse-incidents-640.webp 640w, /assets/images/grok/service-reponse-incidents-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>02.6</span></p>
+              <h3 class="fp-titre">Incident response (CSIRT)</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">React quickly to contain, investigate and recover from security incidents.</p>
+              <ul class="fp-points"><li>Security incident response and mitigation</li><li>Proactive threat hunting</li><li>Post-incident investigation and remediation</li><li>Crisis management and preparedness simulations</li></ul>
+              <a href="/en/reponse-incidents" class="bouton fp-lien" data-libelle="Incident response (CSIRT)">See the service<span class="visuellement-cache"> : Incident response (CSIRT)</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <span class="ecran-balai" aria-hidden="true"></span>
+        </div>
+        <p class="console-pole-lien"><a href="/en/cybersecurite" data-libelle="Cybersecurity">Explore cybersecurity<span class="fleche" aria-hidden="true">→</span></a><span class="console-glisser" aria-hidden="true">Swipe</span></p>
+      </div><div class="console-panneau" role="tabpanel" id="panneau-reseau" aria-labelledby="onglet-reseau" data-pole="reseau">
+        <p class="console-pole-nom">Network</p>
+        <p class="console-pole-texte">Fast, reliable and secure connections, from design and build to ongoing management and support.</p>
+        <div class="console-cote">
+          <ul class="console-liste" aria-labelledby="onglet-reseau">
+            <li class="console-curseur" aria-hidden="true"><i class="console-progres"></i></li>
+            <li><button type="button" class="console-item" aria-controls="fiche-reseau-entreprise" aria-current="true" data-i="0"><span class="console-item-n">01</span><span class="console-item-nom">Enterprise network</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-wan-cloud" aria-current="false" data-i="1"><span class="console-item-n">02</span><span class="console-item-nom">WAN &amp; cloud connectivity</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-sdn" aria-current="false" data-i="2"><span class="console-item-n">03</span><span class="console-item-nom">Software-defined networking (SDN)</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-sans-fil" aria-current="false" data-i="3"><span class="console-item-n">04</span><span class="console-item-nom">Wireless solutions</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-automatisation" aria-current="false" data-i="4"><span class="console-item-n">05</span><span class="console-item-nom">Automation and monitoring</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-audits-reseau" aria-current="false" data-i="5"><span class="console-item-n">06</span><span class="console-item-nom">Network audits &amp; compliance</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-conception-migration" aria-current="false" data-i="6"><span class="console-item-n">07</span><span class="console-item-nom">Design, implementation &amp; migration</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-formation" aria-current="false" data-i="7"><span class="console-item-n">08</span><span class="console-item-nom">Training &amp; knowledge transfer</span></button></li><li><button type="button" class="console-item" aria-controls="fiche-labs-poc" aria-current="false" data-i="8"><span class="console-item-n">09</span><span class="console-item-nom">Proof-of-concept labs</span></button></li>
+          </ul>
+        </div>
+        <div class="console-ecran">
+          <article class="fiche-pole active" id="fiche-reseau-entreprise" data-code="03.1">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-reseau-entreprise-mobile-640.webp 640w, /assets/images/grok/service-reseau-entreprise-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-reseau-entreprise-1168.webp" srcset="/assets/images/grok/service-reseau-entreprise-640.webp 640w, /assets/images/grok/service-reseau-entreprise-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.1</span></p>
+              <h3 class="fp-titre">Enterprise network</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Build a strong foundation for your digital infrastructure with high-performance, reliable, and scalable enterprise networks.</p>
+              <ul class="fp-points"><li>Network Design &amp; Architecture</li><li>Network Implementation</li><li>Migration Planning &amp; Execution</li><li>Access Control &amp; Security Integration</li></ul>
+              <a href="/en/reseau-entreprise" class="bouton fp-lien" data-libelle="Enterprise network">See the service<span class="visuellement-cache"> : Enterprise network</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-wan-cloud" data-code="03.2">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-wan-cloud-mobile-640.webp 640w, /assets/images/grok/service-wan-cloud-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-wan-cloud-1168.webp" srcset="/assets/images/grok/service-wan-cloud-640.webp 640w, /assets/images/grok/service-wan-cloud-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.2</span></p>
+              <h3 class="fp-titre">WAN &amp; cloud connectivity</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Ensure seamless connectivity across branches, data centers, and cloud environments with secure and flexible WAN solutions.</p>
+              <ul class="fp-points"><li>Branch-to-Branch Connectivity</li><li>Cloud Network Integration</li><li>Flexible Routing &amp; Failover</li><li>Multi-Domain Integration</li></ul>
+              <a href="/en/connectivite-wan-cloud" class="bouton fp-lien" data-libelle="WAN &amp; cloud connectivity">See the service<span class="visuellement-cache"> : WAN &amp; cloud connectivity</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-sdn" data-code="03.3">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-sdn-mobile-640.webp 640w, /assets/images/grok/service-sdn-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-sdn-1168.webp" srcset="/assets/images/grok/service-sdn-640.webp 640w, /assets/images/grok/service-sdn-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.3</span></p>
+              <h3 class="fp-titre">Software-defined networking (SDN)</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Simplify and modernize network operations with SDN technologies for agility, automation, and visibility.</p>
+              <ul class="fp-points"><li>Smooth SDN Migration</li><li>Automation Frameworks</li><li>Simplified Operations</li><li>Custom Dashboards &amp; Alerts</li></ul>
+              <a href="/en/sdn" class="bouton fp-lien" data-libelle="Software-defined networking (SDN)">See the service<span class="visuellement-cache"> : Software-defined networking (SDN)</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-sans-fil" data-code="03.4">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-sans-fil-mobile-640.webp 640w, /assets/images/grok/service-sans-fil-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-sans-fil-1168.webp" srcset="/assets/images/grok/service-sans-fil-640.webp 640w, /assets/images/grok/service-sans-fil-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.4</span></p>
+              <h3 class="fp-titre">Wireless solutions</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Deliver reliable and secure wireless connectivity for modern, mobile-first organizations.</p>
+              <ul class="fp-points"><li>Site Surveys &amp; Planning</li><li>Wireless Network Migration</li><li>Standards &amp; Best Practices Validation</li><li>Real-Time Network Monitoring</li></ul>
+              <a href="/en/sans-fil" class="bouton fp-lien" data-libelle="Wireless solutions">See the service<span class="visuellement-cache"> : Wireless solutions</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-automatisation" data-code="03.5">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-automatisation-mobile-640.webp 640w, /assets/images/grok/service-automatisation-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-automatisation-1168.webp" srcset="/assets/images/grok/service-automatisation-640.webp 640w, /assets/images/grok/service-automatisation-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.5</span></p>
+              <h3 class="fp-titre">Automation and monitoring</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Gain full visibility and control with smart automation and proactive monitoring solutions.</p>
+              <ul class="fp-points"><li>Real-Time Network Monitoring</li><li>Automation Frameworks</li><li>Custom Dashboards &amp; Alerts</li><li>Simplified Operations</li></ul>
+              <a href="/en/automatisation-surveillance" class="bouton fp-lien" data-libelle="Automation and monitoring">See the service<span class="visuellement-cache"> : Automation and monitoring</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-audits-reseau" data-code="03.6">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-audits-reseau-mobile-640.webp 640w, /assets/images/grok/service-audits-reseau-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-audits-reseau-1168.webp" srcset="/assets/images/grok/service-audits-reseau-640.webp 640w, /assets/images/grok/service-audits-reseau-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.6</span></p>
+              <h3 class="fp-titre">Network audits &amp; compliance</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Ensure your infrastructure is secure, compliant, and optimized through professional network assessments.</p>
+              <ul class="fp-points"><li>Infrastructure &amp; Configuration Audit</li><li>Security Posture Review</li><li>Standards &amp; Best Practices Validation</li><li>Compliance Reporting</li></ul>
+              <a href="/en/audits-reseau" class="bouton fp-lien" data-libelle="Network audits &amp; compliance">See the service<span class="visuellement-cache"> : Network audits &amp; compliance</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-conception-migration" data-code="03.7">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-conception-migration-mobile-640.webp 640w, /assets/images/grok/service-conception-migration-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-conception-migration-1168.webp" srcset="/assets/images/grok/service-conception-migration-640.webp 640w, /assets/images/grok/service-conception-migration-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.7</span></p>
+              <h3 class="fp-titre">Design, implementation &amp; migration</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Design, deploy, and evolve modern network architectures that support growth and agility.</p>
+              <ul class="fp-points"><li>Network Design &amp; Architecture</li><li>Network Implementation</li><li>Seamless Migration Planning</li><li>Validation &amp; Testing</li></ul>
+              <a href="/en/conception-migration" class="bouton fp-lien" data-libelle="Design, implementation &amp; migration">See the service<span class="visuellement-cache"> : Design, implementation &amp; migration</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-formation" data-code="03.8">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-formation-mobile-640.webp 640w, /assets/images/grok/service-formation-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-formation-1168.webp" srcset="/assets/images/grok/service-formation-640.webp 640w, /assets/images/grok/service-formation-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.8</span></p>
+              <h3 class="fp-titre">Training &amp; knowledge transfer</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Empower your teams with hands-on expertise from our certified engineers.</p>
+              <ul class="fp-points"><li>On-site or remote training sessions</li><li>Knowledge transfer workshops</li><li>Technical documentation &amp; best practices</li><li>Continuous skills development</li></ul>
+              <a href="/en/formation" class="bouton fp-lien" data-libelle="Training &amp; knowledge transfer">See the service<span class="visuellement-cache"> : Training &amp; knowledge transfer</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article><article class="fiche-pole" id="fiche-labs-poc" data-code="03.9">
+            <div class="fp-visuel">
+              <figure class="media fp-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/service-labs-poc-mobile-640.webp 640w, /assets/images/grok/service-labs-poc-mobile-784.webp 784w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw">
+    <img src="/assets/images/grok/service-labs-poc-1168.webp" srcset="/assets/images/grok/service-labs-poc-640.webp 640w, /assets/images/grok/service-labs-poc-1168.webp 1168w" sizes="(max-width: 1099px) min(84vw, 400px), 58vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Generated illustration</figcaption>
+</figure>
+              <p class="fp-code" aria-hidden="true"><span>03.9</span></p>
+              <h3 class="fp-titre">Proof-of-concept labs</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">Validate your architecture and solutions before deployment in a safe test environment.</p>
+              <ul class="fp-points"><li>PoC and Lab Simulations</li><li>Real-World Network Scenarios</li><li>Performance and Integration Tests</li><li>Seamless Deployment Preparation</li></ul>
+              <a href="/en/laboratoires-poc" class="bouton fp-lien" data-libelle="Proof-of-concept labs">See the service<span class="visuellement-cache"> : Proof-of-concept labs</span><span class="fleche" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <span class="ecran-balai" aria-hidden="true"></span>
+        </div>
+        <p class="console-pole-lien"><a href="/en/reseau" data-libelle="Network">Explore networking<span class="fleche" aria-hidden="true">→</span></a><span class="console-glisser" aria-hidden="true">Swipe</span></p>
       </div>
-    </article>
+    </div>
   </div>
 </section>
 <section class="urgence" id="urgence" data-gouttiere="#152452">

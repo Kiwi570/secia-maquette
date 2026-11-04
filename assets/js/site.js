@@ -2,9 +2,9 @@
    le mode calme, les boucles, les mesures et la bibliothèque d'effets (lignes, mots, cascade, rideau, parallaxe,
    zoom, trace, galerie, onde, magnétique, incline). Ici, seulement les effets du plan d'animation, chacun marqué
    data-effet="nom" dans les pages : esquisse, impulsions, cotes, plan-trois-etats, confinement, verification,
-   chemin-attaque, cartouche ; et, sur tout le site, fil, decode, ruban, la grille sous la souris et les photos scannées. Aucune lecture de mise en page pendant le défilement : tout est mesuré au
+   chemin-attaque, cartouche, console (accueil) ; et, sur tout le site, fil, decode, ruban, la grille sous la souris et les photos scannées. Aucune lecture de mise en page pendant le défilement : tout est mesuré au
    rafraîchissement de ScrollTrigger ; les tracés SVG sont échantillonnés une fois au démarrage. */
-import { demarrer, boucle, etat, quand } from './socle/index.js?v=4';
+import { demarrer, boucle, etat, quand } from './socle/index.js?v=5';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -263,49 +263,58 @@ function chemin() {
    Le vrai texte reste en place (transparent) : la mise en page ne bouge pas d'un pixel et les lecteurs d'écran le lisent.
    Les signes tirés au sort sont posés par-dessus ; à la fin, le texte d'origine est remis tel quel. */
 const GLYPHES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#/<>*+=';
-const A_DECODER = '.surtitre, .planche-entete > span, .fiche-entete > span, .famille-entete > span, .cote-valeur, .cote-libelle, .valeur-num';
+const A_DECODER = '.surtitre, .fiche-entete > span, .famille-entete > span, .cote-valeur, .cote-libelle, .valeur-num';
+/* Décode un texte (un seul nœud texte) ; « texte » remplace le texte final. Un nouvel appel annule le précédent. */
+function decoderTexte(el, texte) {
+  const jeton = (el.__jeton || 0) + 1;
+  el.__jeton = jeton;
+  if (el.__statique == null) el.__statique = getComputedStyle(el).position === 'static';
+  const fin = texte != null ? texte : (el.__fin != null ? el.__fin : el.textContent);
+  el.__fin = fin;
+  el.textContent = fin;
+  if (el.__statique) el.style.position = '';
+  if (calme() || !fin.trim()) return;
+  const chiffres = el.matches('.cote-valeur, .valeur-num, [data-console-code], [data-console-compteur]');
+  const lot = chiffres ? '0123456789' : GLYPHES;
+  const fixe = (ch) => (chiffres ? !/\d/.test(ch) : !/[A-Za-zÀ-ÿ0-9]/.test(ch));
+  const reel = document.createElement('span');
+  reel.className = 'decode-reel';
+  reel.textContent = fin;
+  el.textContent = '';
+  el.append(reel);
+  const rb = el.getBoundingClientRect(), rr = reel.getBoundingClientRect();
+  if (!rr.width || !rr.height) { el.textContent = fin; return; }
+  if (el.__statique) el.style.position = 'relative';
+  const vu = document.createElement('span');
+  vu.className = 'decode-vu';
+  vu.setAttribute('aria-hidden', 'true');
+  vu.setAttribute('data-audit-ignorer', '');
+  vu.style.cssText = `left:${(rr.left - rb.left - el.clientLeft).toFixed(2)}px;top:${(rr.top - rb.top - el.clientTop).toFixed(2)}px;width:${Math.ceil(rr.width + 1)}px;height:${Math.ceil(rr.height)}px`;
+  vu.textContent = fin;
+  el.append(vu);
+  el.classList.add('decodage');
+  const n = fin.length, duree = Math.min(950, 420 + n * 16), t0 = performance.now();
+  let derniere = -1;
+  const image = (t) => {
+    if (el.__jeton !== jeton) return;
+    const p = Math.min(1, (t - t0) / duree);
+    if (p >= 1) { el.textContent = fin; if (el.__statique) el.style.position = ''; return; }
+    if (t - derniere >= 40) {
+      derniere = t;
+      const net = Math.floor((1 - (1 - p) * (1 - p)) * n);
+      let txt = fin.slice(0, net);
+      for (let i = net; i < n; i++) txt += fixe(fin[i]) ? fin[i] : lot[(Math.random() * lot.length) | 0];
+      vu.textContent = txt;
+    }
+    requestAnimationFrame(image);
+  };
+  requestAnimationFrame(image);
+}
 function decode() {
   if (calme() || !('IntersectionObserver' in window)) return;
   const cibles = $$(A_DECODER).filter((el) => !el.closest('[data-ouverture], [data-voile], [data-menu], .pied')
     && el.childNodes.length && [...el.childNodes].every((n) => n.nodeType === 3) && el.textContent.trim().length > 1);
-  const lancer = (el) => {
-    const fin = el.textContent;
-    const chiffres = el.matches('.cote-valeur, .valeur-num');
-    const lot = chiffres ? '0123456789' : GLYPHES;
-    const fixe = (ch) => (chiffres ? !/\d/.test(ch) : !/[A-Za-zÀ-ÿ0-9]/.test(ch));
-    const reel = document.createElement('span');
-    reel.className = 'decode-reel';
-    reel.textContent = fin;
-    el.textContent = '';
-    el.append(reel);
-    const rb = el.getBoundingClientRect(), rr = reel.getBoundingClientRect();
-    if (!rr.width || !rr.height) { el.textContent = fin; return; }
-    const statique = getComputedStyle(el).position === 'static';
-    if (statique) el.style.position = 'relative';
-    const vu = document.createElement('span');
-    vu.className = 'decode-vu';
-    vu.setAttribute('aria-hidden', 'true');
-    vu.setAttribute('data-audit-ignorer', '');
-    vu.style.cssText = `left:${(rr.left - rb.left - el.clientLeft).toFixed(2)}px;top:${(rr.top - rb.top - el.clientTop).toFixed(2)}px;width:${Math.ceil(rr.width + 1)}px;height:${Math.ceil(rr.height)}px`;
-    vu.textContent = fin;
-    el.append(vu);
-    el.classList.add('decodage');
-    const n = fin.length, duree = Math.min(950, 420 + n * 16), t0 = performance.now();
-    let derniere = -1;
-    const image = (t) => {
-      const p = Math.min(1, (t - t0) / duree);
-      if (p >= 1) { el.textContent = fin; if (statique) el.style.position = ''; return; }
-      if (t - derniere >= 40) {
-        derniere = t;
-        const net = Math.floor((1 - (1 - p) * (1 - p)) * n);
-        let txt = fin.slice(0, net);
-        for (let i = net; i < n; i++) txt += fixe(fin[i]) ? fin[i] : lot[(Math.random() * lot.length) | 0];
-        vu.textContent = txt;
-      }
-      requestAnimationFrame(image);
-    };
-    requestAnimationFrame(image);
-  };
+  const lancer = (el) => decoderTexte(el);
   const attente = [];
   const io = new IntersectionObserver((entrees) => entrees.forEach((e) => {
     if (!e.isIntersecting) return;
@@ -468,7 +477,7 @@ function scan() {
     setTimeout(() => { f.classList.remove('scanne'); f.classList.add('scan-fait'); }, 2600);
   }), { threshold: 0.45 });
   $$('figure.media').filter((f) => !f.matches('.tirage, .hero-photo, .badge-media, .urgence-fond, .nis2-fond')
-    && !f.closest('[data-ouverture], [data-voile], [data-menu], .mur') && f.offsetWidth >= 160).forEach((f) => {
+    && !f.closest('[data-ouverture], [data-voile], [data-menu], .mur, .console') && f.offsetWidth >= 160).forEach((f) => {
     f.classList.add('scan');
     if (f.dataset.anime === 'rideau') f.style.setProperty('--scan-delai', '.6s');
     io.observe(f);
@@ -491,6 +500,219 @@ function rubans() {
       onUpdate: (st) => { pencher(gsap.utils.clamp(-7, 7, st.getVelocity() / -260)); redresser.restart(true); },
     });
   });
+}
+
+/* ---------- console des pôles (accueil) : interrupteur Cybersécurité / Réseau, liste des services, fiche à l'écran ----------
+   Ordinateur (1100 px et plus) : survol, clic ou clavier choisissent un service ; la fiche arrive par un balayage orange,
+   son titre se décode. Seule, la console avance d'un service toutes les 6,5 s (barre orange sous le service en cours),
+   puis passe à l'autre pôle ; elle s'arrête sous la souris, au clavier, hors de l'écran, avec le bouton Pause et en mode calme.
+   Téléphone et tablette : les fiches en bande à faire glisser, le compteur suit. Les positions sont mesurées au
+   redimensionnement, jamais pendant le défilement. */
+function consolePoles() {
+  const k = $('[data-console]');
+  if (!k) return;
+  const bureau = () => window.matchMedia('(min-width: 1100px)').matches;
+  const deux = (n) => String(n).padStart(2, '0');
+  const COURBE = 'cubic-bezier(.7, 0, .25, 1)';
+  const onglets = $$('[role="tab"]', k);
+  const code = $('[data-console-code]', k), compteur = $('[data-console-compteur]', k);
+  const poles = $$('.console-panneau', k).map((panneau) => ({
+    panneau,
+    items: $$('.console-item', panneau),
+    fiches: $$('.fiche-pole', panneau),
+    curseur: $('.console-curseur', panneau),
+    ecran: $('.console-ecran', panneau),
+    balai: $('.ecran-balai', panneau),
+    i: 0, pas: 1, anims: [],
+  }));
+  let p = 0;
+  poles.forEach((P, n) => { P.panneau.classList.toggle('actif', n === 0); P.panneau.inert = n !== 0; });
+
+  const animer = (el, images, options) => (el.animate ? el.animate(images, options) : null);
+  const placer = (P, anim) => {
+    const b = P.items[P.i];
+    if (!b || !P.curseur) return;
+    const li = b.parentElement;
+    if (!anim) P.curseur.style.transition = 'none';
+    P.curseur.style.setProperty('--y', `${li.offsetTop}px`);
+    P.curseur.style.setProperty('--h', `${li.offsetHeight}px`);
+    if (!anim) requestAnimationFrame(() => { P.curseur.style.transition = ''; });
+  };
+  const mesurer = () => poles.forEach((P) => {
+    placer(P, false);
+    P.pas = P.fiches[1] ? Math.max(1, P.fiches[1].offsetLeft - P.fiches[0].offsetLeft) : 1;
+  });
+  const ecrireEtat = (anim) => {
+    const P = poles[p];
+    const texte = P.fiches[P.i].dataset.code, cpt = `${deux(P.i + 1)} / ${deux(P.fiches.length)}`;
+    if (anim) { decoderTexte(code, texte); decoderTexte(compteur, cpt); } else { code.__jeton = (code.__jeton || 0) + 1; compteur.__jeton = (compteur.__jeton || 0) + 1; code.__fin = code.textContent = texte; compteur.__fin = compteur.textContent = cpt; }
+  };
+  /* La fiche suivante (et celle qu'on survole) est affichée en coulisse : sa photo est chargée avant son arrivée. */
+  const preparer = (f) => { if (f) f.classList.add('prete'); };
+  const suivante = () => {
+    const P = poles[p];
+    return P.i + 1 < P.fiches.length ? P.fiches[P.i + 1] : poles[(p + 1) % poles.length].fiches[0];
+  };
+  /* Balayage : la nouvelle fiche se dévoile de gauche à droite, une ligne orange en tête ; le titre se décode, le texte suit. */
+  const balayer = (P, nouvelle, avant) => {
+    P.anims.forEach((a) => a && a.cancel());
+    P.fiches.forEach((f) => { if (f !== avant) f.classList.remove('sortante'); });
+    const d = 780;
+    const a = animer(nouvelle, [{ clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)' }], { duration: d, easing: COURBE });
+    const b = animer(P.balai, [{ transform: 'translate3d(-100%,0,0)', opacity: 1 }, { transform: 'translate3d(0,0,0)', opacity: 1, offset: 0.9 }, { transform: 'translate3d(0,0,0)', opacity: 0 }], { duration: d + 160, easing: COURBE });
+    const textes = [$('.fp-resume', nouvelle), ...$$('.fp-points li', nouvelle), $('.fp-lien', nouvelle)];
+    P.anims = [a, b, ...textes.map((el, n) => animer(el, [{ opacity: 0, transform: 'translate3d(0,10px,0)' }, { opacity: 1, transform: 'none' }], { duration: 420, delay: 300 + n * 45, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards' }))];
+    decoderTexte($('.fp-titre', nouvelle));
+    const fini = () => { if (avant) avant.classList.remove('sortante'); };
+    if (a) a.finished.then(fini, () => {}); else fini();
+    return a;
+  };
+  const relancer = () => {
+    if (!k.classList.contains('lecture')) return;
+    const vieux = $('.console-progres', poles[p].curseur);
+    if (vieux) vieux.replaceWith(vieux.cloneNode(false));
+  };
+  const choisir = (np, i, anim = !calme()) => {
+    const A = poles[p], B = poles[np];
+    const avant = A.fiches[A.i];
+    const anime = anim && bureau();
+    if (np !== p) {
+      onglets.forEach((o, n) => { o.setAttribute('aria-selected', String(n === np)); o.tabIndex = n === np ? 0 : -1; });
+      B.fiches[B.i].classList.remove('active');
+      B.i = i;
+      B.fiches[i].classList.add('active');
+      B.items.forEach((b, n) => b.setAttribute('aria-current', String(n === i)));
+      A.panneau.classList.remove('actif'); A.panneau.inert = true;
+      B.panneau.classList.add('actif'); B.panneau.inert = false;
+      p = np;
+      placer(B, false);
+      if (anime) {
+        A.panneau.classList.add('sortant');
+        const a = balayer(B, B.fiches[i], null);
+        const fin = () => A.panneau.classList.remove('sortant');
+        if (a) a.finished.then(fin, fin); else fin();
+        [...$$('.console-liste > li:not(.console-curseur)', B.panneau), $('.console-pole-texte', B.panneau), $('.console-pole-lien', B.panneau)].forEach((el, n) => animer(el, [{ opacity: 0, transform: 'translate3d(16px,0,0)' }, { opacity: 1, transform: 'none' }], { duration: 440, delay: 30 * n, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards' }));
+        animer(B.curseur, [{ opacity: 0 }, { opacity: 1 }], { duration: 300, delay: 140, fill: 'backwards' });
+      }
+      if (!bureau()) { B.ecran.scrollLeft = i * B.pas; }
+    } else {
+      const P = A, nouvelle = P.fiches[i];
+      P.items.forEach((b, n) => b.setAttribute('aria-current', String(n === i)));
+      if (nouvelle !== avant) {
+        P.i = i;
+        avant.classList.remove('active');
+        nouvelle.classList.add('active');
+        if (anime) { avant.classList.add('sortante'); balayer(P, nouvelle, avant); }
+      }
+      placer(P, anim);
+    }
+    ecrireEtat(anime);
+    relancer();
+    preparer(suivante());
+  };
+
+  /* Interrupteur : clic, flèches gauche et droite, Début et Fin. */
+  onglets.forEach((o, n) => {
+    o.addEventListener('click', () => choisir(n, poles[n].i));
+    o.addEventListener('pointerenter', () => poles[n].fiches.forEach(preparer));
+    o.addEventListener('focus', () => poles[n].fiches.forEach(preparer));
+    o.addEventListener('keydown', (e) => {
+      const cible = { ArrowRight: n + 1, ArrowLeft: n - 1, Home: 0, End: onglets.length - 1 }[e.key];
+      if (cible == null) return;
+      e.preventDefault();
+      const m = (cible + onglets.length) % onglets.length;
+      onglets[m].focus();
+      choisir(m, poles[m].i);
+    });
+  });
+  /* Liste : survol (court délai d'intention), clic, focus au clavier, flèches haut et bas. */
+  poles.forEach((P, n) => P.items.forEach((b, i) => {
+    let delai = 0;
+    b.addEventListener('pointerenter', (e) => {
+      if (e.pointerType !== 'mouse') return;
+      preparer(P.fiches[i]);
+      clearTimeout(delai);
+      delai = setTimeout(() => { if (P.i !== i) choisir(n, i); }, 110);
+    });
+    b.addEventListener('pointerleave', () => clearTimeout(delai));
+    b.addEventListener('click', () => { clearTimeout(delai); choisir(n, i); });
+    b.addEventListener('focus', () => { if (b.matches(':focus-visible') && P.i !== i) choisir(n, i); });
+    b.addEventListener('keydown', (e) => {
+      const cible = { ArrowDown: i + 1, ArrowUp: i - 1, Home: 0, End: P.items.length - 1 }[e.key];
+      if (cible == null) return;
+      e.preventDefault();
+      P.items[(cible + P.items.length) % P.items.length].focus();
+    });
+  }));
+  /* Lecture automatique : la barre orange sous le service en cours sert de minuterie. */
+  k.addEventListener('animationend', (e) => {
+    if (e.animationName !== 'console-progres' || !k.classList.contains('lecture') || !bureau()) return;
+    const P = poles[p];
+    if (P.i + 1 < P.fiches.length) choisir(p, P.i + 1); else choisir((p + 1) % poles.length, 0);
+  });
+  const mode = () => {
+    const lit = bureau() && !calme();
+    k.classList.toggle('lecture', lit);
+    if (lit) k.dataset.effet = 'console'; else delete k.dataset.effet;
+    mesurer();
+    relancer();
+  };
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver((es) => es.forEach((e) => {
+      k.classList.toggle('en-vue', e.intersectionRatio >= 0.4);
+      if (e.isIntersecting) { poles[p].fiches.forEach(preparer); preparer(suivante()); }
+    }), { threshold: [0, 0.4], rootMargin: '0px' }).observe(k);
+  }
+  /* Bande sur téléphone : le compteur suit la fiche visible ; une petite poussée montre qu'on peut faire glisser. */
+  poles.forEach((P, n) => {
+    let raf = 0;
+    P.ecran.addEventListener('scroll', () => {
+      if (bureau() || raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        const i = Math.min(P.fiches.length - 1, Math.max(0, Math.round(P.ecran.scrollLeft / P.pas)));
+        if (n === p && i !== P.i) {
+          P.fiches[P.i].classList.remove('active');
+          P.i = i;
+          P.fiches[i].classList.add('active');
+          P.items.forEach((b, m) => b.setAttribute('aria-current', String(m === i)));
+          ecrireEtat(false);
+        }
+      });
+    }, { passive: true });
+  });
+  if ('IntersectionObserver' in window && !calme()) {
+    const io = new IntersectionObserver((es) => es.forEach((e) => {
+      if (!e.isIntersecting || bureau()) return;
+      io.disconnect();
+      const P = poles[p];
+      if (P.ecran.scrollLeft > 4) return;
+      P.fiches.slice(0, 3).forEach((f) => animer(f, [{ transform: 'translate3d(0,0,0)' }, { transform: 'translate3d(-34px,0,0)', offset: 0.45 }, { transform: 'translate3d(0,0,0)' }], { duration: 1100, delay: 350, easing: 'cubic-bezier(.45,0,.2,1)', composite: 'add' }));
+    }), { threshold: 0.6 });
+    io.observe(poles[0].ecran);
+  }
+  /* Parallaxe légère de la photo sous la souris (ordinateur). */
+  if (!calme()) {
+    poles.forEach((P) => {
+      let raf = 0, x = 0, y = 0, r = null;
+      P.ecran.addEventListener('pointerenter', () => { r = P.ecran.getBoundingClientRect(); });
+      P.ecran.addEventListener('pointermove', (e) => {
+        if (e.pointerType !== 'mouse' || !bureau() || !r) return;
+        x = (e.clientX - r.left) / r.width - 0.5; y = (e.clientY - r.top) / r.height - 0.5;
+        if (!raf) raf = requestAnimationFrame(() => { raf = 0; P.ecran.style.setProperty('--px', x.toFixed(3)); P.ecran.style.setProperty('--py', y.toFixed(3)); });
+      }, { passive: true });
+      P.ecran.addEventListener('pointerleave', () => { P.ecran.style.setProperty('--px', '0'); P.ecran.style.setProperty('--py', '0'); });
+    });
+  }
+  window.matchMedia('(min-width: 1100px)').addEventListener('change', mode);
+  if ('ResizeObserver' in window) {
+    let raf = 0;
+    const ro = new ResizeObserver(() => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; mesurer(); }); });
+    poles.forEach((P) => { if (P.curseur) ro.observe(P.curseur.parentElement); ro.observe(P.ecran); });
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(mesurer);
+  mode();
+  ecrireEtat(false);
 }
 
 /* ---------- Demande de rendez-vous en étapes (contact) : validation par étape, hauteur animée, récapitulatif ---------- */
@@ -608,6 +830,7 @@ demarrer({
     grille();
     reticule();
     rubans();
+    consolePoles();
     decode();
     scan();
     grilleSouris();

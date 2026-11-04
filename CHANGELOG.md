@@ -2,6 +2,36 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v5 — la console Cybersécurité / Réseau sur l'accueil
+
+Comparaison faite fichier par fichier avec l'archive secia-maquette-v4.zip : aucun fichier ajouté ni retiré, 79 modifiés (ce fichier compris). Hors accueil (français et anglais), les pages et les 16 fichiers du socle ne changent que par leur numéro de version (5).
+
+**Accueil (français et anglais) : la section des deux pôles est refaite en console**
+- Un interrupteur Cybersécurité / Réseau en haut : la pastille sombre glisse d'un pôle à l'autre avec un petit rebond.
+- Ordinateur (1100 px et plus) : la liste des services à gauche, une grande fiche à droite (photo, titre, résumé, points clés et bouton « Voir le service »).
+  - Survol, clic ou clavier choisissent un service : un curseur sombre glisse jusqu'à lui, la nouvelle fiche arrive par un balayage orange de gauche à droite et son titre se « décode ».
+  - Seule, la console avance d'un service toutes les 6,5 s, puis passe à l'autre pôle. Une barre orange sous le service en cours montre le temps restant.
+  - La lecture s'arrête sous la souris, au clavier et hors de l'écran ; un bouton Pause l'arrête tout à fait.
+  - La photo suit légèrement la souris ; des repères orange encadrent l'écran.
+- Téléphone et tablette : les fiches en bande à faire glisser, qui grossissent en passant au centre (navigateurs récents) ; le compteur (01 / 06) suit, et une petite poussée montre qu'on peut faire glisser.
+- Les fiches reprennent la photo, le résumé et les points de chacun des 15 services, déjà présents dans les données du site ; les photos générées portent « Illustration générée ».
+- Le lien du pôle Réseau mène désormais à la page Réseau (« Découvrir le réseau ») au lieu du formulaire de contact.
+- Mode calme : pas de lecture automatique ni de balayage, changements directs. Sans JavaScript : les deux pôles l'un sous l'autre, fiches en bande.
+
+**Fichiers touchés**
+- `source/pages/accueil.mjs` : nouvelle section `poles` (console).
+- `assets/css/site.css` : styles de la console ; anciens styles des deux planches retirés.
+- `assets/js/site.js` : `consolePoles()` ; le décodage devient une fonction réutilisable (`decoderTexte`).
+- `donnees/textes/fr.json` et `en.json` : libellés de l'interrupteur, du bouton Pause et de la bande ; lien du pôle Réseau.
+- `_audit/config.json` : effet « console » ajouté au plan d'animation.
+- `donnees/site.json` et `_audit/version-livree.txt` : version 5. `README.md` : note sur la v5.
+
+**Audit ciblé (accueil, cybersécurité, SECIA)**
+- Premier passage : 28 échecs, tous dans la console (numéros et libellés sous 12 px, texte du service en cours mesuré sur le mauvais fond) ; corrigés.
+- Second passage (mesures et parcours sur l'accueil et SECIA) : 0 échec, rien à regarder.
+- À regarder au premier passage, déjà connus : 5 % d'images lentes au défilement de l'accueil avec le processeur ralenti 4 fois (6 % en v4), et la ligne de cote tracée de l'accueil.
+- Safari ne peut pas être lancé ici : à vérifier sur le Mac (la console, le balayage et la bande sur iPhone).
+
 ## v4 — un site plus vivant : « Plan vivant + cyber »
 
 Comparaison faite fichier par fichier avec l'archive secia-maquette-v3.zip : aucun fichier ajouté ni retiré, 84 modifiés (ce fichier compris). Les 53 pages sont régénérées ; les 16 fichiers du socle ne changent que par leur numéro de version (?v=4).

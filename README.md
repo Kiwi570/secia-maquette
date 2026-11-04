@@ -1,4 +1,4 @@
-# Maquette SECIA — v4
+# Maquette SECIA — v5
 
 Maquette du site de SECIA (membre de NPS Consult Group), direction « Le plan », en français et en anglais.
 Adresse prévue : https://secia-maquette.vercel.app (noindex : la maquette n'est pas référencée).
@@ -18,6 +18,8 @@ Adresse prévue : https://secia-maquette.vercel.app (noindex : la maquette n'est
 | Carrières | `/carrieres` | `/en/carrieres` |
 | Contact | `/contact` | `/en/contact` |
 | Mentions légales, confidentialité, conditions générales | `/mentions-legales`, `/confidentialite`, `/conditions-generales` | mêmes adresses sous `/en/` |
+
+Sur l'accueil (v5), les deux pôles forment une console : un interrupteur Cybersécurité / Réseau, la liste des services et une grande fiche qui arrive par un balayage orange ; sur ordinateur elle avance seule toutes les 6,5 s (bouton Pause, arrêt sous la souris, au clavier, hors de l'écran et en mode calme), sur téléphone les fiches se font glisser. Code : `consolePoles()` dans `assets/js/site.js`, section `poles` de `source/pages/accueil.mjs`, bloc « Deux pôles : la console » de `assets/css/site.css`.
 
 Le site (v4) est plus vivant sur toutes les pages : fil de lecture orange dans la marge (ordinateur), grille du calque qui s'allume sous la souris, surtitres et chiffres qui se décodent, photos scannées à leur arrivée, rubans de mots au défilement et cartes en relief. Tout est dans `assets/js/site.js` (fonctions `fil`, `grilleSouris`, `decode`, `scan`, `rubans`) et `assets/css/site.css` (bloc v4) ; le mode calme coupe ces mouvements.
 

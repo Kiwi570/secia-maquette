@@ -14,6 +14,10 @@ export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'photos/bu
 
 const EDITEURS = ['cisco', 'checkpoint', 'extreme', 'sentinelone', 'isc2'];
 
+/* Console des deux pôles : un onglet par pôle, la liste de ses services et une fiche par service. */
+const POLES = ['cyber', 'reseau'];
+const deux = (n) => String(n).padStart(2, '0');
+
 export default (c) => {
   const u = c.site.urgence;
   const certifs = c.donnees.certifications;
@@ -89,25 +93,46 @@ ${ruban(c, [c.donnees.services.cyber.map((s) => s.nom), c.donnees.services.resea
     <p class="surtitre">${c.t('accueil.poles.surtitre')}</p>
     <h2 data-anime="lignes">${c.t('accueil.poles.titre')}</h2>
   </div>
-  <div class="poles-grille">
-    ${['cyber', 'reseau'].map((p, i) => {
-      const liste = c.donnees.services[p];
-      return html`<article class="planche" id="pole-${p}" data-survol="incline" data-survol-force="3">
-      <p class="planche-entete"><span>${c.t('commun.planche')} 0${i + 2}</span><span>${c.t(`accueil.poles.${p}.compte`)}</span></p>
-      <svg class="planche-cote" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M1 6 H399 M1 1 V11 M399 1 V11"/></svg>
-      ${c.media({ nom: p === 'cyber' ? 'grok/accueil-cyber' : 'grok/accueil-reseau', alt: c.s(`accueil.poles.${p}.alt`), cadrage: '50% 45%', classe: 'planche-media', sizes: '(max-width: 760px) 100vw, 30vw', attrs: 'data-anime="rideau"' })}
-      <div class="planche-texte">
-        <h3>${c.t(`accueil.poles.${p}.titre`)}</h3>
-        <p>${c.t(`accueil.poles.${p}.texte`)}</p>
-        <ul class="planche-services" data-anime="cascade">
-          ${liste.map((s, k) => html`<li><span class="num">${String(k + 1).padStart(2, '0')}</span>${s.page ? c.lien(s.page, { texte: s.nom }) : html`<span>${s.nom}</span>`}</li>`)}
-        </ul>
-        <p>${p === 'cyber'
-          ? c.lien('cybersecurite', { classe: 'bouton', texte: c.t('accueil.poles.cyber.lien'), attrs: 'data-survol="magnetique"' })
-          : c.lien('contact', { params: 'sujet=reseau', classe: 'bouton bouton--contour', texte: c.t('accueil.poles.reseau.lien'), attrs: 'data-survol="magnetique"' })}</p>
+  <div class="console" id="console-poles" data-console data-boucle-css>
+    <div class="console-barre">
+      <div class="console-onglets" role="tablist" aria-label="${c.s('accueil.poles.onglets')}">
+        <span class="console-onglets-curseur" aria-hidden="true"></span>
+        ${POLES.map((p, i) => html`<button type="button" class="console-onglet" role="tab" id="onglet-${p}" aria-controls="panneau-${p}" aria-selected="${i ? 'false' : 'true'}" tabindex="${i ? '-1' : '0'}"><span>${c.t(`accueil.poles.${p}.titre`)}</span><span class="console-onglet-n" aria-hidden="true">${deux(c.donnees.services[p].length)}</span></button>`)}
       </div>
-    </article>`;
-    })}
+      <p class="console-etat" aria-hidden="true"><span class="console-etat-code" data-console-code>${c.site.planches[c.donnees.services.cyber[0].page]}</span><span class="console-etat-trait"></span><span data-console-compteur>01 / ${deux(c.donnees.services.cyber.length)}</span></p>
+      <button type="button" class="console-pause" data-pause-pour="console-poles" data-libelle-pause="${c.s('commun.pause')}" data-libelle-lecture="${c.s('commun.lecture')}"><span data-libelle-bouton>${c.t('commun.pause')}</span><span class="visuellement-cache"> : ${c.t('accueil.poles.auto')}</span></button>
+    </div>
+    <div class="console-panneaux">
+      ${POLES.map((p, i) => {
+        const liste = c.donnees.services[p];
+        return html`<div class="console-panneau${i ? '' : ' actif'}" role="tabpanel" id="panneau-${p}" aria-labelledby="onglet-${p}" data-pole="${p}">
+        <p class="console-pole-nom">${c.t(`accueil.poles.${p}.titre`)}</p>
+        <p class="console-pole-texte">${c.t(`accueil.poles.${p}.texte`)}</p>
+        <div class="console-cote">
+          <ul class="console-liste" aria-labelledby="onglet-${p}">
+            <li class="console-curseur" aria-hidden="true"><i class="console-progres"></i></li>
+            ${liste.map((s, k) => html`<li><button type="button" class="console-item" aria-controls="fiche-${s.cle}" aria-current="${k ? 'false' : 'true'}" data-i="${k}"><span class="console-item-n">${deux(k + 1)}</span><span class="console-item-nom">${s.nom}</span></button></li>`)}
+          </ul>
+        </div>
+        <div class="console-ecran">
+          ${liste.map((s, k) => html`<article class="fiche-pole${k ? '' : ' active'}" id="fiche-${s.cle}" data-code="${c.site.planches[s.page]}">
+            <div class="fp-visuel">
+              ${c.media({ nom: s.image, alt: '', cadrage: '50% 50%', classe: 'fp-media', sizes: '(max-width: 1099px) min(84vw, 400px), 58vw' })}
+              <p class="fp-code" aria-hidden="true"><span>${c.site.planches[s.page]}</span></p>
+              <h3 class="fp-titre">${s.nom}</h3>
+            </div>
+            <div class="fp-texte">
+              <p class="fp-resume">${s.resume}</p>
+              <ul class="fp-points">${s.points.map((x) => html`<li>${x}</li>`)}</ul>
+              ${c.lien(s.page, { classe: 'bouton fp-lien', texte: html`${c.t('cyber.services.voir')}<span class="visuellement-cache"> : ${s.nom}</span><span class="fleche" aria-hidden="true">→</span>` })}
+            </div>
+          </article>`)}
+          <span class="ecran-balai" aria-hidden="true"></span>
+        </div>
+        <p class="console-pole-lien">${c.lien(p === 'cyber' ? 'cybersecurite' : 'reseau', { texte: html`${c.t(`accueil.poles.${p}.lien`)}<span class="fleche" aria-hidden="true">→</span>` })}<span class="console-glisser" aria-hidden="true">${c.t('accueil.poles.glisser')}</span></p>
+      </div>`;
+      })}
+    </div>
   </div>
 </section>
 

@@ -327,9 +327,12 @@
         "titre": "Network",
         "compte": "9 services",
         "texte": "Fast, reliable and secure connections, from design and build to ongoing management and support.",
-        "lien": "Talk about your network",
+        "lien": "Explore networking",
         "alt": "Fibre optic patch panel"
-      }
+      },
+      "onglets": "Areas of expertise",
+      "auto": "automatic service rotation",
+      "glisser": "Swipe"
     },
     "urgence": {
       "surtitre": "Emergency line · 24 hours a day, 7 days a week",

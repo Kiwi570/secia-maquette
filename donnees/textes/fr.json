@@ -327,9 +327,12 @@
         "titre": "Réseau",
         "compte": "9 services",
         "texte": "Des connexions rapides, fiables et sécurisées, de la conception jusqu'à la gestion et au support continus.",
-        "lien": "Parler de votre réseau",
+        "lien": "Découvrir le réseau",
         "alt": "Panneau de brassage à fibres optiques"
-      }
+      },
+      "onglets": "Pôles d'expertise",
+      "auto": "défilement automatique des services",
+      "glisser": "Faites glisser"
     },
     "urgence": {
       "surtitre": "Ligne d'urgence · 24 h sur 24, 7 jours sur 7",
